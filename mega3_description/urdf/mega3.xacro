@@ -52,7 +52,7 @@
     <material name="dark_grey"/>
   </visual>
   <collision>
-    <origin xyz="-0.07 -0.1 -0.105" rpy="0 1.5708 0"/>
+    <origin xyz="-0.07 -0.1 -0.136" rpy="0 1.5708 0"/>
     <geometry>
       <mesh filename="package://mega3_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -75,7 +75,7 @@
     <material name="dark_grey"/>
   </visual>
   <collision>
-    <origin xyz="-0.07 -0.1 0.105" rpy="0 1.5708 0"/>
+    <origin xyz="-0.07 -0.1 0.136" rpy="0 1.5708 0"/>
     <geometry>
       <mesh filename="package://mega3_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
