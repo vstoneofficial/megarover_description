@@ -38,14 +38,14 @@
 
 <link name="left_wheel_1">
   <inertial>
-    <origin xyz="0.0 0.0 0.03313" rpy="0 1.5708 0"/>
+    <origin xyz="0.0 0.0 0.00213" rpy="0 1.5708 0"/>
     <mass value="1.239934"/>
     <inertia ixx="0.002474" iyy="0.00174" izz="0.00174" 
              ixy="0.000" iyz="0.000" 
              ixz="-0.000"/>
   </inertial>
   <visual>
-    <origin xyz="-0.07 -0.1 -0.105" rpy="0 1.5708 0"/>
+    <origin xyz="-0.07 -0.1 -0.136" rpy="0 1.5708 0"/>
     <geometry>
       <mesh filename="package://mega3_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -61,14 +61,14 @@
 
 <link name="right_wheel_1">
   <inertial>
-    <origin xyz="0 0 -0.03313" rpy="0 1.5708 0"/>
+    <origin xyz="0 0 -0.00213" rpy="0 1.5708 0"/>
     <mass value="1.239934"/>
     <inertia ixx="0.002474" iyy="0.00174" izz="0.00174" 
              ixy="-0.000" iyz="-0.000" 
              ixz="-0.000"/>
   </inertial>
   <visual>
-    <origin xyz="-0.07 -0.1 0.105" rpy="0 1.5708 0"/>
+    <origin xyz="-0.07 -0.1 0.136" rpy="0 1.5708 0"/>
     <geometry>
       <mesh filename="package://mega3_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -83,14 +83,14 @@
 </link>
 
 <joint name="left_wheel_joint" type="continuous">
-  <origin xyz="-0.105 0.1 0.07" rpy="0 -1.5708 0"/>
+  <origin xyz="-0.136 0.1 0.07" rpy="0 -1.5708 0"/>
   <parent link="base_link"/>
   <child link="left_wheel_1"/>
   <axis xyz="0.0 0.0 1.0"/>
 </joint>
 
 <joint name="right_wheel_joint" type="continuous">
-  <origin xyz="0.105 0.1 0.07" rpy="0 -1.5708 0"/>
+  <origin xyz="0.136 0.1 0.07" rpy="0 -1.5708 0"/>
   <parent link="base_link"/>
   <child link="right_wheel_1"/>
   <axis xyz="0.0 0.0 1.0"/>
