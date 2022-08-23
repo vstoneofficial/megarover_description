@@ -16,8 +16,10 @@
 <link name="base_link">
   <inertial>
     <origin xyz="6.540114906371634e-07 -0.003250873034356485 0.120269680948673" rpy="0 0 0"/>
-    <mass value="79.98438407598134"/>
-    <inertia ixx="0.687749" iyy="0.89788" izz="1.3018" ixy="-0.000134" iyz="-0.001694" ixz="9.4e-05"/>
+    <mass value="26.535431"/>
+    <inertia ixx="0.2129" iyy="0.2979" izz="0.4209" 
+             ixy="-0.000036" iyz="0.008147" 
+             ixz="0.0000368"/>
   </inertial>
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -36,19 +38,21 @@
 
 <link name="right_wheel_1">
   <inertial>
-    <origin xyz="0.03637506015849254 7.02055508131072e-06 -1.1815954602742429e-05" rpy="0 0 0"/>
-    <mass value="1.541653423609473"/>
-    <inertia ixx="0.03088" iyy="0.018304" izz="0.018305" ixy="3e-06" iyz="0.0" ixz="-4e-06"/>
+    <origin xyz="0.0 0.0 -0.001" rpy="0 1.5708 0"/>
+    <mass value="3.241197"/>
+    <inertia ixx="0.01025" iyy="0.00621" izz="0.006211" 
+             ixy="0.0" iyz="0.0" 
+             ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.167 -0.108 -0.085" rpy="0 0 0"/>
+    <origin xyz="-0.085 -0.108 0.202" rpy="0 1.5708 0"/>
     <geometry>
       <mesh filename="package://f120a_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="dark_grey"/>
   </visual>
   <collision>
-    <origin xyz="-0.167 -0.108 -0.085" rpy="0 0 0"/>
+    <origin xyz="-0.085 -0.108 0.202" rpy="0 1.5708 0"/>
     <geometry>
       <mesh filename="package://f120a_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -57,19 +61,21 @@
 
 <link name="left_wheel_1">
   <inertial>
-    <origin xyz="-0.036375060158495454 -2.5558693036720204e-06 -1.3504536612696239e-05" rpy="0 0 0"/>
-    <mass value="1.541653423609318"/>
-    <inertia ixx="0.03088" iyy="0.018305" izz="0.018304" ixy="2e-06" iyz="-0.0" ixz="5e-06"/>
+    <origin xyz="0.0 0.0 0.001" rpy="0 1.5708 0"/>
+    <mass value="3.241197"/>
+    <inertia ixx="0.01025" iyy="0.00621" izz="0.006211" 
+             ixy="0.0" iyz="0.0" 
+             ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.167 -0.108 -0.085" rpy="0 0 0"/>
+    <origin xyz="-0.085 -0.108 -0.202" rpy="0 1.5708 0"/>
     <geometry>
       <mesh filename="package://f120a_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="dark_grey"/>
   </visual>
   <collision>
-    <origin xyz="0.167 -0.108 -0.085" rpy="0 0 0"/>
+    <origin xyz="-0.085 -0.108 -0.202" rpy="0 1.5708 0"/>
     <geometry>
       <mesh filename="package://f120a_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -77,17 +83,17 @@
 </link>
 
 <joint name="right_wheel_joint" type="continuous">
-  <origin xyz="0.167 0.108 0.085" rpy="0 0 0"/>
+  <origin xyz="0.202 0.108 0.085" rpy="0 -1.5708 0"/>
   <parent link="base_link"/>
   <child link="right_wheel_1"/>
-  <axis xyz="1.0 0.0 0.0"/>
+  <axis xyz="0.0 0.0 1.0"/>
 </joint>
 
 <joint name="left_wheel_joint" type="continuous">
-  <origin xyz="-0.167 0.108 0.085" rpy="0 0 0"/>
+  <origin xyz="-0.202 0.108 0.085" rpy="0 -1.5708 0"/>
   <parent link="base_link"/>
   <child link="left_wheel_1"/>
-  <axis xyz="1.0 0.0 0.0"/>
+  <axis xyz="0.0 0.0 1.0"/>
 </joint>
 
 </robot>
