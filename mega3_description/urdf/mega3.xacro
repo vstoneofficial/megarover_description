@@ -16,8 +16,10 @@
 <link name="base_link">
   <inertial>
     <origin xyz="-0.0001512201285105937 -3.420007213019073e-05 0.08388833658828038" rpy="0 0 0"/>
-    <mass value="55.320133808251406"/>
-    <inertia ixx="0.615775" iyy="0.27999" izz="0.754884" ixy="0.001269" iyz="-0.005168" ixz="0.00023"/>
+    <mass value="11.744482"/>
+    <inertia ixx="0.091465" iyy="0.06435" izz="0.1253" 
+             ixy="0.001018" iyz="-0.002369" 
+             ixz="0.000233"/>
   </inertial>
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -36,19 +38,21 @@
 
 <link name="left_wheel_1">
   <inertial>
-    <origin xyz="-0.033128043580545455 7.067830727208735e-07 1.2241841348126226e-06" rpy="0 0 0"/>
-    <mass value="6.011657058706245"/>
-    <inertia ixx="0.012936" iyy="0.008099" izz="0.0081" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+    <origin xyz="0.0 0.0 0.03313" rpy="0 1.5708 0"/>
+    <mass value="1.239934"/>
+    <inertia ixx="0.002474" iyy="0.00174" izz="0.00174" 
+             ixy="0.000" iyz="0.000" 
+             ixz="-0.000"/>
   </inertial>
   <visual>
-    <origin xyz="0.105 -0.1 -0.07" rpy="0 0 0"/>
+    <origin xyz="-0.07 -0.1 -0.105" rpy="0 1.5708 0"/>
     <geometry>
       <mesh filename="package://mega3_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="dark_grey"/>
   </visual>
   <collision>
-    <origin xyz="0.105 -0.1 -0.07" rpy="0 0 0"/>
+    <origin xyz="-0.07 -0.1 -0.105" rpy="0 1.5708 0"/>
     <geometry>
       <mesh filename="package://mega3_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -57,19 +61,21 @@
 
 <link name="right_wheel_1">
   <inertial>
-    <origin xyz="0.03312638365523084 7.067463521914785e-07 -1.2241206745616795e-06" rpy="0 0 0"/>
-    <mass value="6.011968399456773"/>
-    <inertia ixx="0.012936" iyy="0.0081" izz="0.0081" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+    <origin xyz="0 0 -0.03313" rpy="0 1.5708 0"/>
+    <mass value="1.239934"/>
+    <inertia ixx="0.002474" iyy="0.00174" izz="0.00174" 
+             ixy="-0.000" iyz="-0.000" 
+             ixz="-0.000"/>
   </inertial>
   <visual>
-    <origin xyz="-0.105 -0.1 -0.07" rpy="0 0 0"/>
+    <origin xyz="-0.07 -0.1 0.105" rpy="0 1.5708 0"/>
     <geometry>
       <mesh filename="package://mega3_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="dark_grey"/>
   </visual>
   <collision>
-    <origin xyz="-0.105 -0.1 -0.07" rpy="0 0 0"/>
+    <origin xyz="-0.07 -0.1 0.105" rpy="0 1.5708 0"/>
     <geometry>
       <mesh filename="package://mega3_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -77,17 +83,17 @@
 </link>
 
 <joint name="left_wheel_joint" type="continuous">
-  <origin xyz="-0.105 0.1 0.07" rpy="0 0 0"/>
+  <origin xyz="-0.105 0.1 0.07" rpy="0 -1.5708 0"/>
   <parent link="base_link"/>
   <child link="left_wheel_1"/>
-  <axis xyz="-1.0 0.0 0.0"/>
+  <axis xyz="0.0 0.0 1.0"/>
 </joint>
 
 <joint name="right_wheel_joint" type="continuous">
-  <origin xyz="0.105 0.1 0.07" rpy="0 0 0"/>
+  <origin xyz="0.105 0.1 0.07" rpy="0 -1.5708 0"/>
   <parent link="base_link"/>
   <child link="right_wheel_1"/>
-  <axis xyz="1.0 0.0 0.0"/>
+  <axis xyz="0.0 0.0 1.0"/>
 </joint>
 
 </robot>

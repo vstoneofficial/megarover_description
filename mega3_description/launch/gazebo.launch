@@ -1,11 +1,26 @@
 <launch>
-  <param name="robot_description" command="$(find xacro)/xacro $(find mega3_description)/urdf/mega3.xacro"/>
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model mega3"/>
+  <arg name="gazebo_gui" default="true"/>
+  <arg name="paused" default="false"/>
+
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" default="worlds/empty.world"/>
     <arg name="paused" value="true"/>
     <arg name="use_sim_time" value="true"/>
-    <arg name="gui" value="true"/>
+    <arg name="gui" value="$(arg gazebo_gui)"/>
     <arg name="headless" value="false"/>
     <arg name="debug" value="false"/>
   </include>
+
+  <param name="robot_description" command="$(find xacro)/xacro '$(find mega3_description)/urdf/mega3.xacro'" />
+
+  <arg name="world_pose" value="-x 0 -y 0 -z 0" />
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model mega3 $(arg world_pose) -param robot_description" />
+  
+  <!-- マウスによる制御ノード -->
+  <node pkg="mouse_teleop" type="mouse_teleop.py" name="mouse_teleop">
+    <remap from="/mouse_vel" to="/cmd_vel" />
+  </node>
+
 </launch>
+
+
