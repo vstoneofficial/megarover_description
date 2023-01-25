@@ -1,0 +1,12 @@
+<launch>
+  <!-- 引数 -->
+  <arg name="rover_type" default="mega3" doc="mega3 / f120a" />
+  <arg name="use_gui" default="false" />
+
+  <param name="robot_description" command="$(find xacro)/xacro $(find megarover_description)/urdf/$(arg rover_type).xacro" />
+  <node name="rviz" pkg="rviz" args="-d $(find megarover_description)/rviz/$(arg rover_type).rviz" type="rviz" required="true" />
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" unless="$(arg use_gui)" />
+  <node name="joint_state_publisher" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" if="$(arg use_gui)" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+</launch>
