@@ -3,7 +3,7 @@
 ## 準備
 ヴイストンの台車ロボットのオプションを表示する場合は、`vs_rover_options_description`というパッケージを`src`フォルダーにクローンしてください。（詳細は[こちら](https://github.com/vstoneofficial/vs_rover_options_description.git)を参照してください）
 ```bash
-git clone https://github.com/vstoneofficial/vs_rover_options_description.git
+git clone -b $ROS_DISTRO https://github.com/vstoneofficial/vs_rover_options_description.git
 ```
 > 1. 対応するオプション
 >   - LRF TG30
@@ -18,12 +18,12 @@ git clone https://github.com/vstoneofficial/vs_rover_options_description.git
 デフォルトでは`rover_type`に`mega3`が与えられています。
 ### メガローバーVer 3.0の場合は
 ```bash
-roslaunch megarover_description display.launch rover_type:=mega3
+ros2 launch megarover_description mega3_view.launch.py
 ```
 ![](images/mega3_description.png)
 
 ### メガローバーF120Aの場合は
 ```bash
-roslaunch megarover_description display.launch rover_type:=f120a
+ros2 launch megarover_description f120a_view.launch.py
 ```
 ![](images/f120a_description.png)
