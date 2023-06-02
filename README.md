@@ -14,8 +14,8 @@ git clone -b $ROS_DISTRO https://github.com/vstoneofficial/vs_rover_options_desc
 > 2. 使用状況に応じて、[mega3.xacro](./urdf/mega3.xacro), [f120a.xacro](./urdf/f120a.xacro)ファイルの6~18行目にある使用しないオプションをコメントアウトしてください。
 
 ## RViz上の可視化
-以下のコマンドで立ち上げます。\
-デフォルトでは`rover_type`に`mega3`が与えられています。
+以下のコマンドで立ち上げます。
+
 ### メガローバーVer 3.0の場合は
 ```bash
 ros2 launch megarover_description mega3_view.launch.py
