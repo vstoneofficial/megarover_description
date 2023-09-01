@@ -4,7 +4,7 @@
   <xacro:include filename="$(find megarover_description)/urdf/mega3_base_model.xacro" />
   <xacro:include filename="$(find megarover_description)/urdf/mega3.gazebo" />
   <!-- OPTION: LRF TG30 -->
-  <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/lrf/tg30_mega3.xacro" /> -->
+  <xacro:include filename="$(find vs_rover_options_description)/urdf/lrf/tg30_mega3.xacro" />
   <!-- OPTION: bumper sensor -->
   <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/bumper/bumper_mega3.xacro" />
   <xacro:bumperbaseboard prefix="front" parent="base_link" xyz="0 0.19 0.02" z_dir="180" />
@@ -24,5 +24,4 @@
     <child link="link0_1" />
   </joint> -->
 
-  
 </robot>
