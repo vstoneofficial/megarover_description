@@ -2,7 +2,6 @@
 <robot name="f120a" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <xacro:include filename="$(find megarover_description)/urdf/materials.xacro" />
-  <xacro:include filename="$(find megarover_description)/urdf/f120a_base_model.gazebo" />
 
   <link name="base_footprint" />
 

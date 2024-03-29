@@ -1,16 +1,26 @@
 <?xml version="1.0"?>
-<package format="2">
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
   <name>megarover_description</name>
   <version>1.0.0</version>
-  <description>3D model of Vstone Megarover3.0 and Megarover F120A for simulation and visualization</description>
 
+  <description>3D models of the Megarover 3.0 for simulation and visualization</description>
+  <author email="jie@vstone.co.jp">Jie</author>
   <maintainer email="infodesk@vstone.co.jp">Vstone</maintainer>
 
-  <!-- Commonly used license strings: -->
-  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
-  <license>Apache 2.0</license>
+  <license>Apache License 2.0</license>
 
-  <buildtool_depend>catkin</buildtool_depend>
-  <depend>urdf</depend>
-  <depend>xacro</depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>   
+    <gazebo_ros gazebo_model_path="${prefix}/.."/>
+  </export>
 </package>

@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <robot name="f120a" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:include filename="$(find megarover_description)/urdf/materials.xacro" />
+  <xacro:include filename="$(find megarover_description)/urdf/f120a_base_model.xacro" />
   <xacro:include filename="$(find megarover_description)/urdf/f120a.gazebo" />
   <!-- OPTION: LRF TG30 -->
-  <xacro:include filename="$(find vs_rover_options_description)/urdf/lrf/tg30_f120a.xacro" />
+  <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/lrf/tg30_f120a.xacro" /> -->
   <!-- OPTION: bumper sensor -->
-  <xacro:include filename="$(find vs_rover_options_description)/urdf/bumper/bumper_f120a.xacro" />
+  <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/bumper/bumper_f120a.xacro" />
   <xacro:bumperbaseboard prefix="front" parent="base_link" xyz="0 ${0.272 + bumper_alu_frame_y_offset} 0.0385" z_dir="180" />
-  <xacro:bumperbaseboard prefix="back" parent="base_link" xyz="0 ${-0.272 + bumper_alu_frame_y_offset} 0.0385" z_dir="0" />
+  <xacro:bumperbaseboard prefix="back" parent="base_link" xyz="0 ${-0.272 + bumper_alu_frame_y_offset} 0.0385" z_dir="0" /> -->
   <!-- OPTION: camera stay -->
-  <xacro:include filename="$(find vs_rover_options_description)/urdf/cam_stay/cam_stay_f120a.xacro" />
+  <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/cam_stay/cam_stay_f120a.xacro" /> -->
   <!-- OPTION: Intel Realsense depth camera D435i (camera stay is required)  -->
-  <xacro:include filename="$(find vs_rover_options_description)/urdf/depth_cam/_d435i.urdf.xacro" />
+  <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/depth_cam/_d435i.urdf.xacro" />
   <xacro:sensor_d435i parent="cam_mount_link" use_nominal_extrinsics="true">
     <origin xyz="0.0295 0 0.0095" rpy="0 0 0" />
-  </xacro:sensor_d435i>
+  </xacro:sensor_d435i> -->
   <!-- OPTION: AMIR 740 (disabled by default because of interference with camera stay)-->
   <!-- <xacro:include filename="$(find amir_description)/urdf/amir_for_rover.xacro" />
   <joint name="base_fixed" type="fixed">
@@ -23,96 +23,5 @@
     <parent link="base_link" />
     <child link="link0_1" />
   </joint> -->
-
-  <link name="base_footprint" />
-
-  <joint name="base_joint" type="fixed">
-    <parent link="base_footprint" />
-    <child link="base_link" />
-    <origin xyz="-0.108 0 0" rpy="0 0 -1.5708" />
-  </joint>
-
-  <link name="base_link">
-    <inertial>
-      <origin xyz="6.540114906371634e-07 -0.003250873034356485 0.120269680948673" rpy="0 0 0" />
-      <mass value="26.535431" />
-      <inertia ixx="0.2129" iyy="0.2979" izz="0.4209"
-        ixy="-0.000036" iyz="0.008147"
-        ixz="0.0000368" />
-    </inertial>
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="package://megarover_description/meshes/f120a/base_link.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-      <material name="silver" />
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="package://megarover_description/meshes/f120a/base_link.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="right_wheel_joint" type="continuous">
-    <origin xyz="0.202 0.108 0.085" rpy="0 -1.5708 0" />
-    <parent link="base_link" />
-    <child link="right_wheel_1" />
-    <axis xyz="0.0 0.0 1.0" />
-  </joint>
-
-  <link name="right_wheel_1">
-    <inertial>
-      <origin xyz="0.0 0.0 -0.001" rpy="0 1.5708 0" />
-      <mass value="3.241197" />
-      <inertia ixx="0.01025" iyy="0.00621" izz="0.006211"
-        ixy="0.0" iyz="0.0"
-        ixz="0.0" />
-    </inertial>
-    <visual>
-      <origin xyz="-0.085 -0.108 0.202" rpy="0 1.5708 0" />
-      <geometry>
-        <mesh filename="package://megarover_description/meshes/f120a/right_wheel_1.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-      <material name="dark_grey" />
-    </visual>
-    <collision>
-      <origin xyz="-0.085 -0.108 0.202" rpy="0 1.5708 0" />
-      <geometry>
-        <mesh filename="package://megarover_description/meshes/f120a/right_wheel_1.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="left_wheel_joint" type="continuous">
-    <origin xyz="-0.202 0.108 0.085" rpy="0 -1.5708 0" />
-    <parent link="base_link" />
-    <child link="left_wheel_1" />
-    <axis xyz="0.0 0.0 1.0" />
-  </joint>
-
-  <link name="left_wheel_1">
-    <inertial>
-      <origin xyz="0.0 0.0 0.001" rpy="0 1.5708 0" />
-      <mass value="3.241197" />
-      <inertia ixx="0.01025" iyy="0.00621" izz="0.006211"
-        ixy="0.0" iyz="0.0"
-        ixz="0.0" />
-    </inertial>
-    <visual>
-      <origin xyz="-0.085 -0.108 -0.202" rpy="0 1.5708 0" />
-      <geometry>
-        <mesh filename="package://megarover_description/meshes/f120a/left_wheel_1.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-      <material name="dark_grey" />
-    </visual>
-    <collision>
-      <origin xyz="-0.085 -0.108 -0.202" rpy="0 1.5708 0" />
-      <geometry>
-        <mesh filename="package://megarover_description/meshes/f120a/left_wheel_1.stl" scale="0.001 0.001 0.001" />
-      </geometry>
-    </collision>
-  </link>
 
 </robot>
