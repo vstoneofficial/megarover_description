@@ -1,0 +1,23 @@
+[INFO] [launch]: All log files can be found below /root/description-jazzy-20261014/evidence/window-candidate-01-mega3-true-early-sigint/ros/2026-10-14-03-47-37-291177-MSI-127100
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [127104]
+[INFO] [setsid-2]: process started with pid [127105]
+[INFO] [setsid-3]: process started with pid [127106]
+[robot_state_publisher-1] [INFO] [1791917257.733250966] [robot_state_publisher]: Robot initialized
+[setsid-3] {"gui_session": "5af4d018-bc7a-4b0b-8033-240921b7a512", "backend_pid": 127126, "argv": ["/root/description-jazzy-20261014/ws/install/megarover_description/lib/megarover_description/rviz_no_prompt", "-d", "/root/description-jazzy-20261014/ws/install/megarover_description/share/megarover_description/rviz/mega3.rviz", "--ros-args", "-r", "__node:=rviz2"], "cwd": "/root/description-jazzy-20261014/ws"}
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [setsid-3]: sending signal 'SIGINT' to process[setsid-3]
+[INFO] [setsid-2]: sending signal 'SIGINT' to process[setsid-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1791917258.126509834] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-1] [INFO] [1791917258.135254852] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[setsid-3] {"owned_rviz_close": 127126, "windows": ["0x1e00006"]}
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 127104]
+[setsid-3] [INFO] [1791917258.406400055] [rviz2]: Stereo is NOT SUPPORTED
+[setsid-3] [INFO] [1791917258.406777115] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [setsid-2]: process has finished cleanly [pid 127105]
+[setsid-3] [INFO] [1791917258.486699172] [rviz2]: Stereo is NOT SUPPORTED
+[setsid-3] {"owned_rviz_close": 127126, "windows": ["0x1e00106"]}
+[setsid-3] [INFO] [1791917258.706018468] [rviz2]: Completed rendering before frame close; GLX drawable=37748740
+[setsid-3] [INFO] [1791917258.706313582] [rviz2]: Display layout close confirmation disabled; unsaved layout=false
+[INFO] [setsid-3]: process has finished cleanly [pid 127106]

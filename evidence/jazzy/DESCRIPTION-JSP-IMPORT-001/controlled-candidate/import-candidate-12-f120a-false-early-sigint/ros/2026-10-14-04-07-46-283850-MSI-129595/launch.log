@@ -1,0 +1,16 @@
+1791918466.2857530 [INFO] [launch]: All log files can be found below /root/description-jazzy-20261014/evidence/import-candidate-12-f120a-false-early-sigint/ros/2026-10-14-04-07-46-283850-MSI-129595
+1791918466.2860284 [INFO] [launch]: Default logging verbosity is set to INFO
+1791918466.5188603 [INFO] [robot_state_publisher-1]: process started with pid [129599]
+1791918466.5191157 [INFO] [setsid-2]: process started with pid [129600]
+1791918466.5192280 [INFO] [setsid-3]: process started with pid [129601]
+1791918466.6210537 [robot_state_publisher-1] [INFO] [1791918466.620389997] [robot_state_publisher]: Robot initialized
+1791918467.0023298 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1791918467.0069411 [INFO] [setsid-3]: sending signal 'SIGINT' to process[setsid-3]
+1791918467.0085454 [INFO] [setsid-2]: sending signal 'SIGINT' to process[setsid-2]
+1791918467.0105999 [INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+1791918467.0113881 [robot_state_publisher-1] [INFO] [1791918467.002151278] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1791918467.0120013 [robot_state_publisher-1] [INFO] [1791918467.011173615] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1791918467.1316590 [setsid-2] [INFO] [1791918467.131028957] [joint_state_publisher]: Waiting for robot_description to be published on the robot_description topic...
+1791918467.2324159 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 129599]
+1791918467.4258800 [INFO] [setsid-2]: process has finished cleanly [pid 129600]
+1791918467.4630556 [INFO] [setsid-3]: process has finished cleanly [pid 129601]

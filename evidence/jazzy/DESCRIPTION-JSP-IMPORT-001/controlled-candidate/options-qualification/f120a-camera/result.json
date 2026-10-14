@@ -1,0 +1,30 @@
+{
+  "name": "f120a-camera",
+  "enabled": [
+    "camera"
+  ],
+  "command": [
+    "xacro",
+    "/root/description-jazzy-20261014/evidence/options-qualification/f120a-camera/input.xacro",
+    "use_ros2_control:=false"
+  ],
+  "input_sha256": "558c99a11a4a7f6a7be45a603b78916539d3dbf8c3fe628cc767692dd164cb76",
+  "start_epoch": 1791917796.6693249,
+  "phase": "finished",
+  "pid": 128110,
+  "exit_code": 0,
+  "end_epoch": 1791917796.8574057,
+  "status": "PASS",
+  "links": 20,
+  "joints": 19,
+  "baseline_links_joints_unchanged": true,
+  "mesh_hashes": {
+    "package://vs_rover_options_description/meshes/cam_stay/cam_mount_frame.stl": "54a6a24b545a23c43307d0771fbf32a3cc2fb6b8160a9ac3bc5d2e062e4fa264",
+    "package://vs_rover_options_description/meshes/cam_stay/cam_mount_link.stl": "4aa7c203286b07ef66f553ae078891853a2bc46235ac307dee8f3080566ab71f",
+    "package://vs_rover_options_description/meshes/depth_cam/d435.dae": "75569d283e487c4faf8943b5f2fb7b84c21692f5c1f34a7e9687645aa2b3d434",
+    "package://megarover_description/meshes/f120a/base_link.stl": "8294b31104e4f2c76e4fc657978d203c962d39211c298343be2a508b1792af34",
+    "package://megarover_description/meshes/f120a/right_wheel_1.stl": "e8abf02965bcf261d88a6858a083ceb7fe620ab5a1a916447e53e4ed7f517424",
+    "package://megarover_description/meshes/f120a/left_wheel_1.stl": "4878399ea525145cd41fbae9e75b88a3a7f33317984403f617aae60bb2c97db1"
+  },
+  "urdf_sha256": "34b1a25354c261cc5dbe8bfbca54bebe0fb98a2b7fbd209b97149dede5e0cf37"
+}

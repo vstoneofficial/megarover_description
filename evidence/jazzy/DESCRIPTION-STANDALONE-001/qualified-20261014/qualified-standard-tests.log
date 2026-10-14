@@ -1,0 +1,172 @@
+Starting >>> megarover_description
+UpdateCTestConfiguration  from :/root/description-jazzy-20261014/default-test-ws/build/megarover_description/CTestConfiguration.ini
+Parse Config file:/root/description-jazzy-20261014/default-test-ws/build/megarover_description/CTestConfiguration.ini
+   Site: MSI
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20261013-2042 - Experimental
+UpdateCTestConfiguration  from :/root/description-jazzy-20261014/default-test-ws/build/megarover_description/CTestConfiguration.ini
+Parse Config file:/root/description-jazzy-20261014/default-test-ws/build/megarover_description/CTestConfiguration.ini
+Test project /root/description-jazzy-20261014/default-test-ws/build/megarover_description
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: copyright
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/copyright.xunit.xml" "--package-name" "megarover_description" "--output-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/ament_copyright/copyright.txt" "--command" "/opt/ros/jazzy/bin/ament_copyright" "--xunit-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/copyright.xunit.xml"
+1: Working Directory: /root/description-jazzy-20261014/default-test-ws/src/megarover_description
+1: Test timeout computed to be: 200
+1: -- run_test.py: invoking following command in '/root/description-jazzy-20261014/default-test-ws/src/megarover_description':
+1:  - /opt/ros/jazzy/bin/ament_copyright --xunit-file /root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/copyright.xunit.xml
+1: No problems found, checked 9 files
+1: -- run_test.py: return code 0
+1: -- run_test.py: verify result file '/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/copyright.xunit.xml'
+1/8 Test #1: copyright ........................   Passed    0.44 sec
+test 2
+    Start 2: cppcheck
+
+2: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/cppcheck.xunit.xml" "--package-name" "megarover_description" "--output-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/jazzy/bin/ament_cppcheck" "--xunit-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/cppcheck.xunit.xml"
+2: Working Directory: /root/description-jazzy-20261014/default-test-ws/src/megarover_description
+2: Test timeout computed to be: 300
+2: -- run_test.py: invoking following command in '/root/description-jazzy-20261014/default-test-ws/src/megarover_description':
+2:  - /opt/ros/jazzy/bin/ament_cppcheck --xunit-file /root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/cppcheck.xunit.xml
+2: No problems found
+2: -- run_test.py: return code 0
+2: -- run_test.py: verify result file '/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/cppcheck.xunit.xml'
+2/8 Test #2: cppcheck .........................   Passed    0.17 sec
+test 3
+    Start 3: cpplint
+
+3: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/cpplint.xunit.xml" "--package-name" "megarover_description" "--output-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/ament_cpplint/cpplint.txt" "--command" "/opt/ros/jazzy/bin/ament_cpplint" "--xunit-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/cpplint.xunit.xml"
+3: Working Directory: /root/description-jazzy-20261014/default-test-ws/src/megarover_description
+3: Test timeout computed to be: 120
+3: -- run_test.py: invoking following command in '/root/description-jazzy-20261014/default-test-ws/src/megarover_description':
+3:  - /opt/ros/jazzy/bin/ament_cpplint --xunit-file /root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/cpplint.xunit.xml
+3: Using '--root=/root/description-jazzy-20261014/default-test-ws/src/megarover_description/src' argument
+3: 
+3: Done processing /root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp
+3: 
+3: No problems found
+3: -- run_test.py: return code 0
+3: -- run_test.py: verify result file '/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/cpplint.xunit.xml'
+3/8 Test #3: cpplint ..........................   Passed    0.18 sec
+test 4
+    Start 4: flake8
+
+4: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/flake8.xunit.xml" "--package-name" "megarover_description" "--output-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/ament_flake8/flake8.txt" "--command" "/opt/ros/jazzy/bin/ament_flake8" "--xunit-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/flake8.xunit.xml"
+4: Working Directory: /root/description-jazzy-20261014/default-test-ws/src/megarover_description
+4: Test timeout computed to be: 60
+4: -- run_test.py: invoking following command in '/root/description-jazzy-20261014/default-test-ws/src/megarover_description':
+4:  - /opt/ros/jazzy/bin/ament_flake8 --xunit-file /root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/flake8.xunit.xml
+4: 
+4: 6 files checked
+4: No problems found
+4: 
+4: Checked files:
+4: 
+4: * ./launch/display.launch.py
+4: * ./params/rover_twist_relay.py
+4: * ./scripts/joint_state_node.py
+4: * ./scripts/joint_state_gui.py
+4: * ./scripts/gui_session.py
+4: * ./tools/verify_description_jazzy.py
+4: -- run_test.py: return code 0
+4: -- run_test.py: verify result file '/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/flake8.xunit.xml'
+4/8 Test #4: flake8 ...........................   Passed    0.39 sec
+test 5
+    Start 5: lint_cmake
+
+5: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/lint_cmake.xunit.xml" "--package-name" "megarover_description" "--output-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/jazzy/bin/ament_lint_cmake" "--xunit-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/lint_cmake.xunit.xml"
+5: Working Directory: /root/description-jazzy-20261014/default-test-ws/src/megarover_description
+5: Test timeout computed to be: 60
+5: -- run_test.py: invoking following command in '/root/description-jazzy-20261014/default-test-ws/src/megarover_description':
+5:  - /opt/ros/jazzy/bin/ament_lint_cmake --xunit-file /root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/lint_cmake.xunit.xml
+5: 
+5: No problems found
+5: -- run_test.py: return code 0
+5: -- run_test.py: verify result file '/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/lint_cmake.xunit.xml'
+5/8 Test #5: lint_cmake .......................   Passed    0.17 sec
+test 6
+    Start 6: pep257
+
+6: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/pep257.xunit.xml" "--package-name" "megarover_description" "--output-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/ament_pep257/pep257.txt" "--command" "/opt/ros/jazzy/bin/ament_pep257" "--xunit-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/pep257.xunit.xml"
+6: Working Directory: /root/description-jazzy-20261014/default-test-ws/src/megarover_description
+6: Test timeout computed to be: 60
+6: -- run_test.py: invoking following command in '/root/description-jazzy-20261014/default-test-ws/src/megarover_description':
+6:  - /opt/ros/jazzy/bin/ament_pep257 --xunit-file /root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/pep257.xunit.xml
+6: checking ./launch/display.launch.py
+6: checking ./params/rover_twist_relay.py
+6: checking ./scripts/gui_session.py
+6: checking ./scripts/joint_state_gui.py
+6: checking ./scripts/joint_state_node.py
+6: checking ./tools/verify_description_jazzy.py
+6: No problems found
+6: -- run_test.py: return code 0
+6: -- run_test.py: verify result file '/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/pep257.xunit.xml'
+6/8 Test #6: pep257 ...........................   Passed    0.25 sec
+test 7
+    Start 7: uncrustify
+
+7: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/uncrustify.xunit.xml" "--package-name" "megarover_description" "--output-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/jazzy/bin/ament_uncrustify" "--xunit-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/uncrustify.xunit.xml"
+7: Working Directory: /root/description-jazzy-20261014/default-test-ws/src/megarover_description
+7: Test timeout computed to be: 60
+7: -- run_test.py: invoking following command in '/root/description-jazzy-20261014/default-test-ws/src/megarover_description':
+7:  - /opt/ros/jazzy/bin/ament_uncrustify --xunit-file /root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/uncrustify.xunit.xml
+7: No code style divergence in file 'src/rviz_no_prompt.cpp'
+7: 
+7: No problems found
+7: -- run_test.py: return code 0
+7: -- run_test.py: verify result file '/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/uncrustify.xunit.xml'
+7/8 Test #7: uncrustify .......................   Passed    0.16 sec
+test 8
+    Start 8: xmllint
+
+8: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/xmllint.xunit.xml" "--package-name" "megarover_description" "--output-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/ament_xmllint/xmllint.txt" "--command" "/opt/ros/jazzy/bin/ament_xmllint" "--xunit-file" "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/xmllint.xunit.xml"
+8: Working Directory: /root/description-jazzy-20261014/default-test-ws/src/megarover_description
+8: Test timeout computed to be: 60
+8: -- run_test.py: invoking following command in '/root/description-jazzy-20261014/default-test-ws/src/megarover_description':
+8:  - /opt/ros/jazzy/bin/ament_xmllint --xunit-file /root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/xmllint.xunit.xml
+8: File 'package.xml' is valid
+8: 
+8: File 'evidence/jazzy/DESCRIPTION-JSP-IMPORT-001/controlled-candidate/test-results/copyright.xunit.xml' is valid
+8: 
+8: File 'evidence/jazzy/DESCRIPTION-JSP-IMPORT-001/controlled-candidate/test-results/cppcheck.xunit.xml' is valid
+8: 
+8: File 'evidence/jazzy/DESCRIPTION-JSP-IMPORT-001/controlled-candidate/test-results/cpplint.xunit.xml' is valid
+8: 
+8: File 'evidence/jazzy/DESCRIPTION-JSP-IMPORT-001/controlled-candidate/test-results/flake8.xunit.xml' is valid
+8: 
+8: File 'evidence/jazzy/DESCRIPTION-JSP-IMPORT-001/controlled-candidate/test-results/lint_cmake.xunit.xml' is valid
+8: 
+8: File 'evidence/jazzy/DESCRIPTION-JSP-IMPORT-001/controlled-candidate/test-results/pep257.xunit.xml' is valid
+8: 
+8: File 'evidence/jazzy/DESCRIPTION-JSP-IMPORT-001/controlled-candidate/test-results/uncrustify.xunit.xml' is valid
+8: 
+8: File 'evidence/jazzy/DESCRIPTION-JSP-IMPORT-001/controlled-candidate/test-results/xmllint.xunit.xml' is valid
+8: 
+8: No problems found
+8: -- run_test.py: return code 0
+8: -- run_test.py: verify result file '/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/xmllint.xunit.xml'
+8/8 Test #8: xmllint ..........................   Passed    0.93 sec
+
+100% tests passed, 0 tests failed out of 8
+
+Label Time Summary:
+copyright     =   0.44 sec*proc (1 test)
+cppcheck      =   0.17 sec*proc (1 test)
+cpplint       =   0.18 sec*proc (1 test)
+flake8        =   0.39 sec*proc (1 test)
+lint_cmake    =   0.17 sec*proc (1 test)
+linter        =   2.68 sec*proc (8 tests)
+pep257        =   0.25 sec*proc (1 test)
+uncrustify    =   0.16 sec*proc (1 test)
+xmllint       =   0.93 sec*proc (1 test)
+
+Total Test time (real) =   2.68 sec
+Finished <<< megarover_description [2.82s]
+
+Summary: 1 package finished [2.97s]

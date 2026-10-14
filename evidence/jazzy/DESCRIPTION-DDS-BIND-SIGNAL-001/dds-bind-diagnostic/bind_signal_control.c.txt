@@ -1,0 +1,47 @@
+#define _GNU_SOURCE
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <pthread.h>
+#include <signal.h>
+#include <stdatomic.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/socket.h>
+#include <unistd.h>
+struct request { pthread_t target; atomic_int done; };
+static void *interrupt_binding(void *data) {
+  struct request *r=data;
+  while (!atomic_load(&r->done)) {
+    pthread_kill(r->target,SIGINT);
+    usleep(10);
+  }
+  return NULL;
+}
+int bind(int fd, const struct sockaddr *address, socklen_t length) {
+  static int (*original)(int,const struct sockaddr *,socklen_t);
+  if (!original) original=dlsym(RTLD_NEXT,"bind");
+  char command[2048]={0};
+  int proc=open("/proc/self/cmdline",O_RDONLY);
+  if (proc>=0) { int n=read(proc,command,sizeof(command)-1); close(proc); for (int i=0;i<n;i++) if (!command[i]) command[i]=' '; }
+  int active=strstr(command,"joint_state_node.py")!=NULL;
+  int masked=active && getenv("BIND_SIGNAL_MASK_CONTROL")!=NULL;
+  sigset_t block,previous;
+  sigemptyset(&block); sigaddset(&block,SIGINT); sigaddset(&block,SIGTERM);
+  if (masked) pthread_sigmask(SIG_BLOCK,&block,&previous);
+  struct request request={.target=pthread_self(),.done=0};
+  pthread_t worker;
+  if (active) pthread_create(&worker,NULL,interrupt_binding,&request);
+  int result=original(fd,address,length);
+  int error=errno;
+  if (active) { atomic_store(&request.done,1); pthread_join(worker,NULL); }
+  if (result<0 || active) {
+    unsigned port=address && address->sa_family==AF_INET ? ntohs(((const struct sockaddr_in *)address)->sin_port):0;
+    dprintf(STDERR_FILENO,"BIND_SIGNAL_DIAGNOSTIC pid=%d port=%u result=%d errno=%d masked=%d\n",getpid(),port,result,error,masked);
+  }
+  if (masked) pthread_sigmask(SIG_SETMASK,&previous,NULL);
+  errno=error;
+  return result;
+}

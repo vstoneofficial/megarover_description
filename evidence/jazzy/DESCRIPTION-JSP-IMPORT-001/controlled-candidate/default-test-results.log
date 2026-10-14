@@ -1,0 +1,567 @@
+build/megarover_description/Testing/20261013-1911/Test.xml: 8 tests, 0 errors, 5 failures, 0 skipped
+- copyright
+  <<< failure message
+    -- run_test.py: invoking following command in '/root/description-jazzy-20261014/default-test-ws/src/megarover_description':
+     - /opt/ros/jazzy/bin/ament_copyright --xunit-file /root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/copyright.xunit.xml
+    CONTRIBUTING.md: file not found
+    LICENSE: file not found
+    launch/display.launch.py: could not find copyright notice
+    params/rover_twist_relay.py: could not find copyright notice
+    scripts/gui_session.py: could not find copyright notice
+    scripts/joint_state_gui.py: could not find copyright notice
+    scripts/joint_state_node.py: could not find copyright notice
+    src/rviz_no_prompt.cpp: copyright=YOSHIDA-V (2026), license=<unknown>
+    tools/verify_description_jazzy.py: could not find copyright notice
+    9 errors, checked 9 files
+    -- run_test.py: return code 1
+    -- run_test.py: verify result file '/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/copyright.xunit.xml'
+  >>>
+- cpplint
+  <<< failure message
+    -- run_test.py: invoking following command in '/root/description-jazzy-20261014/default-test-ws/src/megarover_description':
+     - /opt/ros/jazzy/bin/ament_cpplint --xunit-file /root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/cpplint.xunit.xml
+    /root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:7:  Found C system header after C++ system header. Should be: rviz_no_prompt.h, c system, c++ system, other.  [build/include_order] [4]
+    /root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:8:  Found C system header after C++ system header. Should be: rviz_no_prompt.h, c system, c++ system, other.  [build/include_order] [4]
+    /root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:9:  Found C system header after C++ system header. Should be: rviz_no_prompt.h, c system, c++ system, other.  [build/include_order] [4]
+    /root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:10:  Found C system header after C++ system header. Should be: rviz_no_prompt.h, c system, c++ system, other.  [build/include_order] [4]
+    /root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:11:  Found C system header after C++ system header. Should be: rviz_no_prompt.h, c system, c++ system, other.  [build/include_order] [4]
+    /root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:20:  Found C system header after other header. Should be: rviz_no_prompt.h, c system, c++ system, other.  [build/include_order] [4]
+    /root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:21:  Found C system header after other header. Should be: rviz_no_prompt.h, c system, c++ system, other.  [build/include_order] [4]
+    /root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:68:  Use int16/int64/etc, rather than the C type long  [runtime/int] [4]
+    Category 'build/include_order' errors found: 7
+    Category 'runtime/int' errors found: 1
+    Total errors found: 8
+    Using '--root=/root/description-jazzy-20261014/default-test-ws/src/megarover_description/src' argument
+    
+    Done processing /root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp
+    
+    -- run_test.py: return code 1
+    -- run_test.py: verify result file '/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/cpplint.xunit.xml'
+  >>>
+- flake8
+  <<< failure message
+    -- run_test.py: invoking following command in '/root/description-jazzy-20261014/default-test-ws/src/megarover_description':
+     - /opt/ros/jazzy/bin/ament_flake8 --xunit-file /root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/flake8.xunit.xml
+    from rclpy.utilities import get_rmw_implementation_identifier
+    ^
+    from ament_index_python.packages import get_package_prefix, get_package_share_directory
+    ^
+    from launch.substitutions import LaunchConfiguration, PythonExpression, Command
+    ^
+        gui   = LaunchConfiguration('gui',   default='true')
+           ^
+                                   'lib/megarover_description/rviz_no_prompt'),
+                                   ^
+    
+    ^
+    from geometry_msgs.msg import Twist
+    ^
+    from rclpy.parameter import Parameter
+    ^
+    
+    ^
+                if marker in (entry / 'environ').read_bytes().split(b'\0') and str((entry / 'exe').resolve()) in executables:
+                                                                                                       ^
+            C.c_int, C.c_ulong, C.POINTER(C.c_ulong), C.POINTER(C.c_int), C.POINTER(C.c_ulong),
+            ^
+                    C.byref(actual), C.byref(fmt), C.byref(count), C.byref(remaining), C.byref(data))
+                    ^
+                    return list(C.cast(data, C.POINTER(C.c_ulong))[:count.value]) if status == 0 and fmt.value == 32 and data else []
+                                                                                                       ^
+                        or atom('_NET_WM_WINDOW_TYPE_NORMAL') not in values(window, '_NET_WM_WINDOW_TYPE')
+                                                                                                       ^
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+                                       ^
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+                                               ^
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+                                                             ^
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+                                                                       ^
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+                                                                              ^
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+                                                                                      ^
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+                                                                                            ^
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+                                                                                                       ^
+                    print(json.dumps({'gui_exit':status}), flush=True)
+                                                ^
+                        print(json.dumps({'backend_sigint_after_gui_exit':child.pid}), flush=True)
+                                                                         ^
+                                print(json.dumps({'owned_rviz_close':pid,'windows':windows}), flush=True)
+                                                                    ^
+                                print(json.dumps({'owned_rviz_close':pid,'windows':windows}), flush=True)
+                                                                        ^
+                                print(json.dumps({'owned_rviz_close':pid,'windows':windows}), flush=True)
+                                                                                  ^
+                                print(json.dumps({'owned_rviz_close':pid,'windows':windows}), flush=True)
+                                                                                                       ^
+    def main():
+    ^
+    import json
+    ^
+    from rclpy.qos import DurabilityPolicy, QoSProfile, qos_profile_sensor_data
+    ^
+    from ament_index_python.packages import get_package_share_directory
+    ^
+        subscriptions = [
+        ^
+                lambda m: messages['joints'].append({'names': list(m.name),
+                ^
+                    'position': list(m.position), 'stamp': [m.header.stamp.sec, m.header.stamp.nanosec]}),
+                    ^
+                    'position': list(m.position), 'stamp': [m.header.stamp.sec, m.header.stamp.nanosec]}),
+                                                                                                       ^
+            node.create_subscription(TFMessage, '/tf', lambda m: tf_cb(m, 'tf'), qos_profile_sensor_data),
+                                                                                                       ^
+            node.create_subscription(TFMessage, '/tf_static', lambda m: tf_cb(m, 'tf_static'), transient),
+                                                                                                       ^
+                        'missing_tf': sorted((expected or set()) - set(messages['tf']) - set(messages['tf_static']))}))
+                                                                                                       ^
+                    'links': models, 'joint_samples': messages['joints'], 'tf': messages['tf'],
+                    ^
+                    'tf_static': messages['tf_static'], 'mesh_hashes': resources,
+                    ^
+                    'description_sha256': hashlib.sha256(messages['description'].encode()).hexdigest()})
+                                                                                                       ^
+    7     E128 continuation line under-indented for visual indent
+    1     E221 multiple spaces before operator
+    12    E231 missing whitespace after ':'
+    1     E302 expected 2 blank lines, found 1
+    10    E501 line too long (121 > 99 characters)
+    1     F401 'json' imported but unused
+    1     F841 local variable 'subscriptions' is assigned to but never used
+    4     I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_prefix, get_package_share_directory' should be before 'from rclpy.utilities import get_rmw_implementation_identifier'
+    2     I101 Imported names are in the wrong order. Should be Command, LaunchConfiguration, PythonExpression
+    1     I201 Missing newline between import groups. 'from rclpy.utilities import get_rmw_implementation_identifier' is identified as Third Party and 'from pathlib import Path' is identified as Stdlib.
+    2     W391 blank line at end of file
+    
+    ./launch/display.launch.py:3:1: I201 Missing newline between import groups. 'from rclpy.utilities import get_rmw_implementation_identifier' is identified as Third Party and 'from pathlib import Path' is identified as Stdlib.
+    
+    ./launch/display.launch.py:4:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_prefix, get_package_share_directory' should be before 'from rclpy.utilities import get_rmw_implementation_identifier'
+    
+    ./launch/display.launch.py:8:1: I101 Imported names are in the wrong order. Should be Command, LaunchConfiguration, PythonExpression
+    
+    ./launch/display.launch.py:31:8: E221 multiple spaces before operator
+    
+    ./launch/display.launch.py:90:32: E128 continuation line under-indented for visual indent
+    
+    ./launch/display.launch.py:117:1: W391 blank line at end of file
+    
+    ./params/rover_twist_relay.py:5:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from rclpy.node import Node'
+    
+    ./params/rover_twist_relay.py:7:1: I100 Import statements are in the wrong order. 'from rclpy.parameter import Parameter' should be before 'from std_msgs.msg import Float64MultiArray'
+    
+    ./params/rover_twist_relay.py:134:1: W391 blank line at end of file
+    
+    ./scripts/gui_session.py:28:100: E501 line too long (121 > 99 characters)
+    
+    ./scripts/gui_session.py:55:9: E128 continuation line under-indented for visual indent
+    
+    ./scripts/gui_session.py:77:17: E128 continuation line under-indented for visual indent
+    
+    ./scripts/gui_session.py:79:100: E501 line too long (129 > 99 characters)
+    
+    ./scripts/gui_session.py:89:100: E501 line too long (102 > 99 characters)
+    
+    ./scripts/gui_session.py:126:36: E231 missing whitespace after ':'
+    
+    ./scripts/gui_session.py:126:44: E231 missing whitespace after ','
+    
+    ./scripts/gui_session.py:126:58: E231 missing whitespace after ':'
+    
+    ./scripts/gui_session.py:126:68: E231 missing whitespace after ','
+    
+    ./scripts/gui_session.py:126:75: E231 missing whitespace after ':'
+    
+    ./scripts/gui_session.py:126:83: E231 missing whitespace after ','
+    
+    ./scripts/gui_session.py:126:89: E231 missing whitespace after ':'
+    
+    ./scripts/gui_session.py:126:100: E501 line too long (115 > 99 characters)
+    
+    ./scripts/gui_session.py:140:45: E231 missing whitespace after ':'
+    
+    ./scripts/gui_session.py:154:70: E231 missing whitespace after ':'
+    
+    ./scripts/gui_session.py:160:65: E231 missing whitespace after ':'
+    
+    ./scripts/gui_session.py:160:69: E231 missing whitespace after ','
+    
+    ./scripts/gui_session.py:160:79: E231 missing whitespace after ':'
+    
+    ./scripts/gui_session.py:160:100: E501 line too long (101 > 99 characters)
+    
+    ./scripts/joint_state_gui.py:18:1: E302 expected 2 blank lines, found 1
+    
+    ./tools/verify_description_jazzy.py:4:1: F401 'json' imported but unused
+    
+    ./tools/verify_description_jazzy.py:14:1: I101 Imported names are in the wrong order. Should be DurabilityPolicy, qos_profile_sensor_data, QoSProfile
+    
+    ./tools/verify_description_jazzy.py:16:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from rclpy.signals import SignalHandlerOptions'
+    
+    ./tools/verify_description_jazzy.py:82:5: F841 local variable 'subscriptions' is assigned to but never used
+    
+    ./tools/verify_description_jazzy.py:85:13: E128 continuation line under-indented for visual indent
+    
+    ./tools/verify_description_jazzy.py:86:17: E128 continuation line under-indented for visual indent
+    
+    ./tools/verify_description_jazzy.py:86:100: E501 line too long (102 > 99 characters)
+    
+    ./tools/verify_description_jazzy.py:88:100: E501 line too long (102 > 99 characters)
+    
+    ./tools/verify_description_jazzy.py:89:100: E501 line too long (102 > 99 characters)
+    
+    ./tools/verify_description_jazzy.py:123:100: E501 line too long (115 > 99 characters)
+    
+    ./tools/verify_description_jazzy.py:138:17: E128 continuation line under-indented for visual indent
+    
+    ./tools/verify_description_jazzy.py:139:17: E128 continuation line under-indented for visual indent
+    
+    ./tools/verify_description_jazzy.py:140:100: E501 line too long (100 > 99 characters)
+    
+    
+    6 files checked
+    42 errors
+    
+    'E'-type errors: 31
+    'F'-type errors: 2
+    'I'-type errors: 7
+    'W'-type errors: 2
+    
+    Checked files:
+    
+    * ./launch/display.launch.py
+    * ./params/rover_twist_relay.py
+    * ./scripts/joint_state_node.py
+    * ./scripts/joint_state_gui.py
+    * ./scripts/gui_session.py
+    * ./tools/verify_description_jazzy.py
+    -- run_test.py: return code 1
+    -- run_test.py: verify result file '/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/flake8.xunit.xml'
+  >>>
+- uncrustify
+  <<< failure message
+    -- run_test.py: invoking following command in '/root/description-jazzy-20261014/default-test-ws/src/megarover_description':
+     - /opt/ros/jazzy/bin/ament_uncrustify --xunit-file /root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/uncrustify.xunit.xml
+    Code style divergence in file 'src/rviz_no_prompt.cpp':
+    
+    --- src/rviz_no_prompt.cpp
+    +++ src/rviz_no_prompt.cpp.uncrustify
+    @@ -38,3 +38,3 @@
+    -        if (frame) {
+    -          frame->close();
+    -        }
+    +          if (frame) {
+    +            frame->close();
+    +          }
+    
+    1 files with code style divergence
+    -- run_test.py: return code 1
+    -- run_test.py: verify result file '/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/uncrustify.xunit.xml'
+  >>>
+- xmllint
+  <<< failure message
+    -- run_test.py: invoking following command in '/root/description-jazzy-20261014/default-test-ws/src/megarover_description':
+     - /opt/ros/jazzy/bin/ament_xmllint --xunit-file /root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/xmllint.xunit.xml
+    File 'package.xml' is invalid:
+    /root/description-jazzy-20261014/default-test-ws/src/megarover_description/package.xml:8: element author: Schemas validity error : Element 'author': This element is not expected. Expected is ( maintainer ).
+    /root/description-jazzy-20261014/default-test-ws/src/megarover_description/package.xml fails to validate
+    
+    1 files are invalid
+    -- run_test.py: return code 1
+    -- run_test.py: verify result file '/root/description-jazzy-20261014/default-test-ws/build/megarover_description/test_results/megarover_description/xmllint.xunit.xml'
+  >>>
+build/megarover_description/test_results/megarover_description/copyright.xunit.xml: 9 tests, 0 errors, 9 failures, 0 skipped
+- megarover_description.copyright CONTRIBUTING.md
+  <<< failure message
+    file not found
+  >>>
+- megarover_description.copyright LICENSE
+  <<< failure message
+    file not found
+  >>>
+- megarover_description.copyright launch/display.launch.py
+  <<< failure message
+    could not find copyright notice
+  >>>
+- megarover_description.copyright params/rover_twist_relay.py
+  <<< failure message
+    could not find copyright notice
+  >>>
+- megarover_description.copyright scripts/gui_session.py
+  <<< failure message
+    could not find copyright notice
+  >>>
+- megarover_description.copyright scripts/joint_state_gui.py
+  <<< failure message
+    could not find copyright notice
+  >>>
+- megarover_description.copyright scripts/joint_state_node.py
+  <<< failure message
+    could not find copyright notice
+  >>>
+- megarover_description.copyright src/rviz_no_prompt.cpp
+  <<< failure message
+    copyright=YOSHIDA-V (2026), license=<unknown>
+  >>>
+- megarover_description.copyright tools/verify_description_jazzy.py
+  <<< failure message
+    could not find copyright notice
+  >>>
+build/megarover_description/test_results/megarover_description/cpplint.xunit.xml: 8 tests, 0 errors, 8 failures, 0 skipped
+- megarover_description.cpplint build/include_order [4] (/root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:7)
+  <<< failure message
+    Found C system header after C++ system header. Should be: rviz_no_prompt.h, c system, c++ system, other.
+  >>>
+- megarover_description.cpplint build/include_order [4] (/root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:8)
+  <<< failure message
+    Found C system header after C++ system header. Should be: rviz_no_prompt.h, c system, c++ system, other.
+  >>>
+- megarover_description.cpplint build/include_order [4] (/root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:9)
+  <<< failure message
+    Found C system header after C++ system header. Should be: rviz_no_prompt.h, c system, c++ system, other.
+  >>>
+- megarover_description.cpplint build/include_order [4] (/root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:10)
+  <<< failure message
+    Found C system header after C++ system header. Should be: rviz_no_prompt.h, c system, c++ system, other.
+  >>>
+- megarover_description.cpplint build/include_order [4] (/root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:11)
+  <<< failure message
+    Found C system header after C++ system header. Should be: rviz_no_prompt.h, c system, c++ system, other.
+  >>>
+- megarover_description.cpplint build/include_order [4] (/root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:20)
+  <<< failure message
+    Found C system header after other header. Should be: rviz_no_prompt.h, c system, c++ system, other.
+  >>>
+- megarover_description.cpplint build/include_order [4] (/root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:21)
+  <<< failure message
+    Found C system header after other header. Should be: rviz_no_prompt.h, c system, c++ system, other.
+  >>>
+- megarover_description.cpplint runtime/int [4] (/root/description-jazzy-20261014/default-test-ws/src/megarover_description/src/rviz_no_prompt.cpp:68)
+  <<< failure message
+    Use int16/int64/etc, rather than the C type long
+  >>>
+build/megarover_description/test_results/megarover_description/flake8.xunit.xml: 42 tests, 0 errors, 42 failures, 0 skipped
+- megarover_description.flake8 I201 (./launch/display.launch.py:3:1)
+  <<< failure message
+    Missing newline between import groups. 'from rclpy.utilities import get_rmw_implementation_identifier' is identified as Third Party and 'from pathlib import Path' is identified as Stdlib.:
+    from rclpy.utilities import get_rmw_implementation_identifier
+  >>>
+- megarover_description.flake8 I100 (./launch/display.launch.py:4:1)
+  <<< failure message
+    Import statements are in the wrong order. 'from ament_index_python.packages import get_package_prefix, get_package_share_directory' should be before 'from rclpy.utilities import get_rmw_implementation_identifier':
+    from ament_index_python.packages import get_package_prefix, get_package_share_directory
+  >>>
+- megarover_description.flake8 I101 (./launch/display.launch.py:8:1)
+  <<< failure message
+    Imported names are in the wrong order. Should be Command, LaunchConfiguration, PythonExpression:
+    from launch.substitutions import LaunchConfiguration, PythonExpression, Command
+  >>>
+- megarover_description.flake8 E221 (./launch/display.launch.py:31:8)
+  <<< failure message
+    multiple spaces before operator:
+        gui   = LaunchConfiguration('gui',   default='true')
+  >>>
+- megarover_description.flake8 E128 (./launch/display.launch.py:90:32)
+  <<< failure message
+    continuation line under-indented for visual indent:
+                                   'lib/megarover_description/rviz_no_prompt'),
+  >>>
+- megarover_description.flake8 W391 (./launch/display.launch.py:117:1)
+  <<< failure message
+    blank line at end of file:
+  >>>
+- megarover_description.flake8 I100 (./params/rover_twist_relay.py:5:1)
+  <<< failure message
+    Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from rclpy.node import Node':
+    from geometry_msgs.msg import Twist
+  >>>
+- megarover_description.flake8 I100 (./params/rover_twist_relay.py:7:1)
+  <<< failure message
+    Import statements are in the wrong order. 'from rclpy.parameter import Parameter' should be before 'from std_msgs.msg import Float64MultiArray':
+    from rclpy.parameter import Parameter
+  >>>
+- megarover_description.flake8 W391 (./params/rover_twist_relay.py:134:1)
+  <<< failure message
+    blank line at end of file:
+  >>>
+- megarover_description.flake8 E501 (./scripts/gui_session.py:28:100)
+  <<< failure message
+    line too long (121 > 99 characters):
+                if marker in (entry / 'environ').read_bytes().split(b'\0') and str((entry / 'exe').resolve()) in executables:
+  >>>
+- megarover_description.flake8 E128 (./scripts/gui_session.py:55:9)
+  <<< failure message
+    continuation line under-indented for visual indent:
+            C.c_int, C.c_ulong, C.POINTER(C.c_ulong), C.POINTER(C.c_int), C.POINTER(C.c_ulong),
+  >>>
+- megarover_description.flake8 E128 (./scripts/gui_session.py:77:17)
+  <<< failure message
+    continuation line under-indented for visual indent:
+                    C.byref(actual), C.byref(fmt), C.byref(count), C.byref(remaining), C.byref(data))
+  >>>
+- megarover_description.flake8 E501 (./scripts/gui_session.py:79:100)
+  <<< failure message
+    line too long (129 > 99 characters):
+                    return list(C.cast(data, C.POINTER(C.c_ulong))[:count.value]) if status == 0 and fmt.value == 32 and data else []
+  >>>
+- megarover_description.flake8 E501 (./scripts/gui_session.py:89:100)
+  <<< failure message
+    line too long (102 > 99 characters):
+                        or atom('_NET_WM_WINDOW_TYPE_NORMAL') not in values(window, '_NET_WM_WINDOW_TYPE')
+  >>>
+- megarover_description.flake8 E231 (./scripts/gui_session.py:126:36)
+  <<< failure message
+    missing whitespace after ':':
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+  >>>
+- megarover_description.flake8 E231 (./scripts/gui_session.py:126:44)
+  <<< failure message
+    missing whitespace after ',':
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+  >>>
+- megarover_description.flake8 E231 (./scripts/gui_session.py:126:58)
+  <<< failure message
+    missing whitespace after ':':
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+  >>>
+- megarover_description.flake8 E231 (./scripts/gui_session.py:126:68)
+  <<< failure message
+    missing whitespace after ',':
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+  >>>
+- megarover_description.flake8 E231 (./scripts/gui_session.py:126:75)
+  <<< failure message
+    missing whitespace after ':':
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+  >>>
+- megarover_description.flake8 E231 (./scripts/gui_session.py:126:83)
+  <<< failure message
+    missing whitespace after ',':
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+  >>>
+- megarover_description.flake8 E231 (./scripts/gui_session.py:126:89)
+  <<< failure message
+    missing whitespace after ':':
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+  >>>
+- megarover_description.flake8 E501 (./scripts/gui_session.py:126:100)
+  <<< failure message
+    line too long (115 > 99 characters):
+        print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)
+  >>>
+- megarover_description.flake8 E231 (./scripts/gui_session.py:140:45)
+  <<< failure message
+    missing whitespace after ':':
+                    print(json.dumps({'gui_exit':status}), flush=True)
+  >>>
+- megarover_description.flake8 E231 (./scripts/gui_session.py:154:70)
+  <<< failure message
+    missing whitespace after ':':
+                        print(json.dumps({'backend_sigint_after_gui_exit':child.pid}), flush=True)
+  >>>
+- megarover_description.flake8 E231 (./scripts/gui_session.py:160:65)
+  <<< failure message
+    missing whitespace after ':':
+                                print(json.dumps({'owned_rviz_close':pid,'windows':windows}), flush=True)
+  >>>
+- megarover_description.flake8 E231 (./scripts/gui_session.py:160:69)
+  <<< failure message
+    missing whitespace after ',':
+                                print(json.dumps({'owned_rviz_close':pid,'windows':windows}), flush=True)
+  >>>
+- megarover_description.flake8 E231 (./scripts/gui_session.py:160:79)
+  <<< failure message
+    missing whitespace after ':':
+                                print(json.dumps({'owned_rviz_close':pid,'windows':windows}), flush=True)
+  >>>
+- megarover_description.flake8 E501 (./scripts/gui_session.py:160:100)
+  <<< failure message
+    line too long (101 > 99 characters):
+                                print(json.dumps({'owned_rviz_close':pid,'windows':windows}), flush=True)
+  >>>
+- megarover_description.flake8 E302 (./scripts/joint_state_gui.py:18:1)
+  <<< failure message
+    expected 2 blank lines, found 1:
+    def main():
+  >>>
+- megarover_description.flake8 F401 (./tools/verify_description_jazzy.py:4:1)
+  <<< failure message
+    'json' imported but unused:
+    import json
+  >>>
+- megarover_description.flake8 I101 (./tools/verify_description_jazzy.py:14:1)
+  <<< failure message
+    Imported names are in the wrong order. Should be DurabilityPolicy, qos_profile_sensor_data, QoSProfile:
+    from rclpy.qos import DurabilityPolicy, QoSProfile, qos_profile_sensor_data
+  >>>
+- megarover_description.flake8 I100 (./tools/verify_description_jazzy.py:16:1)
+  <<< failure message
+    Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from rclpy.signals import SignalHandlerOptions':
+    from ament_index_python.packages import get_package_share_directory
+  >>>
+- megarover_description.flake8 F841 (./tools/verify_description_jazzy.py:82:5)
+  <<< failure message
+    local variable 'subscriptions' is assigned to but never used:
+        subscriptions = [
+  >>>
+- megarover_description.flake8 E128 (./tools/verify_description_jazzy.py:85:13)
+  <<< failure message
+    continuation line under-indented for visual indent:
+                lambda m: messages['joints'].append({'names': list(m.name),
+  >>>
+- megarover_description.flake8 E128 (./tools/verify_description_jazzy.py:86:17)
+  <<< failure message
+    continuation line under-indented for visual indent:
+                    'position': list(m.position), 'stamp': [m.header.stamp.sec, m.header.stamp.nanosec]}),
+  >>>
+- megarover_description.flake8 E501 (./tools/verify_description_jazzy.py:86:100)
+  <<< failure message
+    line too long (102 > 99 characters):
+                    'position': list(m.position), 'stamp': [m.header.stamp.sec, m.header.stamp.nanosec]}),
+  >>>
+- megarover_description.flake8 E501 (./tools/verify_description_jazzy.py:88:100)
+  <<< failure message
+    line too long (102 > 99 characters):
+            node.create_subscription(TFMessage, '/tf', lambda m: tf_cb(m, 'tf'), qos_profile_sensor_data),
+  >>>
+- megarover_description.flake8 E501 (./tools/verify_description_jazzy.py:89:100)
+  <<< failure message
+    line too long (102 > 99 characters):
+            node.create_subscription(TFMessage, '/tf_static', lambda m: tf_cb(m, 'tf_static'), transient),
+  >>>
+- megarover_description.flake8 E501 (./tools/verify_description_jazzy.py:123:100)
+  <<< failure message
+    line too long (115 > 99 characters):
+                        'missing_tf': sorted((expected or set()) - set(messages['tf']) - set(messages['tf_static']))}))
+  >>>
+- megarover_description.flake8 E128 (./tools/verify_description_jazzy.py:138:17)
+  <<< failure message
+    continuation line under-indented for visual indent:
+                    'links': models, 'joint_samples': messages['joints'], 'tf': messages['tf'],
+  >>>
+- megarover_description.flake8 E128 (./tools/verify_description_jazzy.py:139:17)
+  <<< failure message
+    continuation line under-indented for visual indent:
+                    'tf_static': messages['tf_static'], 'mesh_hashes': resources,
+  >>>
+- megarover_description.flake8 E501 (./tools/verify_description_jazzy.py:140:100)
+  <<< failure message
+    line too long (100 > 99 characters):
+                    'description_sha256': hashlib.sha256(messages['description'].encode()).hexdigest()})
+  >>>
+build/megarover_description/test_results/megarover_description/uncrustify.xunit.xml: 1 test, 0 errors, 1 failure, 0 skipped
+- megarover_description.uncrustify src/rviz_no_prompt.cpp
+  <<< failure message
+    Diff with 9 lines
+  >>>
+build/megarover_description/test_results/megarover_description/xmllint.xunit.xml: 1 test, 0 errors, 1 failure, 0 skipped
+- megarover_description.xmllint package.xml
+  <<< failure message
+    Diff with 312 lines
+  >>>
+
+Summary: 77 tests, 0 errors, 66 failures, 1 skipped

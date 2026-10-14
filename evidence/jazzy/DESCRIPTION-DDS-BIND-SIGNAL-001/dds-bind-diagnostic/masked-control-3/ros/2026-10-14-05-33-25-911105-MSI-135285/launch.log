@@ -1,0 +1,23 @@
+1791923605.9120111 [INFO] [launch]: All log files can be found below /root/description-jazzy-20261014/evidence/dds-bind-diagnostic/masked-control-3/ros/2026-10-14-05-33-25-911105-MSI-135285
+1791923605.9121296 [INFO] [launch]: Default logging verbosity is set to INFO
+1791923606.0426595 [INFO] [robot_state_publisher-1]: process started with pid [135289]
+1791923606.0428193 [INFO] [setsid-2]: process started with pid [135290]
+1791923606.0428874 [INFO] [setsid-3]: process started with pid [135291]
+1791923606.0706530 [robot_state_publisher-1] BIND_SIGNAL_DIAGNOSTIC pid=135289 port=32410 result=-1 errno=98 masked=0
+1791923606.1134639 [robot_state_publisher-1] [INFO] [1791923606.113208897] [robot_state_publisher]: Robot initialized
+1791923606.2461858 [setsid-2] BIND_SIGNAL_DIAGNOSTIC pid=135290 port=32410 result=-1 errno=98 masked=1
+1791923606.2573719 [setsid-2] BIND_SIGNAL_DIAGNOSTIC pid=135290 port=32412 result=-1 errno=98 masked=1
+1791923606.2685809 [setsid-2] BIND_SIGNAL_DIAGNOSTIC pid=135290 port=32414 result=-1 errno=98 masked=1
+1791923606.2808342 [setsid-2] BIND_SIGNAL_DIAGNOSTIC pid=135290 port=32416 result=0 errno=98 masked=1
+1791923606.2933295 [setsid-2] BIND_SIGNAL_DIAGNOSTIC pid=135290 port=32417 result=0 errno=98 masked=1
+1791923606.3036687 [setsid-2] BIND_SIGNAL_DIAGNOSTIC pid=135290 port=0 result=0 errno=98 masked=1
+1791923606.3392172 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1791923606.3407662 [INFO] [setsid-3]: sending signal 'SIGINT' to process[setsid-3]
+1791923606.3412561 [INFO] [setsid-2]: sending signal 'SIGINT' to process[setsid-2]
+1791923606.3415504 [INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+1791923606.3418012 [robot_state_publisher-1] [INFO] [1791923606.339099494] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1791923606.3420484 [robot_state_publisher-1] [INFO] [1791923606.341694751] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1791923606.3593040 [setsid-2] [INFO] [1791923606.359021953] [joint_state_publisher]: Waiting for robot_description to be published on the robot_description topic...
+1791923606.5169601 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 135289]
+1791923606.5920236 [INFO] [setsid-3]: process has finished cleanly [pid 135291]
+1791923607.5432613 [INFO] [setsid-2]: process has finished cleanly [pid 135290]

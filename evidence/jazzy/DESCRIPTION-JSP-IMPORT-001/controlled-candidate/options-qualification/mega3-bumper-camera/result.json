@@ -1,0 +1,33 @@
+{
+  "name": "mega3-bumper-camera",
+  "enabled": [
+    "bumper",
+    "camera"
+  ],
+  "command": [
+    "xacro",
+    "/root/description-jazzy-20261014/evidence/options-qualification/mega3-bumper-camera/input.xacro",
+    "use_ros2_control:=false"
+  ],
+  "input_sha256": "2627f2e9581cb624d9eb19c5d809ae1552d82168cab4ad4f8fde353d282691f1",
+  "start_epoch": 1791917795.4096224,
+  "phase": "finished",
+  "pid": 128104,
+  "exit_code": 0,
+  "end_epoch": 1791917795.6160533,
+  "status": "PASS",
+  "links": 30,
+  "joints": 29,
+  "baseline_links_joints_unchanged": true,
+  "mesh_hashes": {
+    "package://vs_rover_options_description/meshes/bumper/mega3_bumper_plate.stl": "1285c7adc3eccf132e0148cfb05e3e18fa50daad50c20e39df1fb836e8990b80",
+    "package://vs_rover_options_description/meshes/bumper/mega3_bumper_link.stl": "0b5cb16a2cb2d46c15691c464611d85e1cd2785165b39da8b9ac0efa5b26b75d",
+    "package://vs_rover_options_description/meshes/cam_stay/cam_mount_frame.stl": "54a6a24b545a23c43307d0771fbf32a3cc2fb6b8160a9ac3bc5d2e062e4fa264",
+    "package://vs_rover_options_description/meshes/cam_stay/cam_mount_link.stl": "4aa7c203286b07ef66f553ae078891853a2bc46235ac307dee8f3080566ab71f",
+    "package://vs_rover_options_description/meshes/depth_cam/d435.dae": "75569d283e487c4faf8943b5f2fb7b84c21692f5c1f34a7e9687645aa2b3d434",
+    "package://megarover_description/meshes/mega3/base_link.stl": "7c7096579140f4418a18288ccf478ebdf23e75e06f5f417f7d63bb019f5a4679",
+    "package://megarover_description/meshes/mega3/left_wheel_1.stl": "c5d180764bb7fdd07153a6b6948e6a62427522c8035fbc8c26154bac61816e72",
+    "package://megarover_description/meshes/mega3/right_wheel_1.stl": "81fd4b54db6ebe970ff7c6db848297cf533b14483e64bdf3574bfd251bf14457"
+  },
+  "urdf_sha256": "26149bfec3bd476770b67dc651c6d6ee4811454667a75a9af16f18bf73b6060f"
+}

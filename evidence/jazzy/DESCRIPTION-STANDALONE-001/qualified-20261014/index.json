@@ -1,0 +1,750 @@
+[
+  {
+    "path": "qualified-bind-diagnostic-1/processes-before-stop.json",
+    "sha256": "9f45d0692da97dbce5c72a524100b10e65a04918af5bd72dccea80d10d01502a"
+  },
+  {
+    "path": "qualified-bind-diagnostic-1/result.json",
+    "sha256": "ff933023f730b96d0e9b849350cabb3c462dfc4ea33e715607f047f1de20ba23"
+  },
+  {
+    "path": "qualified-bind-diagnostic-1/ros/2026-10-14-05-42-44-916879-MSI-135598/launch.log",
+    "sha256": "057feb64bfb74665977b6b806944940521d22591238eabc947f0ac2cd1659329"
+  },
+  {
+    "path": "qualified-bind-diagnostic-1/ros/python3_135603_1791924165262.log",
+    "sha256": "f0e09ea68cef1322ab013b965fcd47b50924dee71251aba5f5de92858234389e"
+  },
+  {
+    "path": "qualified-bind-diagnostic-1/ros/robot_state_publisher_135602_1791924165089.log",
+    "sha256": "02bd66e7fbf42be1246c1efa356bfc4bbb7d30daa21cfe712703106de51f537d"
+  },
+  {
+    "path": "qualified-bind-diagnostic-1/ros/rviz_no_prompt_135617_1791924165248.log",
+    "sha256": "34960faca6e6c6f2cbce6c58f92afe9465ffa0611fbfa0b4ba2c8a1a2ec61478"
+  },
+  {
+    "path": "qualified-bind-diagnostic-1/runtime.log",
+    "sha256": "df44521bfdbec251d737d1cda4ba71b8b04d0dd141577ef8537f009b2bbc93de"
+  },
+  {
+    "path": "qualified-bind-diagnostic-1.fixture.log",
+    "sha256": "152293d0fd1aa1b60e6c5c705e79d76a5c4a6582bb873c14a42d0ccc592a92a3"
+  },
+  {
+    "path": "qualified-bind-diagnostic-2/processes-before-stop.json",
+    "sha256": "8b2f9bf97d0eb386b963296848ab8554339fe33515f661065f75e4bb325c56fc"
+  },
+  {
+    "path": "qualified-bind-diagnostic-2/result.json",
+    "sha256": "0821b881a3f8b07c18c1a5f9b1f5dadbe67421230177d3c117cc29409451bedb"
+  },
+  {
+    "path": "qualified-bind-diagnostic-2/ros/2026-10-14-05-42-49-233124-MSI-135715/launch.log",
+    "sha256": "0b67d67d21695c51ec8df5bec63415755f812762b2d3b7f2f32d320cd390a02e"
+  },
+  {
+    "path": "qualified-bind-diagnostic-2/ros/python3_135720_1791924169548.log",
+    "sha256": "4ccbbd2262bd3c685b391f33337cf93d31312471a21d760dfb965032819fac8a"
+  },
+  {
+    "path": "qualified-bind-diagnostic-2/ros/robot_state_publisher_135719_1791924169377.log",
+    "sha256": "a1c795f77f2966c3e499efedf6b9dccd452772c88fd38c77d052ac00310d7c54"
+  },
+  {
+    "path": "qualified-bind-diagnostic-2/ros/rviz_no_prompt_135738_1791924169480.log",
+    "sha256": "9395e61832bf92dfb4aa096e17d6466dd99b4f28134d29a44b4f3ced06f1420a"
+  },
+  {
+    "path": "qualified-bind-diagnostic-2/runtime.log",
+    "sha256": "538ca35e3256e45438962d931f6d37d941eda268e71df00bfec3f2a3ca4efbc1"
+  },
+  {
+    "path": "qualified-bind-diagnostic-2.fixture.log",
+    "sha256": "95087af638f518e59faed466c43be61470045358bad1e69a5b2069ac556f7dd9"
+  },
+  {
+    "path": "qualified-bind-diagnostic-3/processes-before-stop.json",
+    "sha256": "08eecba9e2102ff30ea8b81505442e3d19bd127c4488efbd74fe1b0a82031924"
+  },
+  {
+    "path": "qualified-bind-diagnostic-3/result.json",
+    "sha256": "c25aed4239bda9606703f8499d31d14c75a10e10b1a658b544fdf4acc934f7fc"
+  },
+  {
+    "path": "qualified-bind-diagnostic-3/ros/2026-10-14-05-42-53-404482-MSI-135832/launch.log",
+    "sha256": "2956f87272a1a8403d7316826ca5228248361ad76a4dee215075a78132cfbcb1"
+  },
+  {
+    "path": "qualified-bind-diagnostic-3/ros/python3_135837_1791924173726.log",
+    "sha256": "a3a1d2434c638ba3f686d3eba3f2b0580887e31b32739270469d84dd8737d2c6"
+  },
+  {
+    "path": "qualified-bind-diagnostic-3/ros/robot_state_publisher_135836_1791924173544.log",
+    "sha256": "8d8df9a4ff7ef258ceb7f99c76659925a6fea8a79fbe56883910f0cf622aad5c"
+  },
+  {
+    "path": "qualified-bind-diagnostic-3/ros/rviz_no_prompt_135856_1791924173649.log",
+    "sha256": "83c238955c5ec0d0bbf232e2093060e1abb350da6d0a9b96a77760c29c14f5d4"
+  },
+  {
+    "path": "qualified-bind-diagnostic-3/runtime.log",
+    "sha256": "98b0561d32db0c47cf5a6ec010d2427b8bfc6ef90703a5c7d4f3ed587163ffe9"
+  },
+  {
+    "path": "qualified-bind-diagnostic-3.fixture.log",
+    "sha256": "e3c106177738e478a747c1c6862c99bad2f02055238a6115e68f01b1e1d2e411"
+  },
+  {
+    "path": "qualified-candidate-1-mega3-true-ready/desktop.png",
+    "sha256": "70ec7b1f06650418c109c75a2ba9782680484e1fa3bc6550c4ab6bcb089abbb4"
+  },
+  {
+    "path": "qualified-candidate-1-mega3-true-ready/observations.json",
+    "sha256": "c95efdf7dd7afa49448e5b4b31418820a14aad7a99aea6cd3323a385216db8c8"
+  },
+  {
+    "path": "qualified-candidate-1-mega3-true-ready/processes-before-stop.json",
+    "sha256": "60f95a8afdb88ea7338868bd4bb44d2a3214a203f54147d19ae4ffee3553407f"
+  },
+  {
+    "path": "qualified-candidate-1-mega3-true-ready/result.json",
+    "sha256": "f418665fd4731c7db07102be9cc93ea1538ca5dc7aeb1eee055eb315dac9a6d2"
+  },
+  {
+    "path": "qualified-candidate-1-mega3-true-ready/robot_description.urdf",
+    "sha256": "1d2826af2cd678f453d4fcea2b395287d927c8a71c5a0b0a0671faaf5e98dbee"
+  },
+  {
+    "path": "qualified-candidate-1-mega3-true-ready/ros/2026-10-14-05-42-57-595479-MSI-135950/launch.log",
+    "sha256": "1f4ebca2b84ee1db167fa02928a189bea5209b7e09da6f405e747e60a3d8fc8e"
+  },
+  {
+    "path": "qualified-candidate-1-mega3-true-ready/ros/python3_135955_1791924177971.log",
+    "sha256": "ef4b8a71186476519377c53e49d17217fa9cc93ce9953b48ccd295ca802cd7ba"
+  },
+  {
+    "path": "qualified-candidate-1-mega3-true-ready/ros/robot_state_publisher_135954_1791924177720.log",
+    "sha256": "b9138da86542bb6937b205ac7595721710c234e749413240fbe7fdfcaa42c509"
+  },
+  {
+    "path": "qualified-candidate-1-mega3-true-ready/ros/rviz_no_prompt_135967_1791924177814.log",
+    "sha256": "c80a06c6d1b5aced06c4fd46ed2b45205ea4950b1869776ad70ef1cb0e9e43cb"
+  },
+  {
+    "path": "qualified-candidate-1-mega3-true-ready/runtime.log",
+    "sha256": "05b616a888928df3201d75d21449cd863f12e4ce8d85f9761a4bc256fe15d44e"
+  },
+  {
+    "path": "qualified-candidate-1-mega3-true-ready.fixture.log",
+    "sha256": "33020cb32da86daa7ca0b8fe894f094b908395c2d14c6ec39fd9f5347cd43fb6"
+  },
+  {
+    "path": "qualified-candidate-10-f120a-false-early-sigint/processes-before-stop.json",
+    "sha256": "f6650cd897774b926fa1776bdb71de9dc5278bdfc411aa8fd7ec5a87a597bae8"
+  },
+  {
+    "path": "qualified-candidate-10-f120a-false-early-sigint/result.json",
+    "sha256": "0a9bec39c2eb4067355c523e4c3e40f6110c66a9ccf3da9696965bbd098cfe70"
+  },
+  {
+    "path": "qualified-candidate-10-f120a-false-early-sigint/ros/2026-10-14-05-44-50-313863-MSI-137000/launch.log",
+    "sha256": "3428b5af7a996cd29d29442a70e4b385e4823c302737792df260318d187a38c2"
+  },
+  {
+    "path": "qualified-candidate-10-f120a-false-early-sigint/ros/python3_137005_1791924290631.log",
+    "sha256": "724d39114d1c9fc3b562405d7c284a285c9c1cce6f1ac6491e0a9153613fad17"
+  },
+  {
+    "path": "qualified-candidate-10-f120a-false-early-sigint/ros/robot_state_publisher_137004_1791924290456.log",
+    "sha256": "71e6fbe834a40d78918baf147b0da6a493073f9c855734626118fe2cbff2847a"
+  },
+  {
+    "path": "qualified-candidate-10-f120a-false-early-sigint/ros/rviz_no_prompt_137024_1791924290554.log",
+    "sha256": "ccb1804ad251ed390049ad2b6a663cb4b1d0a6041a5718cdb8f626262cedb962"
+  },
+  {
+    "path": "qualified-candidate-10-f120a-false-early-sigint/runtime.log",
+    "sha256": "d38f853c9c605e6808d67d815b49c710be7c87eafc95f829fe94318469eae921"
+  },
+  {
+    "path": "qualified-candidate-10-f120a-false-early-sigint.fixture.log",
+    "sha256": "cd12f4b1b0893716cfc722638348499b3aec1051a95a7850693626aa66e56e2b"
+  },
+  {
+    "path": "qualified-candidate-11-s40a_lb-true-early-sigint/processes-before-stop.json",
+    "sha256": "36e6bab5c20a430fe6b0d6236ca06ab4c8bcadef8f87cab088aa298e8b8e1666"
+  },
+  {
+    "path": "qualified-candidate-11-s40a_lb-true-early-sigint/result.json",
+    "sha256": "42c892792ed5234c6b04e0b1632f5f51896e257aac25a07a3becd20785afc3c7"
+  },
+  {
+    "path": "qualified-candidate-11-s40a_lb-true-early-sigint/ros/2026-10-14-05-44-54-490385-MSI-137109/launch.log",
+    "sha256": "d9d4e77e194e4a4bf5b1656a92f0a43c5884e99f7644116ea97957cba53fcc46"
+  },
+  {
+    "path": "qualified-candidate-11-s40a_lb-true-early-sigint/ros/python3_137114_1791924294887.log",
+    "sha256": "a32ecbfa802a7244be60e394383ec22427fcfe7174683b22f63e4ab15b42f498"
+  },
+  {
+    "path": "qualified-candidate-11-s40a_lb-true-early-sigint/ros/robot_state_publisher_137113_1791924294658.log",
+    "sha256": "c310d07382f811ed233286e9167eee2336434bd4d1f9433db824744bf53458a6"
+  },
+  {
+    "path": "qualified-candidate-11-s40a_lb-true-early-sigint/ros/rviz_no_prompt_137133_1791924294764.log",
+    "sha256": "3def7c23f163fee0c9a34f68c53b866ed7bdbda11fd61e3bbb50d30166a0f8d4"
+  },
+  {
+    "path": "qualified-candidate-11-s40a_lb-true-early-sigint/runtime.log",
+    "sha256": "93ae656b7c8b68f1cc4a047e5326909a4de5754d7b24f0a9d7e5fab5c48dcd60"
+  },
+  {
+    "path": "qualified-candidate-11-s40a_lb-true-early-sigint.fixture.log",
+    "sha256": "e55e788fc9f12fc8d6ab667afaaeeae432cde4f3d049c4957150a5ad9ed49971"
+  },
+  {
+    "path": "qualified-candidate-12-s40a_lb-false-early-sigint/processes-before-stop.json",
+    "sha256": "fc0051dab0b8dde3abe0a47a8a9c6048171516d291357bca81e862bafe2189d5"
+  },
+  {
+    "path": "qualified-candidate-12-s40a_lb-false-early-sigint/result.json",
+    "sha256": "c68776417862a75209e8091cef3880581620fa8aceb8a6ed8783e606699fa272"
+  },
+  {
+    "path": "qualified-candidate-12-s40a_lb-false-early-sigint/ros/2026-10-14-05-44-58-854661-MSI-137221/launch.log",
+    "sha256": "f6935f8d11277be03e580f414b5905be877dfeaed14bd0b557fc90573505025c"
+  },
+  {
+    "path": "qualified-candidate-12-s40a_lb-false-early-sigint/ros/python3_137226_1791924299202.log",
+    "sha256": "c3b0793d930eeef4ab74835a220b7ffc6f5efaf9a6fe1c841c5a668e02a0706c"
+  },
+  {
+    "path": "qualified-candidate-12-s40a_lb-false-early-sigint/ros/robot_state_publisher_137225_1791924299017.log",
+    "sha256": "5d63b905eb729e51e948e62f842a55782ec20e3752c73627ec149da570bda2bf"
+  },
+  {
+    "path": "qualified-candidate-12-s40a_lb-false-early-sigint/ros/rviz_no_prompt_137247_1791924299129.log",
+    "sha256": "50cc86d2073bf26e4d381d2aa92c3ce5f273482d7d61203fe802273acbd01ab8"
+  },
+  {
+    "path": "qualified-candidate-12-s40a_lb-false-early-sigint/runtime.log",
+    "sha256": "e69695036045919f06efaba3cdf50f8a195495a6ae9d8b94475bf8155537ea31"
+  },
+  {
+    "path": "qualified-candidate-12-s40a_lb-false-early-sigint.fixture.log",
+    "sha256": "85f0b629a4e195e96b844beec97bbe8e6532b9c92fe8e87a6e29e66adcaa85d3"
+  },
+  {
+    "path": "qualified-candidate-13-mega3-true-restart/desktop.png",
+    "sha256": "ae23b05e22b02282a4885f3b339151e5bd260fb9c56b247552aaaf98f6acb99d"
+  },
+  {
+    "path": "qualified-candidate-13-mega3-true-restart/observations.json",
+    "sha256": "9b67812d8e9ad4a46f6218489e8ac3b79ea93fd2f8949caf9dd8cc3bf936a28b"
+  },
+  {
+    "path": "qualified-candidate-13-mega3-true-restart/processes-before-stop.json",
+    "sha256": "02cf08c2c4475b4e1a3a49719a06c1113169c8bfe2d1b348d92db59bcbdb1cf9"
+  },
+  {
+    "path": "qualified-candidate-13-mega3-true-restart/result.json",
+    "sha256": "c4f139d10e465f51e1562893f900b21a2a4a075195e9b19be47cb939ae50c861"
+  },
+  {
+    "path": "qualified-candidate-13-mega3-true-restart/robot_description.urdf",
+    "sha256": "1d2826af2cd678f453d4fcea2b395287d927c8a71c5a0b0a0671faaf5e98dbee"
+  },
+  {
+    "path": "qualified-candidate-13-mega3-true-restart/ros/2026-10-14-05-45-03-169051-MSI-137330/launch.log",
+    "sha256": "90ce1d77b47995e7840f20e278b11f3b11ac59f4a2ce153bc93bd9329af5f6b6"
+  },
+  {
+    "path": "qualified-candidate-13-mega3-true-restart/ros/python3_137335_1791924303521.log",
+    "sha256": "9f2eade5f962056cb9a22f1a0eb57e9c3b2c41a1b223c1ddef9ddfb0af822be7"
+  },
+  {
+    "path": "qualified-candidate-13-mega3-true-restart/ros/robot_state_publisher_137334_1791924303309.log",
+    "sha256": "21590ebc317fbcb4562abd4a8e23a130fb06c552eaf64123950b209d90cc5ce3"
+  },
+  {
+    "path": "qualified-candidate-13-mega3-true-restart/ros/rviz_no_prompt_137356_1791924303409.log",
+    "sha256": "04f7e6fbdb727bbb70a953fdc6813a9d1f2795e1bd4ec49c6783298afcd41cc2"
+  },
+  {
+    "path": "qualified-candidate-13-mega3-true-restart/runtime.log",
+    "sha256": "8d1e355fc0c24659ad93ac0208ec92f9f1666cb07e59945af348e19690ea91fa"
+  },
+  {
+    "path": "qualified-candidate-13-mega3-true-restart.fixture.log",
+    "sha256": "e015613554c2c382479d05adaec39683907ea3cbb9d35f6ad5bac41d821caa85"
+  },
+  {
+    "path": "qualified-candidate-14-f120a-true-restart/desktop.png",
+    "sha256": "5c4c795536fd5b82bd11cb55164ee5837e10786ed88366841f4a9d69a8618bcf"
+  },
+  {
+    "path": "qualified-candidate-14-f120a-true-restart/observations.json",
+    "sha256": "0b9ffa5e99847d9e5491be08d977990dc8c04e5967058b479b31c62648f6450f"
+  },
+  {
+    "path": "qualified-candidate-14-f120a-true-restart/processes-before-stop.json",
+    "sha256": "a58f77793d0cec96056f8410d319f8f37b4c0e2642a4d4b5064218c6173afdc9"
+  },
+  {
+    "path": "qualified-candidate-14-f120a-true-restart/result.json",
+    "sha256": "eac6ea4b0b62749de21733197f19a22117721e31669d6be43829a4b804d5d04f"
+  },
+  {
+    "path": "qualified-candidate-14-f120a-true-restart/robot_description.urdf",
+    "sha256": "3f635a5ef6d7a0155a97ff1ad39524327d710b6d3177dfeeac80c9f38ee27746"
+  },
+  {
+    "path": "qualified-candidate-14-f120a-true-restart/ros/2026-10-14-05-45-19-866708-MSI-137442/launch.log",
+    "sha256": "91b1f4db282cfc196356e6ce7d71de7b80856af320a918c7dffc0d2fdd05d33e"
+  },
+  {
+    "path": "qualified-candidate-14-f120a-true-restart/ros/python3_137447_1791924320230.log",
+    "sha256": "cea2692aa804f9d3f692cb957e1eee9aa773277e5d42b90d7762c06db1654441"
+  },
+  {
+    "path": "qualified-candidate-14-f120a-true-restart/ros/robot_state_publisher_137446_1791924320001.log",
+    "sha256": "953d8152d1331f93380257ef91eb394523f3da479624c1679c2d3305b3e9f9f9"
+  },
+  {
+    "path": "qualified-candidate-14-f120a-true-restart/ros/rviz_no_prompt_137468_1791924320105.log",
+    "sha256": "cdbaa5c4ebff28dfd3af6637e94fa4519b0a3f5b861f83da4730e205cad4b883"
+  },
+  {
+    "path": "qualified-candidate-14-f120a-true-restart/runtime.log",
+    "sha256": "e5117b541386148b9854da832927e79e5277c4c4ab5ab9fbebe09323276386f4"
+  },
+  {
+    "path": "qualified-candidate-14-f120a-true-restart.fixture.log",
+    "sha256": "96c092270d36630336604362e361c71c8e05f5bc634339e8429ec2db6c4da4c9"
+  },
+  {
+    "path": "qualified-candidate-15-s40a_lb-true-restart/desktop.png",
+    "sha256": "a18e089a80343f214c91b060d5387463310ce1f636cff1eaedd974f347800cd0"
+  },
+  {
+    "path": "qualified-candidate-15-s40a_lb-true-restart/observations.json",
+    "sha256": "d63889784851ae15b1b23502a381782a82f85947cd103255f09b0e2e15e040ed"
+  },
+  {
+    "path": "qualified-candidate-15-s40a_lb-true-restart/processes-before-stop.json",
+    "sha256": "a677ac225c0c1f78000ed7c1f839db0b580f4fadcef78b311c4791edb58d2ce1"
+  },
+  {
+    "path": "qualified-candidate-15-s40a_lb-true-restart/result.json",
+    "sha256": "e69a01a3a29743af2c8c98d163405fea39068f38683595da6a4f3e6b81513485"
+  },
+  {
+    "path": "qualified-candidate-15-s40a_lb-true-restart/robot_description.urdf",
+    "sha256": "300c72d98c7f826d834568007bb225ef861cf5eab98e68571a950c6ece00b037"
+  },
+  {
+    "path": "qualified-candidate-15-s40a_lb-true-restart/ros/2026-10-14-05-45-36-558467-MSI-137554/launch.log",
+    "sha256": "8d6bd77cb64507ef0c3ce41c7294cce799c881fbf45a498dbe29df4e6486191d"
+  },
+  {
+    "path": "qualified-candidate-15-s40a_lb-true-restart/ros/python3_137559_1791924336918.log",
+    "sha256": "0b8f103f73d6e07ac3f1cd61f887632480affb9eb1ba8068b36d90fbbdb42aaf"
+  },
+  {
+    "path": "qualified-candidate-15-s40a_lb-true-restart/ros/robot_state_publisher_137558_1791924336711.log",
+    "sha256": "e1dfe7d1c6618737975be3cff71d4ea8c04796866d74cad9455460e74c94ecd9"
+  },
+  {
+    "path": "qualified-candidate-15-s40a_lb-true-restart/ros/rviz_no_prompt_137578_1791924336802.log",
+    "sha256": "f40251b7a9ac9a18812d7f107d01764d3ec59c887b7a5708ca1d46da6a2a5495"
+  },
+  {
+    "path": "qualified-candidate-15-s40a_lb-true-restart/runtime.log",
+    "sha256": "6ce14c1f65accd21f12273d1beddc684863f233165ba5108891b29c860271285"
+  },
+  {
+    "path": "qualified-candidate-15-s40a_lb-true-restart.fixture.log",
+    "sha256": "78237cf90ee4a062cbfd9f7cb45b5db433c1e57a3f842e3e615d3cbbc0961bb9"
+  },
+  {
+    "path": "qualified-candidate-2-mega3-false-ready/desktop.png",
+    "sha256": "2f9d0fd32be88b15495bdcfe3269fa7445a0e0d31dd49bc9bb0357ecce42292c"
+  },
+  {
+    "path": "qualified-candidate-2-mega3-false-ready/observations.json",
+    "sha256": "1cb3af9982b9ae8d0b5607030ef16b0e8f9374c4fdb1a4acfe1f257c211888e4"
+  },
+  {
+    "path": "qualified-candidate-2-mega3-false-ready/processes-before-stop.json",
+    "sha256": "193d3189b744bc2271f4ec0b81b76d183c10bbf25791667cb342cf11d0bd0a2a"
+  },
+  {
+    "path": "qualified-candidate-2-mega3-false-ready/result.json",
+    "sha256": "75a08729a01854a1ecb65dc5d3dc46ef7db4680a892628725775711cd586d348"
+  },
+  {
+    "path": "qualified-candidate-2-mega3-false-ready/robot_description.urdf",
+    "sha256": "1d2826af2cd678f453d4fcea2b395287d927c8a71c5a0b0a0671faaf5e98dbee"
+  },
+  {
+    "path": "qualified-candidate-2-mega3-false-ready/ros/2026-10-14-05-43-14-304843-MSI-136062/launch.log",
+    "sha256": "328d95f3ca348ca96d95d3f5f074e7cd0f5418534424637459438b4806a64e54"
+  },
+  {
+    "path": "qualified-candidate-2-mega3-false-ready/ros/python3_136067_1791924194589.log",
+    "sha256": "14707c42427f59b6624e20b55b23b514a052f4093556789eb35e3a72466de5a6"
+  },
+  {
+    "path": "qualified-candidate-2-mega3-false-ready/ros/robot_state_publisher_136066_1791924194430.log",
+    "sha256": "00d83ed574d0b6374250490e16da2f088615e16e95a80c17be386e9ace4100cd"
+  },
+  {
+    "path": "qualified-candidate-2-mega3-false-ready/ros/rviz_no_prompt_136086_1791924194521.log",
+    "sha256": "29fe5df09bca019bf22666bcc74c082741309303221d025b51ef8d198d98dd52"
+  },
+  {
+    "path": "qualified-candidate-2-mega3-false-ready/runtime.log",
+    "sha256": "c8159e4bc7a79ffd28b5ed366a574272b9b63376f640e07797fd53196677dd98"
+  },
+  {
+    "path": "qualified-candidate-2-mega3-false-ready.fixture.log",
+    "sha256": "2550c55616781052ae65fade770a757f470d3bfeeb5708bf0901af5142934fa5"
+  },
+  {
+    "path": "qualified-candidate-3-f120a-true-ready/desktop.png",
+    "sha256": "0852544b34edc559bdcb532c827f3edd699702eb78457fad22e30f846b89d2a3"
+  },
+  {
+    "path": "qualified-candidate-3-f120a-true-ready/observations.json",
+    "sha256": "7ad1ac523cfbc6b36180886cd9a949c74c1ecfcfd143747b06efd55bda1c1146"
+  },
+  {
+    "path": "qualified-candidate-3-f120a-true-ready/processes-before-stop.json",
+    "sha256": "48b11c3791975097918cd7c46b6007deb4cb8ab7ae5c4576abe08e7a4def527f"
+  },
+  {
+    "path": "qualified-candidate-3-f120a-true-ready/result.json",
+    "sha256": "89bf2269849a0a9e47b37527d3d3e01211f3403d41f6040077a688fa92ee7696"
+  },
+  {
+    "path": "qualified-candidate-3-f120a-true-ready/robot_description.urdf",
+    "sha256": "3f635a5ef6d7a0155a97ff1ad39524327d710b6d3177dfeeac80c9f38ee27746"
+  },
+  {
+    "path": "qualified-candidate-3-f120a-true-ready/ros/2026-10-14-05-43-30-784232-MSI-136171/launch.log",
+    "sha256": "fe84f895970829cb6b742d0c1cee1366565b1467ca63a1d8f4ab32a13169d0c9"
+  },
+  {
+    "path": "qualified-candidate-3-f120a-true-ready/ros/python3_136176_1791924211119.log",
+    "sha256": "036ba0ad3beb685408d9394b18755627427fd02c8a57d0dc66f59513fccd3af8"
+  },
+  {
+    "path": "qualified-candidate-3-f120a-true-ready/ros/robot_state_publisher_136175_1791924210917.log",
+    "sha256": "c4983f71dd520c93b8e3f5c6eaf030080e1088fcb2bc7bac25a44a030815c8e7"
+  },
+  {
+    "path": "qualified-candidate-3-f120a-true-ready/ros/rviz_no_prompt_136190_1791924211007.log",
+    "sha256": "123f6ccb041ac5e35c1617abd3cef8eca058545e03abc938166690f227207cf2"
+  },
+  {
+    "path": "qualified-candidate-3-f120a-true-ready/runtime.log",
+    "sha256": "a6da58281eec2efdd7e04c48783b94a07db5cb6e9ad114246390c36c809fe73c"
+  },
+  {
+    "path": "qualified-candidate-3-f120a-true-ready.fixture.log",
+    "sha256": "99a15d41598dca839150df8a3ff1b0e9a1cd5066aa91ea0a6643db495410f9ea"
+  },
+  {
+    "path": "qualified-candidate-4-f120a-false-ready/desktop.png",
+    "sha256": "8c32afa5d7e24ec1505f2b8412f94f1c52d0a5121738b3e60f6c2e11762e6ea3"
+  },
+  {
+    "path": "qualified-candidate-4-f120a-false-ready/observations.json",
+    "sha256": "23caa67d9068ae0f73776d22a75f387decca3c5366d46be717df25e0ee573ac9"
+  },
+  {
+    "path": "qualified-candidate-4-f120a-false-ready/processes-before-stop.json",
+    "sha256": "f44145e84ce3be091dbbc6dfffe081c9319ce7c9bdf14d9dfd54b593e07d4476"
+  },
+  {
+    "path": "qualified-candidate-4-f120a-false-ready/result.json",
+    "sha256": "6f3f4069f2c868b4247f2ec8c3fe56fbd619ed4d792ac1343d1c6ea9e922ab5d"
+  },
+  {
+    "path": "qualified-candidate-4-f120a-false-ready/robot_description.urdf",
+    "sha256": "3f635a5ef6d7a0155a97ff1ad39524327d710b6d3177dfeeac80c9f38ee27746"
+  },
+  {
+    "path": "qualified-candidate-4-f120a-false-ready/ros/2026-10-14-05-43-47-433139-MSI-136334/launch.log",
+    "sha256": "c08e6b8c0c53349e8bdf46244dedf2e82f67c4bd3ded80bad9dfe1e9f1b40de6"
+  },
+  {
+    "path": "qualified-candidate-4-f120a-false-ready/ros/python3_136339_1791924227712.log",
+    "sha256": "79aab6656e031d569ebccc2b0c38abbc2211da18829a35e34d734b99104e8245"
+  },
+  {
+    "path": "qualified-candidate-4-f120a-false-ready/ros/robot_state_publisher_136338_1791924227558.log",
+    "sha256": "ee5508585297db8073bb7206d41fb8a42ca81081b6398a513b553cf1ad3f85e5"
+  },
+  {
+    "path": "qualified-candidate-4-f120a-false-ready/ros/rviz_no_prompt_136360_1791924227655.log",
+    "sha256": "883994652894981b64fca15740867c8bafee9a41a28182936ed5878f9578e80d"
+  },
+  {
+    "path": "qualified-candidate-4-f120a-false-ready/runtime.log",
+    "sha256": "719e99c74de86c9b03dd986e24b79a48fc9b74847b9745082ffddb7f4a886547"
+  },
+  {
+    "path": "qualified-candidate-4-f120a-false-ready.fixture.log",
+    "sha256": "da8a52b0ee520d2b806a03d1520bfd7c32e2a8e07094e8ac70cb360954efc697"
+  },
+  {
+    "path": "qualified-candidate-5-s40a_lb-true-ready/desktop.png",
+    "sha256": "20adfe3bedd95569c98094b9dfb9a32f3bd4dc4e0234ef32f43615f9f4018586"
+  },
+  {
+    "path": "qualified-candidate-5-s40a_lb-true-ready/observations.json",
+    "sha256": "dff32b7af81719df913888829a780973442f57517fa1000157d1e1f8ba350bd5"
+  },
+  {
+    "path": "qualified-candidate-5-s40a_lb-true-ready/processes-before-stop.json",
+    "sha256": "1f7e2d1fa0a92bd1f774c37b344f38435fcdab7f3e9045bf1b51ad525e0a83f4"
+  },
+  {
+    "path": "qualified-candidate-5-s40a_lb-true-ready/result.json",
+    "sha256": "f3a1d936d974b968d830e114d94c3a89707249dc8956354fa68b61cbcf1b81b9"
+  },
+  {
+    "path": "qualified-candidate-5-s40a_lb-true-ready/robot_description.urdf",
+    "sha256": "300c72d98c7f826d834568007bb225ef861cf5eab98e68571a950c6ece00b037"
+  },
+  {
+    "path": "qualified-candidate-5-s40a_lb-true-ready/ros/2026-10-14-05-44-04-195779-MSI-136446/launch.log",
+    "sha256": "a3c4e40d45946c27b8ce14f38d8f9777c1a972f7d5b497078d525e2491134de3"
+  },
+  {
+    "path": "qualified-candidate-5-s40a_lb-true-ready/ros/python3_136451_1791924244555.log",
+    "sha256": "d84fd9ab5ebc4ba7757fa9183ebc1f82618cb657203af17d35c80ab5df49865a"
+  },
+  {
+    "path": "qualified-candidate-5-s40a_lb-true-ready/ros/robot_state_publisher_136450_1791924244346.log",
+    "sha256": "71fa1fbe85559c1cdfa2ff9b23e65b21d195ec369c8ae4ec45c80de9a3419aae"
+  },
+  {
+    "path": "qualified-candidate-5-s40a_lb-true-ready/ros/rviz_no_prompt_136463_1791924244439.log",
+    "sha256": "16760e03f30ca25f25deda682f631020e33d97f1e4d03618731cbedc923b45fb"
+  },
+  {
+    "path": "qualified-candidate-5-s40a_lb-true-ready/runtime.log",
+    "sha256": "6098941f79f75742891a768ceb19b63e2db1807ebd7cee365e8f5f84ad822540"
+  },
+  {
+    "path": "qualified-candidate-5-s40a_lb-true-ready.fixture.log",
+    "sha256": "fd849aca06ef0d05ac64d9f1889360c64da6b6437f7e41ada01201c3d2e8a381"
+  },
+  {
+    "path": "qualified-candidate-6-s40a_lb-false-ready/desktop.png",
+    "sha256": "65d8ca6b43bc4ee8a10be7b038dc5d6cb9e0a57e09f7cba79609a8921c16a713"
+  },
+  {
+    "path": "qualified-candidate-6-s40a_lb-false-ready/observations.json",
+    "sha256": "712bc8341c9554eaed799265a540cb25b8bc56ad1393beb907e47e7d21f0c011"
+  },
+  {
+    "path": "qualified-candidate-6-s40a_lb-false-ready/processes-before-stop.json",
+    "sha256": "c570d0cbd45a01e595df69be0a54d6768251ebf3436d1021b05125d853d228a7"
+  },
+  {
+    "path": "qualified-candidate-6-s40a_lb-false-ready/result.json",
+    "sha256": "2dd30450bb7c4b86c915d170dbfe5effcd493ddc18095f8fafb018f832b60568"
+  },
+  {
+    "path": "qualified-candidate-6-s40a_lb-false-ready/robot_description.urdf",
+    "sha256": "300c72d98c7f826d834568007bb225ef861cf5eab98e68571a950c6ece00b037"
+  },
+  {
+    "path": "qualified-candidate-6-s40a_lb-false-ready/ros/2026-10-14-05-44-21-000390-MSI-136558/launch.log",
+    "sha256": "689bafc5c614beac06e85b3267fa382f3ce468d943aa9b1213b5d51177304e0b"
+  },
+  {
+    "path": "qualified-candidate-6-s40a_lb-false-ready/ros/python3_136563_1791924261312.log",
+    "sha256": "5327773c76fbcdeba7ab34d6013b6dadc5f34002d5e4e8dbf0bbd39fcef6e0f7"
+  },
+  {
+    "path": "qualified-candidate-6-s40a_lb-false-ready/ros/robot_state_publisher_136562_1791924261154.log",
+    "sha256": "81631dcda972bcf52d73e39166bd8c1dd73cc99518948f5f21efb387151f3cef"
+  },
+  {
+    "path": "qualified-candidate-6-s40a_lb-false-ready/ros/rviz_no_prompt_136575_1791924261244.log",
+    "sha256": "adaea47b43284184129591e4d1427ed152d5df07a75c4628803f40a15743a22a"
+  },
+  {
+    "path": "qualified-candidate-6-s40a_lb-false-ready/runtime.log",
+    "sha256": "7953df68116e0f22811ec55a6f0b6f03ae84f054409e03661f51ad75f59342a6"
+  },
+  {
+    "path": "qualified-candidate-6-s40a_lb-false-ready.fixture.log",
+    "sha256": "93209582fbb02552820a0beefb17d1f2eb6be7713469afee2dcfedd73961643f"
+  },
+  {
+    "path": "qualified-candidate-7-mega3-true-early-sigint/processes-before-stop.json",
+    "sha256": "3d85c1ad1155e559e8b21807638789325cb70020db9ff4f515a94f06a028e8ad"
+  },
+  {
+    "path": "qualified-candidate-7-mega3-true-early-sigint/result.json",
+    "sha256": "c52a7b493f5622efd868466a37e1e3e10f4798a131774c7ee5ac8ae357e74044"
+  },
+  {
+    "path": "qualified-candidate-7-mega3-true-early-sigint/ros/2026-10-14-05-44-37-678799-MSI-136667/launch.log",
+    "sha256": "27aaee0e5f80d7ea07bd3fa0d8ef6ffa1360d9257d61039a7a14a30ee6c7ff0f"
+  },
+  {
+    "path": "qualified-candidate-7-mega3-true-early-sigint/ros/python3_136672_1791924278064.log",
+    "sha256": "175d6d0ab010dfaa947ae1d765475c926682c32685ed24fe132e1ca1c9bf9c53"
+  },
+  {
+    "path": "qualified-candidate-7-mega3-true-early-sigint/ros/robot_state_publisher_136671_1791924277833.log",
+    "sha256": "89e02b0efed02bc465053689d163719087a67cab00ff07ceae78f813c98d61b2"
+  },
+  {
+    "path": "qualified-candidate-7-mega3-true-early-sigint/ros/rviz_no_prompt_136693_1791924277940.log",
+    "sha256": "652fed558ecd972aeb4a6dcb3e409fb345590c5f30a8253c212820c2ff4b909a"
+  },
+  {
+    "path": "qualified-candidate-7-mega3-true-early-sigint/runtime.log",
+    "sha256": "a920007796638849948e29c83fe1ab2e6384f0e3c4f609b353e566a0441d5eee"
+  },
+  {
+    "path": "qualified-candidate-7-mega3-true-early-sigint.fixture.log",
+    "sha256": "8e60eca1e2afb4284fdf78c99f4452132e5b6ca600cf3a5f5dd95a3c8d06c158"
+  },
+  {
+    "path": "qualified-candidate-8-mega3-false-early-sigint/processes-before-stop.json",
+    "sha256": "e23fac3b1b40e66670143b50bba474a883441f6a2a30b3eabf77dd01a79e0a6a"
+  },
+  {
+    "path": "qualified-candidate-8-mega3-false-early-sigint/result.json",
+    "sha256": "f359a42e4a942efed2ae676c5254e354c485325932a6ead0cf3d2ed912a673cf"
+  },
+  {
+    "path": "qualified-candidate-8-mega3-false-early-sigint/ros/2026-10-14-05-44-41-888004-MSI-136779/launch.log",
+    "sha256": "993faf8e65481ac5d5c349c548e40845b69d92e60edacf88b151fc056b866e45"
+  },
+  {
+    "path": "qualified-candidate-8-mega3-false-early-sigint/ros/python3_136784_1791924282218.log",
+    "sha256": "f316420d54622bd0b20ab5e58fd2b443f2f33f81d91ae8f6f5a3678826e33ecb"
+  },
+  {
+    "path": "qualified-candidate-8-mega3-false-early-sigint/ros/robot_state_publisher_136783_1791924282039.log",
+    "sha256": "e3d1a64dc2e25eaec45cd4a1d5a2a0bc0262db19df631cda5af9fb7b0158dde4"
+  },
+  {
+    "path": "qualified-candidate-8-mega3-false-early-sigint/ros/rviz_no_prompt_136803_1791924282145.log",
+    "sha256": "06fc177085e737aaa521105a76c5f25c27a274f7e214e82d0187f6bd2e2f28c2"
+  },
+  {
+    "path": "qualified-candidate-8-mega3-false-early-sigint/runtime.log",
+    "sha256": "43fcc96d9f30757753189cb297f0c6a1b545fb7a21ddfcd4c3379b6edae59c28"
+  },
+  {
+    "path": "qualified-candidate-8-mega3-false-early-sigint.fixture.log",
+    "sha256": "593a7cfd36565336d2c8325bb974f198d342d64f37cccba893bcef08227ec2a8"
+  },
+  {
+    "path": "qualified-candidate-9-f120a-true-early-sigint/processes-before-stop.json",
+    "sha256": "d4d2656b680a61c7a11dcc05fcbdfea2aae45fc5b5672391301ad9337568aa94"
+  },
+  {
+    "path": "qualified-candidate-9-f120a-true-early-sigint/result.json",
+    "sha256": "62fa2a158b9f51774e78df911e78bc2a56fbd0ca6b9beb82302ec6cc30f6594e"
+  },
+  {
+    "path": "qualified-candidate-9-f120a-true-early-sigint/ros/2026-10-14-05-44-46-108495-MSI-136888/launch.log",
+    "sha256": "aad6c131a7601967fa9907676a9f30347b2aba66a9fb64b46cf50bc0cdd7e7cd"
+  },
+  {
+    "path": "qualified-candidate-9-f120a-true-early-sigint/ros/python3_136893_1791924286476.log",
+    "sha256": "0ea9a486659e5a34181ef645c0ca7f77609e5f73e92e569c725f99c2b76265c0"
+  },
+  {
+    "path": "qualified-candidate-9-f120a-true-early-sigint/ros/robot_state_publisher_136892_1791924286252.log",
+    "sha256": "d9fac6cbf1ac987f3e935e8587a461e7068827572a3c205be7e60e5fa8270add"
+  },
+  {
+    "path": "qualified-candidate-9-f120a-true-early-sigint/ros/rviz_no_prompt_136912_1791924286355.log",
+    "sha256": "0f33cf31d41dec191b6260a33820fefb7c0b8be0c1d950831db9a696b390d3c8"
+  },
+  {
+    "path": "qualified-candidate-9-f120a-true-early-sigint/runtime.log",
+    "sha256": "58ae2add2aae5b419f65de2b2d58f90f8285d919334685c256bf3beaa1df5846"
+  },
+  {
+    "path": "qualified-candidate-9-f120a-true-early-sigint.fixture.log",
+    "sha256": "b79008c3ec29ff29ce48d099a0531a2311f61bcafcbbac8c5e373b2d66f64dfa"
+  },
+  {
+    "path": "qualified-model-invariance.json",
+    "sha256": "7b907ab0471d49d9ed061b316e00a5830cd4578ffdfec2fda0543f0a377d1b58"
+  },
+  {
+    "path": "qualified-standard-build.log",
+    "sha256": "3ac7f5c0d8c91ca0e60152dfba0917d1a00c7264a84bbab8b93f03022d3a610e"
+  },
+  {
+    "path": "qualified-standard-manifest.json",
+    "sha256": "763c7a5bccc8aca835cf36234566ac4a5cb1abacc41dd81fff60e3aa8588e5cc"
+  },
+  {
+    "path": "qualified-standard-results.log",
+    "sha256": "cd08ee02fd91ba1928167edc3712f04bac4ce79ce9aed5612a55b38abe78cdf6"
+  },
+  {
+    "path": "qualified-standard-tests.log",
+    "sha256": "9a31bbb11a430a91a38e3fbc7383f167e8fa7137f63ac1528e1e58b0fea10af0"
+  },
+  {
+    "path": "qualified-summary.json",
+    "sha256": "fab1d0defa335632bb47abe22d940d596756d89b75b0cb1e6b35aec857d54d4c"
+  },
+  {
+    "path": "final-rosdep-check.log",
+    "sha256": "43a3ee518f5ec19ddeeb125d8bbb6f4272cd1077bfef239a91faf9e78638698f"
+  },
+  {
+    "path": "final-platform.json",
+    "sha256": "a5c3712fed1f26f0de13e02d71f7762a5dae4f4003bd1c68b46c5d8263c4be45"
+  },
+  {
+    "path": "standard-test-results/copyright.xunit.xml",
+    "sha256": "127d03cfe187f0a1bc923fd75a7893492b088a502dc057bd2c430e048da124cc"
+  },
+  {
+    "path": "standard-test-results/cppcheck.xunit.xml",
+    "sha256": "1a3960ef4796b54a2c9b38596cc012f5b947aab6d75caedaef97d908ccb57048"
+  },
+  {
+    "path": "standard-test-results/cpplint.xunit.xml",
+    "sha256": "c0b5d8fef892b3749100927930cb8bee6e6f07c529ea501a42ddb34804b22890"
+  },
+  {
+    "path": "standard-test-results/flake8.xunit.xml",
+    "sha256": "d1eada6af85c65da108ecb173ce7fce2d43cf911fff6a12a2d2ed9dc7127d675"
+  },
+  {
+    "path": "standard-test-results/lint_cmake.xunit.xml",
+    "sha256": "ff7e13afdea29a265d2b566a3a0e8fe4bed3f4d4f8e4274d3aae7a04f23aaad6"
+  },
+  {
+    "path": "standard-test-results/pep257.xunit.xml",
+    "sha256": "565ff7cedd4532f7503fe56fd780879418f3c9f5d553b84e59fee65e8e39d684"
+  },
+  {
+    "path": "standard-test-results/uncrustify.xunit.xml",
+    "sha256": "3850883a23433adbf32a4814ccd75e5a60d2835183b6f47651dd1a691f12eade"
+  },
+  {
+    "path": "standard-test-results/xmllint.xunit.xml",
+    "sha256": "2e7373512c40d6846f6f406cb824fcf77d67abcf054349eebf30be8262888e21"
+  }
+]

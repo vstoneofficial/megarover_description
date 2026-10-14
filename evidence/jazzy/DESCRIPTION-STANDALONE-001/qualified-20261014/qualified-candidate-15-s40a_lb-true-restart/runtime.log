@@ -1,0 +1,26 @@
+[INFO] [launch]: All log files can be found below /root/description-jazzy-20261014/evidence/qualified-candidate-15-s40a_lb-true-restart/ros/2026-10-14-05-45-36-558467-MSI-137554
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [137558]
+[INFO] [setsid-2]: process started with pid [137559]
+[INFO] [setsid-3]: process started with pid [137560]
+[setsid-3] {"gui_session": "4902090f-5f2f-4b94-863a-f7bafe1175c1", "backend_pid": 137578, "argv": ["/root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/rviz_no_prompt", "-d", "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/share/megarover_description/rviz/s40a_lb.rviz", "--ros-args", "-r", "__node:=rviz2"], "cwd": "/root/description-jazzy-20261014/default-test-ws"}
+[robot_state_publisher-1] [INFO] [1791924336.762626211] [robot_state_publisher]: Robot initialized
+[setsid-3] [INFO] [1791924336.972064361] [rviz2]: Stereo is NOT SUPPORTED
+[setsid-3] [INFO] [1791924336.972193630] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[setsid-3] [INFO] [1791924336.996790697] [rviz2]: Stereo is NOT SUPPORTED
+[setsid-2] [INFO] [1791924337.053330194] [joint_state_publisher]: Waiting for robot_description to be published on the robot_description topic...
+[setsid-2] [INFO] [1791924337.061223139] [joint_state_publisher]: Centering
+[setsid-2] [INFO] [1791924337.102542173] [joint_state_publisher]: Got description, configuring robot
+[setsid-2] [INFO] [1791924337.114004361] [joint_state_publisher]: Centering
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [setsid-3]: sending signal 'SIGINT' to process[setsid-3]
+[INFO] [setsid-2]: sending signal 'SIGINT' to process[setsid-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1791924349.533219484] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-1] [INFO] [1791924349.535469728] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[setsid-3] [INFO] [1791924349.564454688] [rviz2]: Completed rendering before frame close; GLX drawable=41943044
+[setsid-3] [INFO] [1791924349.564553195] [rviz2]: Display layout close confirmation disabled; unsaved layout=false
+[setsid-3] {"owned_rviz_close": 137578, "windows": ["0x1e00106"]}
+[INFO] [setsid-3]: process has finished cleanly [pid 137560]
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 137558]
+[INFO] [setsid-2]: process has finished cleanly [pid 137559]

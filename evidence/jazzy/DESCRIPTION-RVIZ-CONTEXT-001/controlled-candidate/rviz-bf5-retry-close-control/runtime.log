@@ -1,0 +1,22 @@
+[INFO] [launch]: All log files can be found below /root/description-jazzy-20261014/evidence/rviz-bf5-retry-close-control/ros/2026-10-14-03-37-06-873006-MSI-126636
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [126640]
+[INFO] [setsid-2]: process started with pid [126641]
+[INFO] [setsid-3]: process started with pid [126642]
+[robot_state_publisher-1] [INFO] [1791916627.598893322] [robot_state_publisher]: Robot initialized
+[setsid-3] {"gui_session": "3057a2e5-85f5-4e59-b34e-3de4aeed5a5e", "backend_pid": 126662, "argv": ["/root/description-jazzy-20261014/ws/install/megarover_description/lib/megarover_description/rviz_no_prompt", "-d", "/root/description-jazzy-20261014/ws/install/megarover_description/share/megarover_description/rviz/mega3.rviz", "--ros-args", "-r", "__node:=rviz2"], "cwd": "/mnt/c/Users/yoshi/Documents/ChatGPT/Ubuntu24.04"}
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [setsid-3]: sending signal 'SIGINT' to process[setsid-3]
+[INFO] [setsid-2]: sending signal 'SIGINT' to process[setsid-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1791916628.043376671] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-1] [INFO] [1791916628.067505150] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 126640]
+[INFO] [setsid-2]: process has finished cleanly [pid 126641]
+[setsid-3] {"owned_rviz_close": 126662, "windows": ["0x1e00006"]}
+[setsid-3] [INFO] [1791916629.001467704] [rviz2]: Stereo is NOT SUPPORTED
+[setsid-3] [INFO] [1791916629.002000625] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[setsid-3] [INFO] [1791916629.140676105] [rviz2]: Stereo is NOT SUPPORTED
+[setsid-3] [INFO] [1791916629.916372153] [rviz2]: Completed rendering before frame close; GLX drawable=39845892
+[setsid-3] [INFO] [1791916629.916802301] [rviz2]: Display layout close confirmation disabled; unsaved layout=false
+[INFO] [setsid-3]: process has finished cleanly [pid 126642]

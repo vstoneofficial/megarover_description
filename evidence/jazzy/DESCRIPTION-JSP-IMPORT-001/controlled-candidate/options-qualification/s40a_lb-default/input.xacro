@@ -1,0 +1,424 @@
+<?xml version="1.0"?>
+<robot name="s40a_lb" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find megarover_description)/urdf/materials.xacro" />
+  <xacro:include filename="$(find megarover_description)/urdf/s40a_lb.gazebo" />
+  <xacro:arg name="use_ros2_control" default="true" />
+  <xacro:if value="$(arg use_ros2_control)">
+    <xacro:include filename="$(find megarover_description)/urdf/s40a_lb_ros2_control.xacro" />
+  </xacro:if>
+  
+  <!-- OPTION LRF TG30 -->
+  <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/lrf/tg30_s40a_lb.xacro" /> -->
+  
+
+  <!-- sus.stl -->
+  <xacro:macro name="sus_stl">
+    <inertial>
+      <origin xyz="0.006525 -0.000000 0.016979"/>
+      <mass value="0.285000"/>
+      <inertia
+        ixx="4.297835e-04" iyy="6.326855e-05" izz="4.175895e-04"
+        ixy="1.511419e-15" iyz="1.007052e-15" ixz="3.193330e-06"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/s40a_lb/sus.stl"
+              scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/s40a_lb/sus.stl"
+              scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </xacro:macro>
+
+  <!-- wheel.stl -->
+  <xacro:macro name="wheel_stl">
+    <inertial>
+      <origin xyz="-0.000001 0.000000 0.031600"/>
+      <mass value="1.240000"/>
+      <inertia
+        ixx="1.662865e-03" iyy="1.662843e-03" izz="2.667211e-03"
+        ixy="-5.705064e-21" iyz="-1.980640e-20" ixz="-3.633290e-09"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/s40a_lb/wheel.stl"
+              scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="dark_grey"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/s40a_lb/wheel.stl"
+              scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </xacro:macro>
+
+  <!-- caster_sus.stl -->
+  <xacro:macro name="caster_sus_stl">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.013367"/>
+      <mass value="0.121000"/>
+      <inertia
+        ixx="2.095764e-05" iyy="2.095764e-05" izz="6.383713e-06"
+        ixy="-7.806980e-22" iyz="5.560539e-22" ixz="5.584715e-22"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/s40a_lb/caster_sus.stl"
+              scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/s40a_lb/caster_sus.stl"
+              scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </xacro:macro>
+
+  <!-- caster_frame.stl -->
+  <xacro:macro name="caster_frame_stl">
+    <inertial>
+      <origin xyz="-0.000000 0.003354 -0.013065"/>
+      <mass value="0.270000"/>
+      <inertia
+        ixx="1.248019e-04" iyy="1.092011e-04" izz="1.195602e-04"
+        ixy="-1.127413e-13" iyz="2.240150e-05" ixz="3.550956e-13"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/s40a_lb/caster_frame.stl"
+              scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/s40a_lb/caster_frame.stl"
+              scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </xacro:macro>
+
+  <!-- caster_wheel.stl -->
+  <xacro:macro name="caster_wheel_stl">
+    <inertial>
+      <origin xyz="0.000004 0.000000 0.010000"/>
+      <mass value="0.235000"/>
+      <inertia
+        ixx="7.027095e-05" iyy="7.024129e-05" izz="1.248456e-04"
+        ixy="1.382123e-21" iyz="1.187006e-21" ixz="7.543622e-21"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/s40a_lb/caster_wheel.stl"
+              scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="dark_grey"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/s40a_lb/caster_wheel.stl"
+              scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </xacro:macro>
+  
+  <xacro:macro name="lrf_mount_stl">
+      <inertial>
+        <origin xyz="0.00 0.22 0.06"/>
+        <mass value="0.07"/>
+        <inertia
+          ixx="4.651365e-05" iyy="6.571400e-05" izz="1.121197e-04"
+          ixy="-4.239657e-09" iyz="1.985164e-18" ixz="-8.506636e-20"/>
+      </inertial>
+      <visual>
+        <geometry>
+          <mesh filename="package://megarover_description/meshes/s40a_lb/lrf_mount.stl"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="silver"/>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://megarover_description/meshes/s40a_lb/lrf_mount.stl"
+                scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+  </xacro:macro>
+
+  <!-- ================================================== -->
+  <!-- base links (NOT macroized) -->
+  <!-- ================================================== -->
+
+  <link name="base_footprint"/>
+
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.001921 0.000020 0.135459"/>
+      <mass value="18.000000"/>
+      <inertia
+        ixx="1.502132e-01" iyy="2.652700e-01" izz="2.510547e-01"
+        ixy="-1.843531e-03" iyz="4.115150e-04" ixz="1.989196e-03"/>
+    </inertial>
+  </link>
+
+  <link name="body_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/s40a_lb/base_link.stl"
+              scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/s40a_lb/base_link.stl"
+              scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- ================================================== -->
+  <!-- link instances -->
+  <!-- ================================================== -->
+
+  <!-- drive -->
+  <link name="left_sus"><xacro:sus_stl/></link>
+  <link name="right_sus"><xacro:sus_stl/></link>
+  <link name="left_wheel_1"><xacro:wheel_stl/></link>
+  <link name="right_wheel_1"><xacro:wheel_stl/></link>
+  <link name="front_left_caster_sus"><xacro:caster_sus_stl/></link>
+  <link name="front_right_caster_sus"><xacro:caster_sus_stl/></link>
+  <link name="back_right_caster_sus"><xacro:caster_sus_stl/></link>
+  <link name="back_left_caster_sus"><xacro:caster_sus_stl/></link>
+  <link name="front_left_caster_frame"><xacro:caster_frame_stl/></link>
+  <link name="front_right_caster_frame"><xacro:caster_frame_stl/></link>
+  <link name="back_right_caster_frame"><xacro:caster_frame_stl/></link>
+  <link name="back_left_caster_frame"><xacro:caster_frame_stl/></link>
+  <link name="front_left_caster_wheel"><xacro:caster_wheel_stl/></link>
+  <link name="front_right_caster_wheel"><xacro:caster_wheel_stl/></link>
+  <link name="back_right_caster_wheel"><xacro:caster_wheel_stl/></link>
+  <link name="back_left_caster_wheel"><xacro:caster_wheel_stl/></link>
+  <link name="front_lrf_mount"><xacro:lrf_mount_stl/></link>
+  <link name="back_lrf_mount"><xacro:lrf_mount_stl/></link>
+
+  <!-- ================================================== -->
+  <!-- joint macros -->
+  <!-- ================================================== -->
+
+  <!-- base -->
+  <xacro:macro name="base_fixed_joint">
+    <joint name="base_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="base_footprint"/>
+      <child link="base_link"/>
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="body_fixed_joint">
+    <joint name="body_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
+      <parent link="base_link"/>
+      <child link="body_link"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- drive suspension -->
+  <xacro:macro name="drive_sus_joint" params="name parent child xyz rpy">
+    <joint name="${name}" type="prismatic">
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <parent link="${parent}"/>
+      <child link="${child}"/>
+      <axis xyz="0 0 -1"/>
+      <limit lower="-0.015" upper="0.006" effort="100" velocity="20.0"/>
+      <dynamics damping="280.0" friction="0.0"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- drive wheel -->
+  <xacro:macro name="drive_wheel_joint" params="name parent child xyz rpy axis_z">
+    <joint name="${name}" type="continuous">
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <parent link="${parent}"/>
+      <child link="${child}"/>
+      <axis xyz="0 0 ${axis_z}"/>
+      <limit effort="500" velocity="50000"/>
+      <dynamics damping="0.02"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- caster suspension(prismatic) -->
+  <xacro:macro name="caster_sus_joint" params="name parent child xyz rpy">
+    <joint name="${name}" type="prismatic">
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <parent link="${parent}"/>
+      <child link="${child}"/>
+      <axis xyz="0 0 -1"/>
+      <limit lower="-0.015" upper="0.006" effort="1000" velocity="20.0"/>
+      <dynamics damping="120.0" friction="0.0"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- caster steering(continuous) -->
+  <xacro:macro name="caster_steering_joint" params="name parent child">
+    <joint name="${name}" type="fixed">
+      <origin xyz="0 0 -0.001" rpy="0 0 0"/>
+      <parent link="${parent}"/>
+      <child link="${child}"/>
+      <axis xyz="0 0 1"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- caster wheel -->
+  <xacro:macro name="caster_wheel_joint" params="name parent child xyz rpy">
+    <joint name="${name}" type="continuous">
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+      <parent link="${parent}"/>
+      <child link="${child}"/>
+      <axis xyz="0 0 1"/>
+    </joint>
+  </xacro:macro>
+  
+  <!-- lrf_mount macro -->
+  <xacro:macro name="s40a_lb_lrf_mount_joint" params="name parent child xyz rpy">
+    <joint name="${name}" type="fixed">
+      <parent link="${parent}"/>
+      <child link="${child}"/>
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- ================================================== -->
+  <!-- joint instances -->
+  <!-- ================================================== -->
+
+  <xacro:base_fixed_joint/>
+  <xacro:body_fixed_joint/>
+
+  <!-- drive -->
+  <xacro:drive_sus_joint
+    name="left_sus_joint"
+    xyz="-0.119 0 0.051" rpy="0 0 ${radians(180)}"
+    parent="body_link"
+    child="left_sus"/>
+
+  <xacro:drive_sus_joint
+    name="right_sus_joint"
+    xyz="0.119 0 0.051" rpy="0 0 0"
+    parent="body_link"
+    child="right_sus"/>
+
+
+  <xacro:drive_wheel_joint
+    name="left_wheel_joint"
+    xyz="0.02215 0 0.019"
+    rpy="0 ${radians(90)} 0"
+    axis_z="1"
+    parent="left_sus"
+    child="left_wheel_1"/>
+
+  <xacro:drive_wheel_joint
+    name="right_wheel_joint"
+    xyz="0.02215 0 0.019"
+    rpy="0 ${radians(90)} 0"
+    axis_z="-1"
+    parent="right_sus"
+    child="right_wheel_1"/>
+
+
+  <!-- caster suspension -->
+  <xacro:caster_sus_joint
+    name="front_left_caster_sus_joint"
+    xyz="-0.165 0.13 0.082" rpy="0 0 0"
+    parent="body_link"
+    child="front_left_caster_sus"/>
+
+  <xacro:caster_sus_joint
+    name="front_right_caster_sus_joint"
+    xyz="0.165 0.13 0.082" rpy="0 0 0"
+    parent="body_link"
+    child="front_right_caster_sus"/>
+
+  <xacro:caster_sus_joint
+    name="back_right_caster_sus_joint"
+    xyz="0.165 -0.13 0.082" rpy="0 0 ${radians(180)}"
+    parent="body_link"
+    child="back_right_caster_sus"/>
+
+  <xacro:caster_sus_joint
+    name="back_left_caster_sus_joint"
+    xyz="-0.165 -0.13 0.082" rpy="0 0 ${radians(180)}"
+    parent="body_link"
+    child="back_left_caster_sus"/>
+
+
+  <!-- caster steering -->
+  <xacro:caster_steering_joint
+    name="front_left_caster_steering_joint"
+    parent="front_left_caster_sus"
+    child="front_left_caster_frame"/>
+
+  <xacro:caster_steering_joint
+    name="front_right_caster_steering_joint"
+    parent="front_right_caster_sus"
+    child="front_right_caster_frame"/>
+
+  <xacro:caster_steering_joint
+    name="back_right_caster_steering_joint"
+    parent="back_right_caster_sus"
+    child="back_right_caster_frame"/>
+
+  <xacro:caster_steering_joint
+    name="back_left_caster_steering_joint"
+    parent="back_left_caster_sus"
+    child="back_left_caster_frame"/>
+
+
+  <!-- caster wheel -->
+  <xacro:caster_wheel_joint
+    name="front_left_caster_wheel_joint"
+    xyz="-0.01 0.021 -0.0495" rpy="0 ${radians(90)} 0"
+    parent="front_left_caster_frame"
+    child="front_left_caster_wheel"/>
+
+  <xacro:caster_wheel_joint
+    name="front_right_caster_wheel_joint"
+    xyz="-0.01 0.021 -0.0495" rpy="0 ${radians(90)} 0"
+    parent="front_right_caster_frame"
+    child="front_right_caster_wheel"/>
+
+  <xacro:caster_wheel_joint
+    name="back_right_caster_wheel_joint"
+    xyz="-0.01 0.021 -0.0495" rpy="0 ${radians(90)} 0"
+    parent="back_right_caster_frame"
+    child="back_right_caster_wheel"/>
+
+  <xacro:caster_wheel_joint
+    name="back_left_caster_wheel_joint"
+    xyz="-0.01 0.021 -0.0495" rpy="0 ${radians(90)} 0"
+    parent="back_left_caster_frame"
+    child="back_left_caster_wheel"/>
+
+  <xacro:s40a_lb_lrf_mount_joint
+    name="front_lrf_mount"
+    xyz="0.0 0.0 0.0" rpy="0 0 ${radians(0)}"
+    parent="body_link"
+    child="front_lrf_mount"/>
+    
+  <xacro:s40a_lb_lrf_mount_joint
+    name="back_lrf_mount"
+    xyz="0.0 0.0 0.0" rpy="0 0 ${radians(180)}"
+    parent="body_link"
+    child="back_lrf_mount"/>
+    
+</robot>
+

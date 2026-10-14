@@ -1,0 +1,19 @@
+1791924210.7852728 [INFO] [launch]: All log files can be found below /root/description-jazzy-20261014/evidence/qualified-candidate-3-f120a-true-ready/ros/2026-10-14-05-43-30-784232-MSI-136171
+1791924210.7853825 [INFO] [launch]: Default logging verbosity is set to INFO
+1791924210.9061749 [INFO] [robot_state_publisher-1]: process started with pid [136175]
+1791924210.9062932 [INFO] [setsid-2]: process started with pid [136176]
+1791924210.9063439 [INFO] [setsid-3]: process started with pid [136177]
+1791924210.9754071 [robot_state_publisher-1] [INFO] [1791924210.975045904] [robot_state_publisher]: Robot initialized
+1791924211.2640228 [setsid-2] [INFO] [1791924211.263741199] [joint_state_publisher]: Waiting for robot_description to be published on the robot_description topic...
+1791924211.2725403 [setsid-2] [INFO] [1791924211.272256855] [joint_state_publisher]: Centering
+1791924211.3149874 [setsid-2] [INFO] [1791924211.314685476] [joint_state_publisher]: Got description, configuring robot
+1791924211.3268864 [setsid-2] [INFO] [1791924211.326549913] [joint_state_publisher]: Centering
+1791924223.7414827 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1791924223.7432327 [INFO] [setsid-3]: sending signal 'SIGINT' to process[setsid-3]
+1791924223.7436390 [INFO] [setsid-2]: sending signal 'SIGINT' to process[setsid-2]
+1791924223.7439125 [INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+1791924223.7440643 [robot_state_publisher-1] [INFO] [1791924223.741384477] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1791924223.7442622 [robot_state_publisher-1] [INFO] [1791924223.744027077] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1791924223.8289578 [INFO] [setsid-3]: process has finished cleanly [pid 136177]
+1791924224.7690313 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 136175]
+1791924224.9189229 [INFO] [setsid-2]: process has finished cleanly [pid 136176]

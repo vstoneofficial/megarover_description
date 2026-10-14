@@ -1,0 +1,32 @@
+{
+  "name": "mega3-tg30-camera",
+  "enabled": [
+    "tg30",
+    "camera"
+  ],
+  "command": [
+    "xacro",
+    "/root/description-jazzy-20261014/evidence/options-qualification/mega3-tg30-camera/input.xacro",
+    "use_ros2_control:=false"
+  ],
+  "input_sha256": "2736ac8b28f152405f8ce1c4c7a9183ebd31755880a9deb2914ba940dae579ad",
+  "start_epoch": 1791917795.8487854,
+  "phase": "finished",
+  "pid": 128106,
+  "exit_code": 0,
+  "end_epoch": 1791917796.0301528,
+  "status": "PASS",
+  "links": 22,
+  "joints": 21,
+  "baseline_links_joints_unchanged": true,
+  "mesh_hashes": {
+    "package://vs_rover_options_description/meshes/lrf/tg30.stl": "b494821651b2d6242bba80cbf254ef07d28651feb5de35e50366164ab758c0e0",
+    "package://vs_rover_options_description/meshes/cam_stay/cam_mount_frame.stl": "54a6a24b545a23c43307d0771fbf32a3cc2fb6b8160a9ac3bc5d2e062e4fa264",
+    "package://vs_rover_options_description/meshes/cam_stay/cam_mount_link.stl": "4aa7c203286b07ef66f553ae078891853a2bc46235ac307dee8f3080566ab71f",
+    "package://vs_rover_options_description/meshes/depth_cam/d435.dae": "75569d283e487c4faf8943b5f2fb7b84c21692f5c1f34a7e9687645aa2b3d434",
+    "package://megarover_description/meshes/mega3/base_link.stl": "7c7096579140f4418a18288ccf478ebdf23e75e06f5f417f7d63bb019f5a4679",
+    "package://megarover_description/meshes/mega3/left_wheel_1.stl": "c5d180764bb7fdd07153a6b6948e6a62427522c8035fbc8c26154bac61816e72",
+    "package://megarover_description/meshes/mega3/right_wheel_1.stl": "81fd4b54db6ebe970ff7c6db848297cf533b14483e64bdf3574bfd251bf14457"
+  },
+  "urdf_sha256": "6a2d5def2457164f7e7aac918ad82069a10c86341c052a5cc4ddd4b6ec26f9d4"
+}

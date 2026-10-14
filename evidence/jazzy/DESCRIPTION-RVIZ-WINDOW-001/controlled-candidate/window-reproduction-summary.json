@@ -1,0 +1,45 @@
+[
+  {
+    "name": "window-candidate-01-mega3-true-early-sigint",
+    "status": "PASS",
+    "exit_code": 0,
+    "shutdown_seconds": 0.7687322589990799,
+    "error_lines": [],
+    "functional_exception": null
+  },
+  {
+    "name": "window-candidate-02-mega3-true-ready",
+    "status": "PASS",
+    "exit_code": 0,
+    "shutdown_seconds": 1.4738402830043924,
+    "error_lines": [],
+    "functional_exception": null
+  },
+  {
+    "name": "window-candidate-03-mega3-true-early-sigint",
+    "status": "PASS",
+    "exit_code": 0,
+    "shutdown_seconds": 0.9688277690001996,
+    "error_lines": [],
+    "functional_exception": null
+  },
+  {
+    "name": "window-candidate-04-mega3-true-ready",
+    "status": "PASS",
+    "exit_code": 0,
+    "shutdown_seconds": 1.2692042239941657,
+    "error_lines": [],
+    "functional_exception": null
+  },
+  {
+    "name": "window-candidate-05-mega3-false-ready",
+    "status": "FAIL",
+    "exit_code": 0,
+    "shutdown_seconds": 1.2194441809988348,
+    "error_lines": [
+      "[joint_state_publisher-2] Traceback (most recent call last):",
+      "[ERROR] [joint_state_publisher-2]: process has died [pid 127543, exit code -2, cmd '/opt/ros/jazzy/lib/joint_state_publisher/joint_state_publisher --ros-args']."
+    ],
+    "functional_exception": null
+  }
+]

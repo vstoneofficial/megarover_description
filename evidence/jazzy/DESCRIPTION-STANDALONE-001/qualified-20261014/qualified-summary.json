@@ -1,0 +1,85 @@
+{
+  "run_count": 15,
+  "passed": 15,
+  "source_commit": "4c691b8bc0710b6fd9601756ab99af90c45aa684",
+  "shutdown_seconds_min": 1.1184667259949492,
+  "shutdown_seconds_max": 1.4188688050053315,
+  "cases": [
+    {
+      "name": "qualified-candidate-1-mega3-true-ready",
+      "status": "PASS",
+      "shutdown_seconds": 1.2180413649912225
+    },
+    {
+      "name": "qualified-candidate-10-f120a-false-early-sigint",
+      "status": "PASS",
+      "shutdown_seconds": 1.271221709990641
+    },
+    {
+      "name": "qualified-candidate-11-s40a_lb-true-early-sigint",
+      "status": "PASS",
+      "shutdown_seconds": 1.4188688050053315
+    },
+    {
+      "name": "qualified-candidate-12-s40a_lb-false-early-sigint",
+      "status": "PASS",
+      "shutdown_seconds": 1.2179057359899161
+    },
+    {
+      "name": "qualified-candidate-13-mega3-true-restart",
+      "status": "PASS",
+      "shutdown_seconds": 1.2193942379963119
+    },
+    {
+      "name": "qualified-candidate-14-f120a-true-restart",
+      "status": "PASS",
+      "shutdown_seconds": 1.2184822970011737
+    },
+    {
+      "name": "qualified-candidate-15-s40a_lb-true-restart",
+      "status": "PASS",
+      "shutdown_seconds": 1.2182934809970902
+    },
+    {
+      "name": "qualified-candidate-2-mega3-false-ready",
+      "status": "PASS",
+      "shutdown_seconds": 1.1184667259949492
+    },
+    {
+      "name": "qualified-candidate-3-f120a-true-ready",
+      "status": "PASS",
+      "shutdown_seconds": 1.218457185997977
+    },
+    {
+      "name": "qualified-candidate-4-f120a-false-ready",
+      "status": "PASS",
+      "shutdown_seconds": 1.1185502909938805
+    },
+    {
+      "name": "qualified-candidate-5-s40a_lb-true-ready",
+      "status": "PASS",
+      "shutdown_seconds": 1.3689986920071533
+    },
+    {
+      "name": "qualified-candidate-6-s40a_lb-false-ready",
+      "status": "PASS",
+      "shutdown_seconds": 1.1205498880008236
+    },
+    {
+      "name": "qualified-candidate-7-mega3-true-early-sigint",
+      "status": "PASS",
+      "shutdown_seconds": 1.2689361800003098
+    },
+    {
+      "name": "qualified-candidate-8-mega3-false-early-sigint",
+      "status": "PASS",
+      "shutdown_seconds": 1.2684409939975012
+    },
+    {
+      "name": "qualified-candidate-9-f120a-true-early-sigint",
+      "status": "PASS",
+      "shutdown_seconds": 1.268655054998817
+    }
+  ],
+  "command_publishers_created": false
+}

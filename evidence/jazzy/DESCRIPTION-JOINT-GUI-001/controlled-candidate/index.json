@@ -1,0 +1,88 @@
+{
+  "files": [
+    {
+      "path": "joint-candidate-mega3-ready/desktop.png",
+      "sha256": "386c39ec35ad0513b372e5edbf5566e415dc9e3866a1e5ff1e0f529bf8396729"
+    },
+    {
+      "path": "joint-candidate-mega3-ready/observations.json",
+      "sha256": "f6f06cb2fa37636a49d8b8e66c67fae08006286c459f852e02b0739cc070d69c"
+    },
+    {
+      "path": "joint-candidate-mega3-ready/processes-before-stop.json",
+      "sha256": "ac57501c11d077595d9afd99259dbfc80d77f2df6e6e171875c153aa70a0ae15"
+    },
+    {
+      "path": "joint-candidate-mega3-ready/result.json",
+      "sha256": "5853452d17bede5e53089abd7e80ad9ee3c37f0f96e24228d4c66578acc7c82f"
+    },
+    {
+      "path": "joint-candidate-mega3-ready/robot_description.urdf",
+      "sha256": "131b30a0308c0f981a8c52be9c0cf7518b539350ba14b9061bb8ae362021e787"
+    },
+    {
+      "path": "joint-candidate-mega3-ready/ros/2026-10-14-03-05-28-418271-MSI-125456/launch.log",
+      "sha256": "5576e624d2e86476801d3a3e378cedd3e29569ae366dc70997d4ed22455bac59"
+    },
+    {
+      "path": "joint-candidate-mega3-ready/ros/python3_125461_1791914729615.log",
+      "sha256": "8ba040f9e74241bda198808a87b7410f0e26e57dfcb43b522f07533c0ff16838"
+    },
+    {
+      "path": "joint-candidate-mega3-ready/ros/robot_state_publisher_125460_1791914728828.log",
+      "sha256": "e3d58cd584e97754ba149b8a06e760e3a304454f9062d2cf5622846711951add"
+    },
+    {
+      "path": "joint-candidate-mega3-ready/ros/rviz2_125462_1791914728975.log",
+      "sha256": "ed82a5e9e132217c674a104d1dbe18b67893044f8717cf62f52097b5db4ad085"
+    },
+    {
+      "path": "joint-candidate-mega3-ready/runtime.log",
+      "sha256": "ee829c062f75846150474b95ba75c27478e4a5f2bb82ff7cbc48ecb1a1b1a847"
+    },
+    {
+      "path": "joint-candidate-mega3-early-sigint/processes-before-stop.json",
+      "sha256": "352c0376febdf39a3ab71076a65d93b258fe07076cc70f0142b7e63c508ec460"
+    },
+    {
+      "path": "joint-candidate-mega3-early-sigint/result.json",
+      "sha256": "f2861e385556f73ca60c095c6736238bee7c8e856e8275982c1326dd597caaed"
+    },
+    {
+      "path": "joint-candidate-mega3-early-sigint/ros/2026-10-14-03-09-16-219394-MSI-125616/launch.log",
+      "sha256": "efa64c78491c33fc72e489423352f857eefeb51108827e3bc846ab059a491f9f"
+    },
+    {
+      "path": "joint-candidate-mega3-early-sigint/ros/robot_state_publisher_125620_1791914956699.log",
+      "sha256": "c8d2cb175c20047912e37ff2477c8589f0caf658ed3aab385739806c2f21c313"
+    },
+    {
+      "path": "joint-candidate-mega3-early-sigint/ros/rviz2_125622_1791914956818.log",
+      "sha256": "cdc9bdc1b06e1d58bb6028957d63547a480fecc4188c253e53e0ebe4181787f3"
+    },
+    {
+      "path": "joint-candidate-mega3-early-sigint/runtime.log",
+      "sha256": "a0ac6f5f7c2a2b11b14f179a4ddcefe71beed37abec9a15a0c499691cfbec117"
+    },
+    {
+      "path": "joint-build.json",
+      "sha256": "db538f54c7488907650920ef368171d6d3759d69e157d4f1a9308c2e152dadd1"
+    },
+    {
+      "path": "joint-build.log",
+      "sha256": "9adcd7dce0c7b28d0298a25731b215163fa6ead0a3924c5eafd6a9f46f536cbb"
+    },
+    {
+      "path": "joint-component-summary.json",
+      "sha256": "c9d987fc1c32beb70f64873ba3336bc2e888d386a94272b139dc20a5ba0e0ee3"
+    },
+    {
+      "path": "joint-candidate-ready-fixture.log",
+      "sha256": "f3a24306b086a3da1aa7331c1de372f49fde6ef006b108002687cb81d40c87f8"
+    },
+    {
+      "path": "joint-candidate-early-sigint-fixture.log",
+      "sha256": "840ae4deac61e2e1cebb051da55d7e23f8aa82042bddf948bb25dbe68ac64ee5"
+    }
+  ]
+}

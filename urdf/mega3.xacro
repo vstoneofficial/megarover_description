@@ -9,7 +9,7 @@
   </xacro:if>
   
   <!-- OPTION LRF TG30 -->
-  <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/lrf/tg30_mega3.xacro" />-->
+  <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/lrf/tg30_mega3.xacro" /> -->
   
   <!-- OPTION  bumper sensor -->
   <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/bumper/bumper_mega3.xacro" />

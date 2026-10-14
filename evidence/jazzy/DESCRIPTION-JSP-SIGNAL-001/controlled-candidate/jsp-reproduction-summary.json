@@ -1,0 +1,21 @@
+[
+  {
+    "name": "jsp-candidate-01-mega3-false-ready",
+    "status": "PASS",
+    "exit_code": 0,
+    "shutdown_seconds": 1.3750772740022512,
+    "error_lines": [],
+    "functional_exception": null
+  },
+  {
+    "name": "jsp-candidate-02-mega3-false-early-sigint",
+    "status": "FAIL",
+    "exit_code": 0,
+    "shutdown_seconds": 1.0211875199966016,
+    "error_lines": [
+      "[setsid-2] Traceback (most recent call last):",
+      "[ERROR] [setsid-2]: process has died [pid 127971, exit code -2, cmd 'setsid /opt/ros/jazzy/lib/joint_state_publisher/joint_state_publisher --ros-args']."
+    ],
+    "functional_exception": null
+  }
+]

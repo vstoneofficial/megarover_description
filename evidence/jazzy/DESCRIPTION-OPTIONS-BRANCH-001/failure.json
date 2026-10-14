@@ -1,0 +1,11 @@
+{
+  "target": "README installation branch lookup",
+  "repository": "https://github.com/vstoneofficial/vs_rover_options_description.git",
+  "command": "git ls-remote --exit-code --heads URL refs/heads/jazzy",
+  "exit_code": 2,
+  "result": "no jazzy branch",
+  "available_heads": "932a710473d1e68b86d78ab919a8442f457ee79f\trefs/heads/master",
+  "source_commit": "1455fe092d7439b588e7dcdd53bed3d88d3e06bd",
+  "start_utc": "2026-10-13T19:06:38.5651111Z",
+  "current_readme_command": "git clone -b $ROS_DISTRO https://github.com/vstoneofficial/vs_rover_options_description.git"
+}

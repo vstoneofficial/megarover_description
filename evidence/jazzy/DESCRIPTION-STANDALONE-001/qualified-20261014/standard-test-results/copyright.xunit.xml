@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="megarover_description.copyright"
+  tests="9"
+  errors="0"
+  failures="0"
+  time="0.253"
+>
+  <testcase
+    name="CONTRIBUTING.md"
+    classname="megarover_description.copyright"/>
+  <testcase
+    name="LICENSE"
+    classname="megarover_description.copyright"/>
+  <testcase
+    name="launch/display.launch.py"
+    classname="megarover_description.copyright"/>
+  <testcase
+    name="params/rover_twist_relay.py"
+    classname="megarover_description.copyright"/>
+  <testcase
+    name="scripts/gui_session.py"
+    classname="megarover_description.copyright"/>
+  <testcase
+    name="scripts/joint_state_gui.py"
+    classname="megarover_description.copyright"/>
+  <testcase
+    name="scripts/joint_state_node.py"
+    classname="megarover_description.copyright"/>
+  <testcase
+    name="src/rviz_no_prompt.cpp"
+    classname="megarover_description.copyright"/>
+  <testcase
+    name="tools/verify_description_jazzy.py"
+    classname="megarover_description.copyright"/>
+  <system-out>Checked files:
+* CONTRIBUTING.md
+* LICENSE
+* launch/display.launch.py
+* params/rover_twist_relay.py
+* scripts/gui_session.py
+* scripts/joint_state_gui.py
+* scripts/joint_state_node.py
+* src/rviz_no_prompt.cpp
+* tools/verify_description_jazzy.py</system-out>
+</testsuite>

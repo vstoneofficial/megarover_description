@@ -1,0 +1,1786 @@
+{
+  "rover": "mega3",
+  "gui": "true",
+  "links": [
+    "base_footprint",
+    "base_link",
+    "left_wheel_1",
+    "right_wheel_1"
+  ],
+  "joint_samples": [
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917263,
+        115723984
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917263,
+        215767418
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917263,
+        316495351
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917263,
+        417244198
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917263,
+        515652035
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917263,
+        615619786
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917263,
+        715959313
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917263,
+        815553715
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917263,
+        915632162
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917264,
+        15590168
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917264,
+        115701680
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917264,
+        217664512
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917264,
+        315665230
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917264,
+        415510675
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917264,
+        515497684
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917264,
+        615504305
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917264,
+        715530267
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917264,
+        815733051
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917264,
+        915800725
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917265,
+        15545623
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917265,
+        115510299
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917265,
+        215449672
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917265,
+        315735723
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917265,
+        415522892
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917265,
+        515490834
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917265,
+        618111293
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917265,
+        715911577
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917265,
+        815533958
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917265,
+        915557308
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917266,
+        15987424
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917266,
+        115681662
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917266,
+        215666145
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917266,
+        315506503
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917266,
+        415653641
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917266,
+        515562913
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917266,
+        615525006
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917266,
+        715501023
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917266,
+        815496558
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917266,
+        915451818
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917267,
+        15432942
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917267,
+        115478734
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917267,
+        215497780
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917267,
+        315502631
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917267,
+        415581634
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917267,
+        515491879
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917267,
+        615759096
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917267,
+        715562064
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917267,
+        815689798
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917267,
+        915552969
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917268,
+        15911267
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917268,
+        116088704
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917268,
+        215589629
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917268,
+        315521947
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917268,
+        415659201
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917268,
+        516463624
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917268,
+        615528231
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917268,
+        715877161
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917268,
+        815593068
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917268,
+        915557477
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917269,
+        15833253
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917269,
+        115489082
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917269,
+        215756532
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917269,
+        315610626
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917269,
+        415519255
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917269,
+        515455397
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917269,
+        615490032
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917269,
+        715463091
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917269,
+        815684172
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917269,
+        915501407
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917270,
+        15519762
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917270,
+        115772897
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917270,
+        215753434
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917270,
+        315575015
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917270,
+        416354246
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917270,
+        515441603
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917270,
+        615417007
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917270,
+        715393955
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917270,
+        815473769
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917270,
+        915479628
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917271,
+        15491792
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917271,
+        115588674
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917271,
+        215623968
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917271,
+        315437809
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917271,
+        415535803
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917271,
+        515424679
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917271,
+        615666408
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917271,
+        715934762
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917271,
+        815454308
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917271,
+        915472314
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917272,
+        15455031
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917272,
+        115483915
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917272,
+        215420480
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917272,
+        315412499
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917272,
+        415408162
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917272,
+        515462915
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917272,
+        615482955
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917272,
+        715487435
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917272,
+        815419210
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917272,
+        915502619
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917273,
+        15524480
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917273,
+        115497533
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917273,
+        215716569
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917273,
+        315567234
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917273,
+        416913928
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917273,
+        515541238
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917273,
+        615493360
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917273,
+        715584885
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917273,
+        815711755
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917273,
+        915958579
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917274,
+        15531699
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917274,
+        115939155
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917274,
+        217008340
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917274,
+        315638272
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917274,
+        415805954
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917274,
+        515908924
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917274,
+        615775564
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917274,
+        716000495
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917274,
+        819070329
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917274,
+        916834408
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917275,
+        15992859
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917275,
+        115520900
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917275,
+        215910407
+      ]
+    },
+    {
+      "names": [
+        "left_wheel_joint",
+        "right_wheel_joint"
+      ],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "stamp": [
+        1791917275,
+        315601412
+      ]
+    }
+  ],
+  "tf": {
+    "left_wheel_1": {
+      "parent": "base_link",
+      "xyz": [
+        0.1,
+        0.136,
+        0.07
+      ],
+      "xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "right_wheel_1": {
+      "parent": "base_link",
+      "xyz": [
+        0.1,
+        -0.136,
+        0.07
+      ],
+      "xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "tf_static": {
+    "base_link": {
+      "parent": "base_footprint",
+      "xyz": [
+        -0.1,
+        0.0,
+        0.0
+      ],
+      "xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "mesh_hashes": {
+    "package://megarover_description/meshes/mega3/base_link.stl": "7c7096579140f4418a18288ccf478ebdf23e75e06f5f417f7d63bb019f5a4679",
+    "package://megarover_description/meshes/mega3/left_wheel_1.stl": "c5d180764bb7fdd07153a6b6948e6a62427522c8035fbc8c26154bac61816e72",
+    "package://megarover_description/meshes/mega3/right_wheel_1.stl": "81fd4b54db6ebe970ff7c6db848297cf533b14483e64bdf3574bfd251bf14457"
+  },
+  "description_sha256": "131b30a0308c0f981a8c52be9c0cf7518b539350ba14b9061bb8ae362021e787"
+}

@@ -1,0 +1,19 @@
+{
+  "source": "/root/description-jazzy-20261014/ws/src/megarover_description",
+  "commit": "bf5d7135f657177b352b0b10b9cb1df9f78be9db",
+  "command": [
+    "colcon",
+    "build",
+    "--symlink-install",
+    "--packages-select",
+    "megarover_description",
+    "--cmake-args",
+    "-DBUILD_TESTING=OFF"
+  ],
+  "cwd": "/root/description-jazzy-20261014/ws",
+  "start_epoch": 1791915688.8669379,
+  "phase": "finished",
+  "pid": 125972,
+  "exit_code": 0,
+  "end_epoch": 1791915719.8424828
+}

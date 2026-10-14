@@ -1,0 +1,46 @@
+1791917675.4044423 [INFO] [launch]: All log files can be found below /root/description-jazzy-20261014/evidence/jsp-candidate-02-mega3-false-early-sigint/ros/2026-10-14-03-54-35-401742-MSI-127965
+1791917675.4047596 [INFO] [launch]: Default logging verbosity is set to INFO
+1791917675.9439528 [INFO] [robot_state_publisher-1]: process started with pid [127970]
+1791917675.9443913 [INFO] [setsid-2]: process started with pid [127971]
+1791917675.9445682 [INFO] [setsid-3]: process started with pid [127972]
+1791917676.1305616 [robot_state_publisher-1] [INFO] [1791917676.129494234] [robot_state_publisher]: Robot initialized
+1791917676.7005048 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1791917676.7072358 [INFO] [setsid-3]: sending signal 'SIGINT' to process[setsid-3]
+1791917676.7117209 [INFO] [setsid-2]: sending signal 'SIGINT' to process[setsid-2]
+1791917676.7157624 [INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+1791917676.7181737 [robot_state_publisher-1] [INFO] [1791917676.700398796] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1791917676.7193542 [setsid-2] Traceback (most recent call last):
+1791917676.7197125 [setsid-2]   File "/opt/ros/jazzy/lib/joint_state_publisher/joint_state_publisher", line 33, in <module>
+1791917676.7200143 [setsid-2]     sys.exit(load_entry_point('joint-state-publisher==2.4.3', 'console_scripts', 'joint_state_publisher')())
+1791917676.7202101 [setsid-2]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1791917676.7203581 [setsid-2]   File "/opt/ros/jazzy/lib/joint_state_publisher/joint_state_publisher", line 25, in importlib_load_entry_point
+1791917676.7204905 [setsid-2]     return next(matches).load()
+1791917676.7206140 [setsid-2]            ^^^^^^^^^^^^^^^^^^^^
+1791917676.7207365 [setsid-2]   File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 205, in load
+1791917676.7216225 [robot_state_publisher-1] [INFO] [1791917676.716558678] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1791917676.7224851 [setsid-2]     module = import_module(match.group('module'))
+1791917676.7227278 [setsid-2]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1791917676.7228570 [setsid-2]   File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+1791917676.7234130 [setsid-2]     return _bootstrap._gcd_import(name[level:], package, level)
+1791917676.7236514 [setsid-2]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1791917676.7238023 [setsid-2]   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+1791917676.7241004 [setsid-2]   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+1791917676.7244318 [setsid-2]   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+1791917676.7246230 [setsid-2]   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+1791917676.7247622 [setsid-2]   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+1791917676.7248881 [setsid-2]   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+1791917676.7250054 [setsid-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/joint_state_publisher/joint_state_publisher.py", line 44, in <module>
+1791917676.7251270 [setsid-2]     import std_msgs.msg
+1791917676.7252357 [setsid-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/std_msgs/msg/__init__.py", line 2, in <module>
+1791917676.7259901 [setsid-2]     from std_msgs.msg._byte import Byte  # noqa: F401
+1791917676.7262797 [setsid-2]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1791917676.7264383 [setsid-2]   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+1791917676.7265618 [setsid-2]   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+1791917676.7266705 [setsid-2]   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+1791917676.7267900 [setsid-2]   File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+1791917676.7269030 [setsid-2]   File "<frozen importlib._bootstrap_external>", line 1087, in get_code
+1791917676.7270582 [setsid-2]   File "<frozen importlib._bootstrap_external>", line 1186, in get_data
+1791917676.7271893 [setsid-2] KeyboardInterrupt
+1791917676.8811982 [ERROR] [setsid-2]: process has died [pid 127971, exit code -2, cmd 'setsid /opt/ros/jazzy/lib/joint_state_publisher/joint_state_publisher --ros-args'].
+1791917676.9196980 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 127970]
+1791917677.5596349 [INFO] [setsid-3]: process has finished cleanly [pid 127972]

@@ -9,7 +9,7 @@
   </xacro:if>
   
   <!-- OPTION LRF TG30 -->
-  <xacro:include filename="$(find vs_rover_options_description)/urdf/lrf/tg30_s40a_lb.xacro" />
+  <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/lrf/tg30_s40a_lb.xacro" /> -->
   
 
   <!-- sus.stl -->

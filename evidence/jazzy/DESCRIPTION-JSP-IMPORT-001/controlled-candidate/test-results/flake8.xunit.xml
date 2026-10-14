@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="megarover_description.flake8"
+  tests="42"
+  errors="0"
+  failures="42"
+  time="0.252"
+>
+  <testcase
+    name="I201 (./launch/display.launch.py:3:1)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="Missing newline between import groups. 'from rclpy.utilities import get_rmw_implementation_identifier' is identified as Third Party and 'from pathlib import Path' is identified as Stdlib.:&#10;from rclpy.utilities import get_rmw_implementation_identifier&#10;"/>
+  </testcase>
+  <testcase
+    name="I100 (./launch/display.launch.py:4:1)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="Import statements are in the wrong order. 'from ament_index_python.packages import get_package_prefix, get_package_share_directory' should be before 'from rclpy.utilities import get_rmw_implementation_identifier':&#10;from ament_index_python.packages import get_package_prefix, get_package_share_directory&#10;"/>
+  </testcase>
+  <testcase
+    name="I101 (./launch/display.launch.py:8:1)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="Imported names are in the wrong order. Should be Command, LaunchConfiguration, PythonExpression:&#10;from launch.substitutions import LaunchConfiguration, PythonExpression, Command&#10;"/>
+  </testcase>
+  <testcase
+    name="E221 (./launch/display.launch.py:31:8)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="multiple spaces before operator:&#10;    gui   = LaunchConfiguration('gui',   default='true')&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/display.launch.py:90:32)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                               'lib/megarover_description/rviz_no_prompt'),&#10;"/>
+  </testcase>
+  <testcase
+    name="W391 (./launch/display.launch.py:117:1)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="blank line at end of file:&#10;&#10;"/>
+  </testcase>
+  <testcase
+    name="I100 (./params/rover_twist_relay.py:5:1)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from rclpy.node import Node':&#10;from geometry_msgs.msg import Twist&#10;"/>
+  </testcase>
+  <testcase
+    name="I100 (./params/rover_twist_relay.py:7:1)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="Import statements are in the wrong order. 'from rclpy.parameter import Parameter' should be before 'from std_msgs.msg import Float64MultiArray':&#10;from rclpy.parameter import Parameter&#10;"/>
+  </testcase>
+  <testcase
+    name="W391 (./params/rover_twist_relay.py:134:1)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="blank line at end of file:&#10;&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./scripts/gui_session.py:28:100)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="line too long (121 &gt; 99 characters):&#10;            if marker in (entry / 'environ').read_bytes().split(b'\0') and str((entry / 'exe').resolve()) in executables:&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./scripts/gui_session.py:55:9)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;        C.c_int, C.c_ulong, C.POINTER(C.c_ulong), C.POINTER(C.c_int), C.POINTER(C.c_ulong),&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./scripts/gui_session.py:77:17)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                C.byref(actual), C.byref(fmt), C.byref(count), C.byref(remaining), C.byref(data))&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./scripts/gui_session.py:79:100)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="line too long (129 &gt; 99 characters):&#10;                return list(C.cast(data, C.POINTER(C.c_ulong))[:count.value]) if status == 0 and fmt.value == 32 and data else []&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./scripts/gui_session.py:89:100)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="line too long (102 &gt; 99 characters):&#10;                    or atom('_NET_WM_WINDOW_TYPE_NORMAL') not in values(window, '_NET_WM_WINDOW_TYPE')&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./scripts/gui_session.py:126:36)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="missing whitespace after ':':&#10;    print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./scripts/gui_session.py:126:44)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;    print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./scripts/gui_session.py:126:58)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="missing whitespace after ':':&#10;    print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./scripts/gui_session.py:126:68)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;    print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./scripts/gui_session.py:126:75)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="missing whitespace after ':':&#10;    print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./scripts/gui_session.py:126:83)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;    print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./scripts/gui_session.py:126:89)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="missing whitespace after ':':&#10;    print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./scripts/gui_session.py:126:100)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="line too long (115 &gt; 99 characters):&#10;    print(json.dumps({'gui_session':session,'backend_pid':child.pid,'argv':command,'cwd':os.getcwd()}), flush=True)&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./scripts/gui_session.py:140:45)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="missing whitespace after ':':&#10;                print(json.dumps({'gui_exit':status}), flush=True)&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./scripts/gui_session.py:154:70)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="missing whitespace after ':':&#10;                    print(json.dumps({'backend_sigint_after_gui_exit':child.pid}), flush=True)&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./scripts/gui_session.py:160:65)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="missing whitespace after ':':&#10;                            print(json.dumps({'owned_rviz_close':pid,'windows':windows}), flush=True)&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./scripts/gui_session.py:160:69)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;                            print(json.dumps({'owned_rviz_close':pid,'windows':windows}), flush=True)&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./scripts/gui_session.py:160:79)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="missing whitespace after ':':&#10;                            print(json.dumps({'owned_rviz_close':pid,'windows':windows}), flush=True)&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./scripts/gui_session.py:160:100)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="line too long (101 &gt; 99 characters):&#10;                            print(json.dumps({'owned_rviz_close':pid,'windows':windows}), flush=True)&#10;"/>
+  </testcase>
+  <testcase
+    name="E302 (./scripts/joint_state_gui.py:18:1)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="expected 2 blank lines, found 1:&#10;def main():&#10;"/>
+  </testcase>
+  <testcase
+    name="F401 (./tools/verify_description_jazzy.py:4:1)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="'json' imported but unused:&#10;import json&#10;"/>
+  </testcase>
+  <testcase
+    name="I101 (./tools/verify_description_jazzy.py:14:1)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="Imported names are in the wrong order. Should be DurabilityPolicy, qos_profile_sensor_data, QoSProfile:&#10;from rclpy.qos import DurabilityPolicy, QoSProfile, qos_profile_sensor_data&#10;"/>
+  </testcase>
+  <testcase
+    name="I100 (./tools/verify_description_jazzy.py:16:1)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from rclpy.signals import SignalHandlerOptions':&#10;from ament_index_python.packages import get_package_share_directory&#10;"/>
+  </testcase>
+  <testcase
+    name="F841 (./tools/verify_description_jazzy.py:82:5)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="local variable 'subscriptions' is assigned to but never used:&#10;    subscriptions = [&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./tools/verify_description_jazzy.py:85:13)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;            lambda m: messages['joints'].append({'names': list(m.name),&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./tools/verify_description_jazzy.py:86:17)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                'position': list(m.position), 'stamp': [m.header.stamp.sec, m.header.stamp.nanosec]}),&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./tools/verify_description_jazzy.py:86:100)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="line too long (102 &gt; 99 characters):&#10;                'position': list(m.position), 'stamp': [m.header.stamp.sec, m.header.stamp.nanosec]}),&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./tools/verify_description_jazzy.py:88:100)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="line too long (102 &gt; 99 characters):&#10;        node.create_subscription(TFMessage, '/tf', lambda m: tf_cb(m, 'tf'), qos_profile_sensor_data),&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./tools/verify_description_jazzy.py:89:100)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="line too long (102 &gt; 99 characters):&#10;        node.create_subscription(TFMessage, '/tf_static', lambda m: tf_cb(m, 'tf_static'), transient),&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./tools/verify_description_jazzy.py:123:100)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="line too long (115 &gt; 99 characters):&#10;                    'missing_tf': sorted((expected or set()) - set(messages['tf']) - set(messages['tf_static']))}))&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./tools/verify_description_jazzy.py:138:17)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                'links': models, 'joint_samples': messages['joints'], 'tf': messages['tf'],&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./tools/verify_description_jazzy.py:139:17)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                'tf_static': messages['tf_static'], 'mesh_hashes': resources,&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./tools/verify_description_jazzy.py:140:100)"
+    classname="megarover_description.flake8"
+  >
+      <failure message="line too long (100 &gt; 99 characters):&#10;                'description_sha256': hashlib.sha256(messages['description'].encode()).hexdigest()})&#10;"/>
+  </testcase>
+  <system-out>Checked files:
+* ./launch/display.launch.py
+* ./params/rover_twist_relay.py
+* ./scripts/joint_state_node.py
+* ./scripts/joint_state_gui.py
+* ./scripts/gui_session.py
+* ./tools/verify_description_jazzy.py</system-out>
+</testsuite>

@@ -1,0 +1,47 @@
+[INFO] [launch]: All log files can be found below /root/description-jazzy-20261014/evidence/dds-bind-diagnostic/signal-diagnostic-1/ros/2026-10-14-05-33-05-238331-MSI-134738
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [134742]
+[INFO] [setsid-2]: process started with pid [134743]
+[INFO] [setsid-3]: process started with pid [134744]
+[robot_state_publisher-1] BIND_SIGNAL_DIAGNOSTIC pid=134742 port=32410 result=-1 errno=98 masked=0
+[robot_state_publisher-1] [INFO] [1791923585.435674341] [robot_state_publisher]: Robot initialized
+[setsid-3] {"gui_session": "e3912629-ce6a-4aa2-81e0-eb94cc1c0d41", "backend_pid": 134763, "argv": ["/root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/rviz_no_prompt", "-d", "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/share/megarover_description/rviz/f120a.rviz", "--ros-args", "-r", "__node:=rviz2"], "cwd": "/root/description-jazzy-20261014/default-test-ws"}
+[setsid-3] BIND_SIGNAL_DIAGNOSTIC pid=134763 port=32410 result=-1 errno=98 masked=0
+[setsid-3] BIND_SIGNAL_DIAGNOSTIC pid=134763 port=32412 result=-1 errno=98 masked=0
+[setsid-2] BIND_SIGNAL_DIAGNOSTIC pid=134743 port=32410 result=-1 errno=98 masked=0
+[setsid-2] BIND_SIGNAL_DIAGNOSTIC pid=134743 port=32412 result=-1 errno=98 masked=0
+[setsid-2] BIND_SIGNAL_DIAGNOSTIC pid=134743 port=32414 result=-1 errno=4 masked=0
+[setsid-2] 1791923585.592019 [100]    python3: ddsi_udp_create_conn: failed to bind to ANY:32414: Error
+[setsid-2] [ERROR] [1791923585.592173240] [rmw_cyclonedds_cpp]: rmw_create_node: failed to create domain, error Error
+[setsid-2] /opt/ros/jazzy/lib/python3.12/site-packages/rclpy/node.py:188: RuntimeWarning: Failed to fini rosout publisher: rcl node implementation is invalid, at ./src/rcl/node.c:390
+[setsid-2]   self.__node = _rclpy.Node(
+[setsid-2] Traceback (most recent call last):
+[setsid-2]   File "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/joint_state_node.py", line 55, in <module>
+[setsid-2]     raise SystemExit(main())
+[setsid-2]                      ^^^^^^
+[setsid-2]   File "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/joint_state_node.py", line 44, in main
+[setsid-2]     publisher = JointStatePublisher(args.description_file)
+[setsid-2]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[setsid-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/joint_state_publisher/joint_state_publisher.py", line 351, in __init__
+[setsid-2]     super().__init__('joint_state_publisher',
+[setsid-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/node.py", line 188, in __init__
+[setsid-2]     self.__node = _rclpy.Node(
+[setsid-2]                   ^^^^^^^^^^^^
+[setsid-2] rclpy._rclpy_pybind11.RCLError: error creating node: error not set, at ./src/rcl/node.c:252
+[setsid-3] [INFO] [1791923585.660673461] [rviz2]: Stereo is NOT SUPPORTED
+[setsid-3] [INFO] [1791923585.660867365] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [setsid-3]: sending signal 'SIGINT' to process[setsid-3]
+[INFO] [setsid-2]: sending signal 'SIGINT' to process[setsid-2]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1791923585.670296667] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-1] [INFO] [1791923585.672976504] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ERROR] [setsid-2]: process has died [pid 134743, exit code -2, cmd 'setsid /root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/joint_state_node.py --ros-args'].
+[setsid-3] [INFO] [1791923585.689744913] [rviz2]: Stereo is NOT SUPPORTED
+[setsid-3] {"owned_rviz_close": 134763, "windows": ["0x1e00006"]}
+[setsid-3] {"owned_rviz_close": 134763, "windows": ["0x1e00106"]}
+[setsid-3] [INFO] [1791923585.814575941] [rviz2]: Completed rendering before frame close; GLX drawable=39845892
+[setsid-3] [INFO] [1791923585.814678394] [rviz2]: Display layout close confirmation disabled; unsaved layout=false
+[setsid-3] {"backend_sigint_after_gui_exit": 134763}
+[INFO] [setsid-3]: process has finished cleanly [pid 134744]
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 134742]

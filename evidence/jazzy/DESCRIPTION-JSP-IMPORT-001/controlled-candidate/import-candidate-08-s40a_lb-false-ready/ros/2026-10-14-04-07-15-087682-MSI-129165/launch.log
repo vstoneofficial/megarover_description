@@ -1,0 +1,17 @@
+1791918435.0893848 [INFO] [launch]: All log files can be found below /root/description-jazzy-20261014/evidence/import-candidate-08-s40a_lb-false-ready/ros/2026-10-14-04-07-15-087682-MSI-129165
+1791918435.0896471 [INFO] [launch]: Default logging verbosity is set to INFO
+1791918435.3796296 [INFO] [robot_state_publisher-1]: process started with pid [129169]
+1791918435.3798344 [INFO] [setsid-2]: process started with pid [129170]
+1791918435.3799281 [INFO] [setsid-3]: process started with pid [129171]
+1791918435.4824815 [robot_state_publisher-1] [INFO] [1791918435.481910005] [robot_state_publisher]: Robot initialized
+1791918435.9326563 [setsid-2] [INFO] [1791918435.931970892] [joint_state_publisher]: Waiting for robot_description to be published on the robot_description topic...
+1791918435.9453723 [setsid-2] [INFO] [1791918435.944801411] [joint_state_publisher]: Got description, configuring robot
+1791918448.6352558 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1791918448.6376019 [INFO] [setsid-3]: sending signal 'SIGINT' to process[setsid-3]
+1791918448.6383910 [INFO] [setsid-2]: sending signal 'SIGINT' to process[setsid-2]
+1791918448.6388969 [INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+1791918448.6391788 [robot_state_publisher-1] [INFO] [1791918448.635125172] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1791918448.6396449 [robot_state_publisher-1] [INFO] [1791918448.639202046] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1791918448.7823033 [INFO] [setsid-3]: process has finished cleanly [pid 129171]
+1791918449.6709912 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 129169]
+1791918449.7154825 [INFO] [setsid-2]: process has finished cleanly [pid 129170]

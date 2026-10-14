@@ -1,0 +1,88 @@
+{
+  "files": [
+    {
+      "path": "jsp-build.log",
+      "sha256": "3b9b751f95fef40dd5ae0340081cd3b2dfa6504dffb733d294f62cd9aa5f77b6"
+    },
+    {
+      "path": "jsp-candidate-01-mega3-false-ready/desktop.png",
+      "sha256": "0dcdeeac8d081ab621b8266bcfbd247b185a62891cb28bede8ca2cfdc1dee6b9"
+    },
+    {
+      "path": "jsp-candidate-01-mega3-false-ready/observations.json",
+      "sha256": "5ce5154fb2703a8a8524a25f12dcda4c1fdc5d09406bd710b98575eee20ef683"
+    },
+    {
+      "path": "jsp-candidate-01-mega3-false-ready/processes-before-stop.json",
+      "sha256": "f97d84c14403293b36f1a89a13b662046b881f7fa5688a0614115e38311d2c80"
+    },
+    {
+      "path": "jsp-candidate-01-mega3-false-ready/result.json",
+      "sha256": "6c6649554725f8b3880bedc218cebd7a89bae1a741b1fe69f21a0867ec3b5a74"
+    },
+    {
+      "path": "jsp-candidate-01-mega3-false-ready/robot_description.urdf",
+      "sha256": "131b30a0308c0f981a8c52be9c0cf7518b539350ba14b9061bb8ae362021e787"
+    },
+    {
+      "path": "jsp-candidate-01-mega3-false-ready/ros/2026-10-14-03-54-14-106532-MSI-127848/launch.log",
+      "sha256": "7e289a05a8e679d8cab512cecdb99399b619be9aba8345b3c049be92e9be779e"
+    },
+    {
+      "path": "jsp-candidate-01-mega3-false-ready/ros/python3_127853_1791917655885.log",
+      "sha256": "1d50190ec8e55e3921e83c9330ac021d867a29767d6f324b2fddd8495436e5e1"
+    },
+    {
+      "path": "jsp-candidate-01-mega3-false-ready/ros/robot_state_publisher_127852_1791917654784.log",
+      "sha256": "6c3e78a3b61af731612dfaf71b8c6b26fe6e6f1bc6ab3e6ca93c0d063b9c5afb"
+    },
+    {
+      "path": "jsp-candidate-01-mega3-false-ready/ros/rviz_no_prompt_127872_1791917655445.log",
+      "sha256": "f858f77f58e21968f983dc8f1edc0e96a7064fe1affb7b82b70e72d2477b3a08"
+    },
+    {
+      "path": "jsp-candidate-01-mega3-false-ready/runtime.log",
+      "sha256": "f66a6f74702fb63b985dbde318bcb2762148d4e3e19df5dac6915d65a6dfa5ea"
+    },
+    {
+      "path": "jsp-candidate-02-mega3-false-early-sigint/processes-before-stop.json",
+      "sha256": "ab5d0c22dd519a5b48f3774a46edcf1e9eae30c51455727eff8987036f39eb33"
+    },
+    {
+      "path": "jsp-candidate-02-mega3-false-early-sigint/result.json",
+      "sha256": "600423561b3f562b3456e28bec3246c3e8ff6c16a9091360989bd0d68f14392a"
+    },
+    {
+      "path": "jsp-candidate-02-mega3-false-early-sigint/ros/2026-10-14-03-54-35-401742-MSI-127965/launch.log",
+      "sha256": "e84654a9099383c1c4b0bf1b95d18240a076299ce9a9fbb342b4765feadeed9b"
+    },
+    {
+      "path": "jsp-candidate-02-mega3-false-early-sigint/ros/robot_state_publisher_127970_1791917676005.log",
+      "sha256": "6627065a98bb8e23bb7a9bd379fdf2983dc25164f39e00c49819f8e30b10c5d9"
+    },
+    {
+      "path": "jsp-candidate-02-mega3-false-early-sigint/ros/rviz_no_prompt_127990_1791917676426.log",
+      "sha256": "e837946dc08e0467fa1f72fd74a22902bdcc83d1c0ffb227cc804c76c9be2559"
+    },
+    {
+      "path": "jsp-candidate-02-mega3-false-early-sigint/runtime.log",
+      "sha256": "98e5578629eb438f541a2b37ce2d16096272f58d82025c515d005db90283205e"
+    },
+    {
+      "path": "jsp-fixture-01.log",
+      "sha256": "7e4007035e8c5a62a9baaec054b6ecf294de9224c8590d79df5f52aa2d1dd3b3"
+    },
+    {
+      "path": "jsp-fixture-02.log",
+      "sha256": "e877659777e55375702d6f0c2d360d462afc20554844ccaf820d2b331977a33b"
+    },
+    {
+      "path": "jsp-matrix-manifest.json",
+      "sha256": "82e07a976cccd265f50abd198650f8d118704f72e4247c1f2dc8c17fee029882"
+    },
+    {
+      "path": "jsp-reproduction-summary.json",
+      "sha256": "0af37fc94de41416ff761be1b1a593c18d97a6fc7e45ecee3890890bfbe3d8dd"
+    }
+  ]
+}

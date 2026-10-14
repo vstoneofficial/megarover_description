@@ -1,0 +1,20 @@
+{
+  "production_diff_from_qualified_base": "empty",
+  "remote_branches": [
+    "3e659155b0f325a90c49c3606e32b75c75cbbee8\trefs/heads/jazzy"
+  ],
+  "checked_at": "2026-10-14T09:22:08.9960293+09:00",
+  "default_branch": "jazzy",
+  "local_branches": [
+    "jazzy"
+  ],
+  "archive_tags": [
+    "archive/consolidation-20261014/original-main",
+    "archive/consolidation-20261014/description-default",
+    "archive/consolidation-20261014/standalone-display",
+    "archive/consolidation-20261014/tg30-option"
+  ],
+  "checked_source_commit": "3e659155b0f325a90c49c3606e32b75c75cbbee8",
+  "repository": "YOSHIDA-V/megarover_description-jazzy",
+  "qualified_base": "c024f0f0d38ba750ab95e384a1450cd4a5888597"
+}

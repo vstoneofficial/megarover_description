@@ -1,0 +1,28 @@
+{
+  "name": "f120a-tg30",
+  "enabled": [
+    "tg30"
+  ],
+  "command": [
+    "xacro",
+    "/root/description-jazzy-20261014/evidence/options-qualification/f120a-tg30/input.xacro",
+    "use_ros2_control:=false"
+  ],
+  "input_sha256": "4cece015ca887fcff916c95e2d4a60f22dddaadb46b4d8f2f01aa5575febc9b9",
+  "start_epoch": 1791917797.2992945,
+  "phase": "finished",
+  "pid": 128113,
+  "exit_code": 0,
+  "end_epoch": 1791917797.4665172,
+  "status": "PASS",
+  "links": 6,
+  "joints": 5,
+  "baseline_links_joints_unchanged": true,
+  "mesh_hashes": {
+    "package://vs_rover_options_description/meshes/lrf/tg30.stl": "b494821651b2d6242bba80cbf254ef07d28651feb5de35e50366164ab758c0e0",
+    "package://megarover_description/meshes/f120a/base_link.stl": "8294b31104e4f2c76e4fc657978d203c962d39211c298343be2a508b1792af34",
+    "package://megarover_description/meshes/f120a/right_wheel_1.stl": "e8abf02965bcf261d88a6858a083ceb7fe620ab5a1a916447e53e4ed7f517424",
+    "package://megarover_description/meshes/f120a/left_wheel_1.stl": "4878399ea525145cd41fbae9e75b88a3a7f33317984403f617aae60bb2c97db1"
+  },
+  "urdf_sha256": "6c1cf177cf895dfc0d76fed11ce2ee841ea66a670757475985230230e8305d43"
+}

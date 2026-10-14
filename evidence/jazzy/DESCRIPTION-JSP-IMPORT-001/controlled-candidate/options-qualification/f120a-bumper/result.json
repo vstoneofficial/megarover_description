@@ -1,0 +1,29 @@
+{
+  "name": "f120a-bumper",
+  "enabled": [
+    "bumper"
+  ],
+  "command": [
+    "xacro",
+    "/root/description-jazzy-20261014/evidence/options-qualification/f120a-bumper/input.xacro",
+    "use_ros2_control:=false"
+  ],
+  "input_sha256": "9e7043bbadde359a0bbcd2aa3fde0b941db36aad56b0a4e0acea419bb2acc7fd",
+  "start_epoch": 1791917796.885605,
+  "phase": "finished",
+  "pid": 128111,
+  "exit_code": 0,
+  "end_epoch": 1791917797.061285,
+  "status": "PASS",
+  "links": 14,
+  "joints": 13,
+  "baseline_links_joints_unchanged": true,
+  "mesh_hashes": {
+    "package://vs_rover_options_description/meshes/bumper/f120a_bumper_plate.stl": "77a31f63624659ae9ff9881bb2cfb1e4038ccfb36d6712f59f70cbc190613d2a",
+    "package://vs_rover_options_description/meshes/bumper/f120a_bumper_link.stl": "150cd26e32032c079aae9a31c98acd1d98cfe4406aee82ce1e725a033b63438e",
+    "package://megarover_description/meshes/f120a/base_link.stl": "8294b31104e4f2c76e4fc657978d203c962d39211c298343be2a508b1792af34",
+    "package://megarover_description/meshes/f120a/right_wheel_1.stl": "e8abf02965bcf261d88a6858a083ceb7fe620ab5a1a916447e53e4ed7f517424",
+    "package://megarover_description/meshes/f120a/left_wheel_1.stl": "4878399ea525145cd41fbae9e75b88a3a7f33317984403f617aae60bb2c97db1"
+  },
+  "urdf_sha256": "485abe9df3d826b8a8bb434e51ce6e56b7104dd54102d6ec8f345b0cabb43164"
+}

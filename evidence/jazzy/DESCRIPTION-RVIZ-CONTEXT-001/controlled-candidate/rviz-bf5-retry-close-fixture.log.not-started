@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/root/description-jazzy-20261014/ws/src/megarover_description/tools/verify_description_jazzy.py", line 158, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/root/description-jazzy-20261014/ws/src/megarover_description/tools/verify_description_jazzy.py", line 58, in main
+    info = {'description': identity(args.source), 'helper': identity(args.helper_root),
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/description-jazzy-20261014/ws/src/megarover_description/tools/verify_description_jazzy.py", line 27, in identity
+    assert not subprocess.check_output(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: /root/description-jazzy-20261014/ws/src/megarover_description

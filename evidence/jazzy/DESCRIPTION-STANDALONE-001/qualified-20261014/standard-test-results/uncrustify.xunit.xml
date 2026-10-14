@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="megarover_description.uncrustify"
+  tests="1"
+  failures="0"
+  errors="0"
+  time="0.009"
+>
+  <testcase
+    name="src/rviz_no_prompt.cpp"
+    classname="megarover_description.uncrustify"/>
+  <system-out>Checked files:
+* src/rviz_no_prompt.cpp</system-out>
+</testsuite>

@@ -1,0 +1,145 @@
+[
+  {
+    "pid": 136779,
+    "process_group": 136779,
+    "session": 136779,
+    "argv": [
+      "/usr/bin/python3",
+      "/opt/ros/jazzy/bin/ros2",
+      "launch",
+      "megarover_description",
+      "display.launch.py",
+      "rover:=mega3",
+      "gui:=false"
+    ],
+    "argument_file_hashes": {
+      "/usr/bin/python3": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+      "/opt/ros/jazzy/bin/ros2": "feb1de8738d0eec45a229e60206dcb0f0940ba7fd1032ea713e3bbe3f7713620"
+    },
+    "exe": "/usr/bin/python3.12",
+    "cwd": "/root/description-jazzy-20261014/default-test-ws",
+    "env": {
+      "DISPLAY": ":1",
+      "ROS_DOMAIN_ID": "100",
+      "ROS_AUTOMATIC_DISCOVERY_RANGE": "LOCALHOST",
+      "RMW_IMPLEMENTATION": "rmw_cyclonedds_cpp",
+      "GZ_PARTITION": null,
+      "ROS_LOG_DIR": "/root/description-jazzy-20261014/evidence/qualified-candidate-8-mega3-false-early-sigint/ros"
+    },
+    "marker": "/root/description-jazzy-20261014/evidence/qualified-candidate-8-mega3-false-early-sigint/ros",
+    "exe_sha256": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f"
+  },
+  {
+    "pid": 136783,
+    "process_group": 136779,
+    "session": 136779,
+    "argv": [
+      "/opt/ros/jazzy/lib/robot_state_publisher/robot_state_publisher",
+      "--ros-args",
+      "--params-file",
+      "/tmp/launch_params_r52cvizf"
+    ],
+    "argument_file_hashes": {
+      "/opt/ros/jazzy/lib/robot_state_publisher/robot_state_publisher": "3dddbe75ff00a8b926e19a058a65d8e5acc8986ec1cdbbc0c3bd6e037e9c7b85",
+      "/tmp/launch_params_r52cvizf": "e4c8f395d35f5423b59c5584152018a223d08b3bc00a114affba19e65126c732"
+    },
+    "exe": "/opt/ros/jazzy/lib/robot_state_publisher/robot_state_publisher",
+    "cwd": "/root/description-jazzy-20261014/default-test-ws",
+    "env": {
+      "DISPLAY": ":1",
+      "ROS_DOMAIN_ID": "100",
+      "ROS_AUTOMATIC_DISCOVERY_RANGE": "LOCALHOST",
+      "RMW_IMPLEMENTATION": "rmw_cyclonedds_cpp",
+      "GZ_PARTITION": null,
+      "ROS_LOG_DIR": "/root/description-jazzy-20261014/evidence/qualified-candidate-8-mega3-false-early-sigint/ros"
+    },
+    "marker": "/root/description-jazzy-20261014/evidence/qualified-candidate-8-mega3-false-early-sigint/ros",
+    "exe_sha256": "3dddbe75ff00a8b926e19a058a65d8e5acc8986ec1cdbbc0c3bd6e037e9c7b85"
+  },
+  {
+    "pid": 136784,
+    "process_group": 136784,
+    "session": 136784,
+    "argv": [
+      "python3",
+      "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/joint_state_node.py",
+      "--ros-args"
+    ],
+    "argument_file_hashes": {
+      "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/joint_state_node.py": "216db26652de614cc6eb67c6d59605556755ce84b421bb6258e1b2acb0d0a423"
+    },
+    "exe": "/usr/bin/python3.12",
+    "cwd": "/root/description-jazzy-20261014/default-test-ws",
+    "env": {
+      "DISPLAY": ":1",
+      "ROS_DOMAIN_ID": "100",
+      "ROS_AUTOMATIC_DISCOVERY_RANGE": "LOCALHOST",
+      "RMW_IMPLEMENTATION": "rmw_cyclonedds_cpp",
+      "GZ_PARTITION": null,
+      "ROS_LOG_DIR": "/root/description-jazzy-20261014/evidence/qualified-candidate-8-mega3-false-early-sigint/ros"
+    },
+    "marker": "/root/description-jazzy-20261014/evidence/qualified-candidate-8-mega3-false-early-sigint/ros",
+    "exe_sha256": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f"
+  },
+  {
+    "pid": 136785,
+    "process_group": 136785,
+    "session": 136785,
+    "argv": [
+      "python3",
+      "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/gui_session.py",
+      "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/rviz_no_prompt",
+      "-d",
+      "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/share/megarover_description/rviz/mega3.rviz",
+      "--ros-args",
+      "-r",
+      "__node:=rviz2"
+    ],
+    "argument_file_hashes": {
+      "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/gui_session.py": "0f22a12db7b0a68fc16f5974d88b1014721723f50cb8b11370470ef5494ec33d",
+      "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/rviz_no_prompt": "5e1eac7b3f567857cbfa7d0b1bf3a8cc6f4257078963faccc07307915cb2912c",
+      "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/share/megarover_description/rviz/mega3.rviz": "7d837690bf0a5bd648665a43ffd8e311cf82a2dba7785b6eebdba74eb254a646"
+    },
+    "exe": "/usr/bin/python3.12",
+    "cwd": "/root/description-jazzy-20261014/default-test-ws",
+    "env": {
+      "DISPLAY": ":1",
+      "ROS_DOMAIN_ID": "100",
+      "ROS_AUTOMATIC_DISCOVERY_RANGE": "LOCALHOST",
+      "RMW_IMPLEMENTATION": "rmw_cyclonedds_cpp",
+      "GZ_PARTITION": null,
+      "ROS_LOG_DIR": "/root/description-jazzy-20261014/evidence/qualified-candidate-8-mega3-false-early-sigint/ros"
+    },
+    "marker": "/root/description-jazzy-20261014/evidence/qualified-candidate-8-mega3-false-early-sigint/ros",
+    "exe_sha256": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f"
+  },
+  {
+    "pid": 136803,
+    "process_group": 136803,
+    "session": 136803,
+    "argv": [
+      "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/rviz_no_prompt",
+      "-d",
+      "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/share/megarover_description/rviz/mega3.rviz",
+      "--ros-args",
+      "-r",
+      "__node:=rviz2"
+    ],
+    "argument_file_hashes": {
+      "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/rviz_no_prompt": "5e1eac7b3f567857cbfa7d0b1bf3a8cc6f4257078963faccc07307915cb2912c",
+      "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/share/megarover_description/rviz/mega3.rviz": "7d837690bf0a5bd648665a43ffd8e311cf82a2dba7785b6eebdba74eb254a646"
+    },
+    "exe": "/root/description-jazzy-20261014/default-test-ws/build/megarover_description/rviz_no_prompt",
+    "cwd": "/root/description-jazzy-20261014/default-test-ws",
+    "env": {
+      "DISPLAY": ":1",
+      "ROS_DOMAIN_ID": "100",
+      "ROS_AUTOMATIC_DISCOVERY_RANGE": "LOCALHOST",
+      "RMW_IMPLEMENTATION": "rmw_cyclonedds_cpp",
+      "GZ_PARTITION": null,
+      "ROS_LOG_DIR": "/root/description-jazzy-20261014/evidence/qualified-candidate-8-mega3-false-early-sigint/ros"
+    },
+    "marker": "/root/description-jazzy-20261014/evidence/qualified-candidate-8-mega3-false-early-sigint/ros",
+    "exe_sha256": "5e1eac7b3f567857cbfa7d0b1bf3a8cc6f4257078963faccc07307915cb2912c"
+  }
+]

@@ -1,0 +1,36 @@
+1791923585.2391763 [INFO] [launch]: All log files can be found below /root/description-jazzy-20261014/evidence/dds-bind-diagnostic/signal-diagnostic-1/ros/2026-10-14-05-33-05-238331-MSI-134738
+1791923585.2392848 [INFO] [launch]: Default logging verbosity is set to INFO
+1791923585.3703115 [INFO] [robot_state_publisher-1]: process started with pid [134742]
+1791923585.3704422 [INFO] [setsid-2]: process started with pid [134743]
+1791923585.3704979 [INFO] [setsid-3]: process started with pid [134744]
+1791923585.3884687 [robot_state_publisher-1] BIND_SIGNAL_DIAGNOSTIC pid=134742 port=32410 result=-1 errno=98 masked=0
+1791923585.4360018 [robot_state_publisher-1] [INFO] [1791923585.435674341] [robot_state_publisher]: Robot initialized
+1791923585.5807209 [setsid-2] BIND_SIGNAL_DIAGNOSTIC pid=134743 port=32410 result=-1 errno=98 masked=0
+1791923585.5919945 [setsid-2] BIND_SIGNAL_DIAGNOSTIC pid=134743 port=32412 result=-1 errno=98 masked=0
+1791923585.5924442 [setsid-2] BIND_SIGNAL_DIAGNOSTIC pid=134743 port=32414 result=-1 errno=4 masked=0
+1791923585.5925198 [setsid-2] 1791923585.592019 [100]    python3: ddsi_udp_create_conn: failed to bind to ANY:32414: Error
+1791923585.5925558 [setsid-2] [ERROR] [1791923585.592173240] [rmw_cyclonedds_cpp]: rmw_create_node: failed to create domain, error Error
+1791923585.5932579 [setsid-2] /opt/ros/jazzy/lib/python3.12/site-packages/rclpy/node.py:188: RuntimeWarning: Failed to fini rosout publisher: rcl node implementation is invalid, at ./src/rcl/node.c:390
+1791923585.5933452 [setsid-2]   self.__node = _rclpy.Node(
+1791923585.6444197 [setsid-2] Traceback (most recent call last):
+1791923585.6445522 [setsid-2]   File "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/joint_state_node.py", line 55, in <module>
+1791923585.6448109 [setsid-2]     raise SystemExit(main())
+1791923585.6448765 [setsid-2]                      ^^^^^^
+1791923585.6449091 [setsid-2]   File "/root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/joint_state_node.py", line 44, in main
+1791923585.6450377 [setsid-2]     publisher = JointStatePublisher(args.description_file)
+1791923585.6450889 [setsid-2]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1791923585.6451199 [setsid-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/joint_state_publisher/joint_state_publisher.py", line 351, in __init__
+1791923585.6451478 [setsid-2]     super().__init__('joint_state_publisher',
+1791923585.6451747 [setsid-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/node.py", line 188, in __init__
+1791923585.6452014 [setsid-2]     self.__node = _rclpy.Node(
+1791923585.6452243 [setsid-2]                   ^^^^^^^^^^^^
+1791923585.6452520 [setsid-2] rclpy._rclpy_pybind11.RCLError: error creating node: error not set, at ./src/rcl/node.c:252
+1791923585.6703756 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1791923585.6719999 [INFO] [setsid-3]: sending signal 'SIGINT' to process[setsid-3]
+1791923585.6724494 [INFO] [setsid-2]: sending signal 'SIGINT' to process[setsid-2]
+1791923585.6728482 [INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+1791923585.6731257 [robot_state_publisher-1] [INFO] [1791923585.670296667] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1791923585.6733019 [robot_state_publisher-1] [INFO] [1791923585.672976504] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1791923585.6762149 [ERROR] [setsid-2]: process has died [pid 134743, exit code -2, cmd 'setsid /root/description-jazzy-20261014/default-test-ws/install/megarover_description/lib/megarover_description/joint_state_node.py --ros-args'].
+1791923585.9187644 [INFO] [setsid-3]: process has finished cleanly [pid 134744]
+1791923586.6948690 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 134742]

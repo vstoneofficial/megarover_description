@@ -1,0 +1,7 @@
+# DESCRIPTION-PACKAGE-SCHEMA-001
+
+cleanな1455fe0でBUILD_TESTING=ONのビルド後にcolcon testを実行し、xmllintがpackage.xmlのauthor位置を不正と判定した。保存したdefault-test-results.logとtest-results/xmllint.xunit.xmlが原証拠。
+
+原因はpackage format3 schemaの要素順とmanifestの順序が一致しないこと。maintainerより前にauthorがあり、schemaはmaintainerを要求している。修正はpackage.xmlのauthorをmaintainer・licenseの後へ移す順序だけ。値、依存、SDK、モデルは変更しない。
+
+同じJazzy xmllintを成功させる。他のlintや機能の成功をこの問題の合格へ代用しない。main・上流へ昇格しない。

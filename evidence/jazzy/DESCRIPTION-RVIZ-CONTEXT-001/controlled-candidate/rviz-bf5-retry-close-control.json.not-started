@@ -1,0 +1,22 @@
+{
+  "diagnostic_only": true,
+  "changed_condition": "repeat the same owned-window close 1 second after the supervisor first sends it",
+  "runtime_commit": "bf5d7135f657177b352b0b10b9cb1df9f78be9db",
+  "command": [
+    "python3",
+    "/root/description-jazzy-20261014/ws/src/megarover_description/tools/verify_description_jazzy.py",
+    "--source",
+    "/root/description-jazzy-20261014/ws/src/megarover_description",
+    "--helper-root",
+    "/root/visual-material-candidate-20261013/ws/src/megarover3_ros2",
+    "--output",
+    "/root/description-jazzy-20261014/evidence/rviz-bf5-retry-close-control",
+    "--rover",
+    "mega3",
+    "--gui",
+    "true",
+    "--mode",
+    "early-sigint"
+  ],
+  "start_epoch": 1791916337.363544
+}

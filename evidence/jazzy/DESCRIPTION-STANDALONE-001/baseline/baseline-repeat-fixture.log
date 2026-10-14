@@ -1,0 +1,1 @@
+{"name": "baseline-mega3-ready-repeat", "status": "FAIL", "exit_code": 0, "shutdown_seconds": 2.832364248999511, "escalation": [], "error_lines": ["[ERROR] [joint_state_publisher_gui-2]: process has died [pid 124976, exit code -2, cmd '/opt/ros/jazzy/lib/joint_state_publisher_gui/joint_state_publisher_gui --ros-args']."]}

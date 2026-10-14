@@ -1,0 +1,29 @@
+{
+  "name": "s40a_lb-default",
+  "enabled": [],
+  "command": [
+    "xacro",
+    "/root/description-jazzy-20261014/evidence/options-qualification/s40a_lb-default/input.xacro",
+    "use_ros2_control:=false"
+  ],
+  "input_sha256": "8cd1b8897f8388bb6da1c65434f4899e0a7e58bce728a9aa5fb992ad9cd87c1f",
+  "start_epoch": 1791917798.1584353,
+  "phase": "finished",
+  "pid": 128117,
+  "exit_code": 0,
+  "end_epoch": 1791917798.3499448,
+  "status": "PASS",
+  "links": 21,
+  "joints": 20,
+  "baseline_links_joints_unchanged": true,
+  "mesh_hashes": {
+    "package://megarover_description/meshes/s40a_lb/base_link.stl": "00d2a2470f76f4cce2aeef25a19967e5786be601d0305ebc12344cf9f9ab9bb3",
+    "package://megarover_description/meshes/s40a_lb/sus.stl": "6a5d589b58415e8636f65ef7c5b6366d79a5147843e9c3b2015938243c6b47e4",
+    "package://megarover_description/meshes/s40a_lb/wheel.stl": "4a4d0fe5d338da2d6c13c9e920859f73fbdbdb5c3f1a7d936eb41120d271a7c0",
+    "package://megarover_description/meshes/s40a_lb/caster_sus.stl": "7070cfb6be9be145a4519b45fbf579ac4e2deb8d7585718f169f1e62b8e97b8f",
+    "package://megarover_description/meshes/s40a_lb/caster_frame.stl": "06ae3d6ee5a01dfed3af7cff5f3abc5f615ff217f0ed6e7b483476fea6cad0b0",
+    "package://megarover_description/meshes/s40a_lb/caster_wheel.stl": "1377fc8f5301c40a149cf6d951f637e0dc692f91260544198906bccab64f21e2",
+    "package://megarover_description/meshes/s40a_lb/lrf_mount.stl": "043e2b99f6cd7a4038a09d0597357c9f1bbf75345799a2a7453a1dacaca79505"
+  },
+  "urdf_sha256": "1ade502d07e16f25091b58300a00771898b1d8550353e90fc5b439862349f35c"
+}
