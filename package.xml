@@ -11,17 +11,11 @@
   <author email="jie@vstone.co.jp">Jie</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <depend>rclcpp</depend>
-  <depend>rviz_common</depend>
-  <depend>qtbase5-dev</depend>
-  <depend>opengl</depend>
   <exec_depend>ament_index_python</exec_depend>
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>
-  <exec_depend>libx11</exec_depend>
   <exec_depend>joint_state_publisher</exec_depend>
   <exec_depend>joint_state_publisher_gui</exec_depend>
-  <exec_depend>python_qt_binding</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
   <exec_depend>rviz2</exec_depend>
   <exec_depend>xacro</exec_depend>

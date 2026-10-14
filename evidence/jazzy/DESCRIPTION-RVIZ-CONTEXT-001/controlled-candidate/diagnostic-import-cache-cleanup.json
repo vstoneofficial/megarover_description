@@ -1,9 +1,0 @@
-{
-  "diagnostic_did_not_launch": true,
-  "generated_cache_removed": [
-    {
-      "path": "/root/description-jazzy-20261014/ws/src/megarover_description/scripts/__pycache__/gui_session.cpython-312.pyc",
-      "sha256": "a2d58e9f93fb97d7926fb2236a99b6e8aa97df62e9c965cc7e37f2a66ae0e617"
-    }
-  ]
-}

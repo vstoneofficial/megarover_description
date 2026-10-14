@@ -1,7 +1,0 @@
-# 非GUI配信ノードの重複SIGINT
-
-実行コード：`d7380512af47d8353961f1e559e6e47ef857be43`、clean。SDKのプログラムは変更せず、setsidの1行だけを追加した。
-
-同じready条件は1.375秒でPASS。配信と全TFを維持し、終了中のdestroy_nodeへの二重KeyboardInterruptは出なくなった。
-
-続くearly-sigintでは、SDK entrypointのモジュールimport中に最初のSIGINTでKeyboardInterruptが発生した。これは終了時の重複シグナルとは別の起動途中の問題であり、単独display全体を合格とは扱わない。原証拠はcontrolled-candidate/に保持した。

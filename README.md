@@ -27,8 +27,6 @@ git clone -b master https://github.com/vstoneofficial/vs_rover_options_descripti
   - RViz 設定ファイル
 - `params/`
   - ros2_control のコントローラ設定
-- `scripts/`
-  - 補助ノードや設定ファイル
 
 
 ## RViz上の可視化
