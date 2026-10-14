@@ -66,19 +66,22 @@ def generate_launch_description():
         package='robot_state_publisher',
         executable='robot_state_publisher',
         parameters=[{
-            'robot_description': robot_description
+            'robot_description': robot_description,
+            'publish_frequency': 200.0
         }]
     )
 
     joint_state_publisher = Node(
         package='joint_state_publisher',
         executable='joint_state_publisher',
+        parameters=[{'rate': 100}],
         condition=UnlessCondition(gui)
     )
 
     joint_state_publisher_gui = Node(
         package='joint_state_publisher_gui',
         executable='joint_state_publisher_gui',
+        parameters=[{'rate': 100}],
         condition=IfCondition(gui)
     )
 
