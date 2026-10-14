@@ -34,7 +34,6 @@ git clone -b master https://github.com/vstoneofficial/vs_rover_options_descripti
 ロボットモデルを表示します。`rover:=` で機種を切り替えます。
 
 ```bash
-export ROS_DOMAIN_ID=100
 ros2 launch megarover_description display.launch.py rover:=mega3
 ```
 
