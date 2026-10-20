@@ -56,9 +56,27 @@
       <material name="dark_grey"/>
     </visual>
     <collision>
+      <origin xyz="0 0 0.02885" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://megarover_description/meshes/s40a_lb/wheel.stl"
-              scale="0.001 0.001 0.001"/>
+        <cylinder radius="0.070000" length="0.001000"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0.02885" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.069811" length="0.014534"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0.02885" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.069244" length="0.029066"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0.02885" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.068300" length="0.043500"/>
       </geometry>
     </collision>
   </xacro:macro>
@@ -128,9 +146,9 @@
       <material name="dark_grey"/>
     </visual>
     <collision>
+      <origin xyz="0 0 0.01"/>
       <geometry>
-        <mesh filename="package://megarover_description/meshes/s40a_lb/caster_wheel.stl"
-              scale="0.001 0.001 0.001"/>
+        <cylinder radius="0.0325" length="0.02"/>
       </geometry>
     </collision>
   </xacro:macro>

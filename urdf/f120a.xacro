@@ -179,9 +179,21 @@
       <material name="dark_grey" />
     </visual>
     <collision>
-      <origin xyz="-0.108 0.197 -0.085" rpy="0 0 0" />
+      <origin xyz="0 -0.015 0" rpy="1.5708 0 0"/>
       <geometry>
-        <mesh filename="package://megarover_description/meshes/f120a/right_wheel_1.stl" scale="0.001 0.001 0.001" />
+        <cylinder radius="0.085" length="0.015"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="0.085" length="0.015"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0.015 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="0.085" length="0.015"/>
       </geometry>
     </collision>
   </link>
@@ -209,9 +221,21 @@
       <material name="dark_grey" />
     </visual>
     <collision>
-      <origin xyz="-0.108297 -0.202941 -0.087693" rpy="0 0 0" />
+      <origin xyz="0 -0.015 0" rpy="1.5708 0 0"/>
       <geometry>
-        <mesh filename="package://megarover_description/meshes/f120a/left_wheel_1.stl" scale="0.001 0.001 0.001" />
+        <cylinder radius="0.085" length="0.015"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="0.085" length="0.015"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0.015 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="0.085" length="0.015"/>
       </geometry>
     </collision>
   </link>
