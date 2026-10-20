@@ -260,8 +260,8 @@
       <parent link="${parent}"/>
       <child link="${child}"/>
       <axis xyz="0 0 -1"/>
-      <limit lower="-0.015" upper="0.006" effort="100" velocity="20.0"/>
-      <dynamics damping="280.0" friction="0.0"/>
+      <limit lower="0.0" upper="0.0135" effort="451.2" velocity="20.0"/>
+      <dynamics damping="1000.0" friction="0.0"/>
     </joint>
   </xacro:macro>
 
@@ -272,7 +272,7 @@
       <parent link="${parent}"/>
       <child link="${child}"/>
       <axis xyz="0 0 ${axis_z}"/>
-      <limit effort="500" velocity="50000"/>
+      <limit effort="3.5" velocity="28.274"/>
       <dynamics damping="0.02"/>
     </joint>
   </xacro:macro>
@@ -284,8 +284,8 @@
       <parent link="${parent}"/>
       <child link="${child}"/>
       <axis xyz="0 0 -1"/>
-      <limit lower="-0.015" upper="0.006" effort="1000" velocity="20.0"/>
-      <dynamics damping="120.0" friction="0.0"/>
+      <limit lower="0.0" upper="0.0135" effort="392.3" velocity="20.0"/>
+      <dynamics damping="1000.0" friction="0.0"/>
     </joint>
   </xacro:macro>
 

@@ -64,7 +64,7 @@
     <gazebo reference="${ref}">
       <implicitSpringDamper>true</implicitSpringDamper>
       <springReference>0.006</springReference>
-      <springStiffness>28000</springStiffness>
+      <springStiffness>15040</springStiffness>
     </gazebo>
   </xacro:macro>
 
