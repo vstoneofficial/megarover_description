@@ -1,9 +1,12 @@
 <?xml version="1.0"?>
 <robot name="mega3" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+  <xacro:arg name="use_ros2_control" default="true" />
+  <xacro:arg name="lidar" default="true" />
+  <xacro:property name="tg30_enabled" value="false" />
+
   <xacro:include filename="$(find megarover_description)/urdf/materials.xacro" />
   <xacro:include filename="$(find megarover_description)/urdf/mega3.gazebo" />
-  <xacro:arg name="use_ros2_control" default="true" />
   <xacro:if value="$(arg use_ros2_control)">
     <xacro:include filename="$(find megarover_description)/urdf/mega3_ros2_control.xacro" />
   </xacro:if>
@@ -41,11 +44,11 @@
 
   <link name="base_link">
     <inertial>
-      <origin xyz="-0.000007 -0.000146 0.095171" rpy="0 0 0" />
-      <mass value="12" />
-      <inertia ixx="5.644759e-02" iyy="9.308603e-02" izz="1.250700e-01"
-        ixy="-3.125032e-04" iyz="-2.117978e-05"
-        ixz="-2.464583e-03" />
+      <origin xyz="0.008652929776791014 0.001107013730491935 0.10307586165229349" rpy="0 0 -1.5707963267948966" />
+      <mass value="3.2472141930264886" />
+      <inertia ixx="0.03499380367357023" iyy="0.02389566038235242" izz="0.04961607321095147"
+        ixy="0.0004073496120585377" iyz="-0.0008864404421181438"
+        ixz="5.121736313081106e-05" />
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 -1.5708" />
@@ -58,6 +61,97 @@
       <origin xyz="0 0 0" rpy="0 0 -1.5708" />
       <geometry>
         <mesh filename="package://megarover_description/meshes/mega3/base_link.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- CAD +Y forward is rotated into the existing mega3 +X frame. -->
+  <joint name="battery_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 -1.5707963267948966" />
+    <parent link="base_link" />
+    <child link="Battery" />
+  </joint>
+
+  <link name="Battery">
+    <inertial>
+      <origin xyz="-8.617707998157631e-18 0.008998698470897024 0.08943706012717803" rpy="0 0 0" />
+      <mass value="8.245147502236165" />
+      <inertia ixx="0.0214853104155929" iyy="0.03313493288601588" izz="0.04284993321973867"
+        ixy="-7.034280604820041e-18" iyz="4.959248083875184e-07" ixz="-6.705434520297627e-19" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3/Battery.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3/Battery.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="caster_swivel_joint" type="continuous">
+    <origin xyz="-0.13 0 0.0814" rpy="0 0 -1.5707963267948966" />
+    <parent link="base_link" />
+    <child link="Caster_Frame" />
+    <axis xyz="0 0 -1" />
+    <limit effort="100.0" velocity="100.0" />
+  </joint>
+
+  <link name="Caster_Frame">
+    <inertial>
+      <origin xyz="-2.9997809438943724e-18 0.0008380877975086853 -0.019114933984371356" rpy="0 0 0" />
+      <mass value="0.18593892620957955" />
+      <inertia ixx="4.784843078569148e-05" iyy="4.884288359081478e-05" izz="3.484845036761698e-05"
+        ixy="-3.951178862922994e-20" iyz="-4.376302309193466e-06" ixz="-3.4741117944938427e-20" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0.13 -0.0814" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3/Caster_Frame.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="silver" />
+    </visual>
+    <collision>
+      <origin xyz="0 0.13 -0.0814" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3/Caster_Frame.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="caster_wheel_joint" type="continuous">
+    <origin xyz="0.014 -0.021 -0.0489" rpy="0 0 0" />
+    <parent link="Caster_Frame" />
+    <child link="Caster_Wheel" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" velocity="100.0" />
+  </joint>
+
+  <link name="Caster_Wheel">
+    <inertial>
+      <origin xyz="-0.014 2.7755575615628914e-17 0.0" rpy="0 0 0" />
+      <mass value="0.07034811349550506" />
+      <inertia ixx="3.7152597439811096e-05" iyy="2.092123583642218e-05" izz="2.0921235836423007e-05"
+        ixy="9.038103598868473e-21" iyz="-3.2526065174565133e-19" ixz="0.0" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.014 0.151 -0.0325" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3/Caster_Wheel.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="caster_wheel">
+        <color rgba="0.960784 0.960784 0.952941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.014 0.151 -0.0325" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3/Caster_Wheel.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
   </link>
@@ -85,9 +179,9 @@
       <material name="dark_grey" />
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="-1.5708 0 0" />
+      <origin xyz="-0.1 -0.136 -0.07" rpy="0 0 -1.5708" />
       <geometry>
-        <cylinder radius="0.07" length="0.05" />
+        <mesh filename="package://megarover_description/meshes/mega3/left_wheel_1.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
   </link>
@@ -115,11 +209,12 @@
       <material name="dark_grey" />
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="-1.5708 0 0" />
+      <origin xyz="-0.1 0.136 -0.07" rpy="0 0 -1.5708" />
       <geometry>
-        <cylinder radius="0.07" length="0.05" />
+        <mesh filename="package://megarover_description/meshes/mega3/right_wheel_1.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
   </link>
   
+  <xacro:gazebo_sensors />
 </robot>

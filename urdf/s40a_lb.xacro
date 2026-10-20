@@ -1,9 +1,12 @@
 <?xml version="1.0"?>
 <robot name="s40a_lb" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+  <xacro:arg name="use_ros2_control" default="true" />
+  <xacro:arg name="lidar" default="true" />
+  <xacro:property name="tg30_enabled" value="false" />
+
   <xacro:include filename="$(find megarover_description)/urdf/materials.xacro" />
   <xacro:include filename="$(find megarover_description)/urdf/s40a_lb.gazebo" />
-  <xacro:arg name="use_ros2_control" default="true" />
   <xacro:if value="$(arg use_ros2_control)">
     <xacro:include filename="$(find megarover_description)/urdf/s40a_lb_ros2_control.xacro" />
   </xacro:if>
@@ -409,16 +412,17 @@
     child="back_left_caster_wheel"/>
 
   <xacro:s40a_lb_lrf_mount_joint
-    name="front_lrf_mount"
+    name="front_lrf_mount_joint"
     xyz="0.0 0.0 0.0" rpy="0 0 ${radians(0)}"
     parent="body_link"
     child="front_lrf_mount"/>
     
   <xacro:s40a_lb_lrf_mount_joint
-    name="back_lrf_mount"
+    name="back_lrf_mount_joint"
     xyz="0.0 0.0 0.0" rpy="0 0 ${radians(180)}"
     parent="body_link"
     child="back_lrf_mount"/>
     
+  <xacro:gazebo_sensors />
 </robot>
 

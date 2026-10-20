@@ -3,7 +3,7 @@
 
   <ros2_control name="GazeboSystem" type="system">
     <hardware>
-      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
     </hardware>
 
     <joint name="left_wheel_joint">
@@ -51,22 +51,6 @@
     </joint>
 
 
-    <joint name="front_left_caster_steering_joint">
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </joint>
-    <joint name="front_right_caster_steering_joint">
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </joint>
-    <joint name="back_right_caster_steering_joint">
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </joint>
-    <joint name="back_left_caster_steering_joint">
-      <state_interface name="position"/>
-      <state_interface name="velocity"/>
-    </joint>
     
     <joint name="front_left_caster_wheel_joint">
       <state_interface name="position"/>
