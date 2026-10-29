@@ -15,7 +15,9 @@
 
 
 from geometry_msgs.msg import Twist
+import signal
 import rclpy
+from rclpy.signals import SignalHandlerOptions
 from rclpy.node import Node
 from rclpy.parameter import Parameter
 from std_msgs.msg import Float64MultiArray
@@ -42,8 +44,13 @@ class RoverTwistRelay(Node):
         self.declare_parameter('mega3.wheel_radius', 0.07)
         self.declare_parameter('mega3.wheel_separation', 0.272)
 
+        self.declare_parameter('mega3_outdoor.wheel_radius', 0.07)
+        self.declare_parameter('mega3_outdoor.wheel_separation', 0.500)
+
         self.declare_parameter('f120a.wheel_radius', 0.085)
-        self.declare_parameter('f120a.wheel_separation', 0.216)
+        self.declare_parameter('f120a.wheel_separation', 0.404)
+
+        self.declare_parameter('s40a_lb.wheel_separation', 0.340)
 
         self.apply_rover_parameters()
 
@@ -134,13 +141,22 @@ class RoverTwistRelay(Node):
 
 
 def main():
-    rclpy.init()
+    stopping = False
+
+    def stop(_signum, _frame):
+        nonlocal stopping
+        stopping = True
+
+    signal.signal(signal.SIGINT, stop)
+    signal.signal(signal.SIGTERM, stop)
+    rclpy.init(signal_handler_options=SignalHandlerOptions.NO)
     node = RoverTwistRelay()
     try:
-        rclpy.spin(node)
+        while not stopping and node.context.ok():
+            rclpy.spin_once(node, timeout_sec=0.1)
     finally:
         node.destroy_node()
-        rclpy.shutdown()
+        rclpy.try_shutdown()
 
 
 if __name__ == '__main__':

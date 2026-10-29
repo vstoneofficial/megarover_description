@@ -15,9 +15,7 @@
   <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/lrf/tg30_mega3.xacro" /> -->
   
   <!-- OPTION  bumper sensor -->
-  <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/bumper/bumper_mega3.xacro" />
-  <xacro:bumperbaseboard prefix="front" parent="base_link" xyz="0.19 0 0.02" z_dir="90" />
-  <xacro:bumperbaseboard prefix="back" parent="base_link" xyz="-0.19 0 0.02" z_dir="-90" />-->
+  <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/bumper/bumper_mega3.xacro" /> -->
 
   <!-- OPTION  camera stay -->
   <!-- <xacro:include filename="$(find vs_rover_options_description)/urdf/cam_stay/cam_stay_mega3.xacro" />
@@ -161,7 +159,6 @@
     <parent link="base_link" />
     <child link="left_wheel_1" />
     <axis xyz="0.0 1.0 0.0" />
-    <limit effort="3.5" velocity="28.274" />
   </joint>
 
   <link name="left_wheel_1">
@@ -180,27 +177,9 @@
       <material name="dark_grey" />
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
+      <origin xyz="-0.1 -0.136 -0.07" rpy="0 0 -1.5708" />
       <geometry>
-        <cylinder radius="0.069965" length="0.006227"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
-      <geometry>
-        <cylinder radius="0.069687" length="0.018681"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
-      <geometry>
-        <cylinder radius="0.069132" length="0.031134"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
-      <geometry>
-        <cylinder radius="0.068300" length="0.043500"/>
+        <mesh filename="package://megarover_description/meshes/mega3/left_wheel_1.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
   </link>
@@ -210,7 +189,6 @@
     <parent link="base_link" />
     <child link="right_wheel_1" />
     <axis xyz="0.0 1.0 0.0" />
-    <limit effort="3.5" velocity="28.274" />
   </joint>
 
   <link name="right_wheel_1">
@@ -229,27 +207,9 @@
       <material name="dark_grey" />
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
+      <origin xyz="-0.1 0.136 -0.07" rpy="0 0 -1.5708" />
       <geometry>
-        <cylinder radius="0.069965" length="0.006227"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
-      <geometry>
-        <cylinder radius="0.069687" length="0.018681"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
-      <geometry>
-        <cylinder radius="0.069132" length="0.031134"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 0 0" rpy="-1.5708 0 0"/>
-      <geometry>
-        <cylinder radius="0.068300" length="0.043500"/>
+        <mesh filename="package://megarover_description/meshes/mega3/right_wheel_1.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
   </link>

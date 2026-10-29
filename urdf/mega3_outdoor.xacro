@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mega3_outdoor">
+  <xacro:arg name="use_ros2_control" default="true" />
+  <xacro:include filename="$(find megarover_description)/urdf/materials.xacro" />
+  <xacro:if value="$(arg use_ros2_control)">
+    <xacro:include filename="$(find megarover_description)/urdf/mega3_ros2_control.xacro" />
+    <gazebo>
+      <plugin name="gz_ros2_control::GazeboSimROS2ControlPlugin" filename="gz_ros2_control-system">
+        <parameters>$(find megarover_description)/params/controllers.yaml</parameters>
+      </plugin>
+      <plugin name="gz::sim::systems::OdometryPublisher" filename="gz-sim-odometry-publisher-system">
+        <odom_frame>odom</odom_frame>
+        <robot_base_frame>base_footprint</robot_base_frame>
+        <odom_topic>/sim_odom</odom_topic>
+        <odom_publish_frequency>50</odom_publish_frequency>
+        <dimensions>2</dimensions>
+      </plugin>
+    </gazebo>
+  </xacro:if>
+  <gazebo reference="base_link">
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+  </gazebo>
+  <gazebo reference="right_wheel_1">
+    <mu1>1.5</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+  <gazebo reference="left_wheel_1">
+    <mu1>1.5</mu1>
+    <mu2>0.8</mu2>
+  </gazebo>
+  <material name="material_8300a_Battery">
+    <color rgba="0.623529 0.623529 0.623529 1.000000" />
+  </material>
+  <material name="material_CASE">
+    <color rgba="0.000000 0.000000 0.000000 1.000000" />
+  </material>
+  <material name="material_Caster_Frame">
+    <color rgba="0.376471 0.376471 0.372549 1.000000" />
+  </material>
+  <material name="material_Caster_Wheel">
+    <color rgba="0.623529 0.623529 0.623529 1.000000" />
+  </material>
+  <material name="material_base_link">
+    <color rgba="0.956863 0.960784 0.964706 1.000000" />
+  </material>
+  <!--CAD base_link faces +X; base_footprint is below the drive axle.-->
+  <link name="base_footprint" />
+  <joint name="base_joint" type="fixed">
+    <origin xyz="-0.19 0 0" rpy="0 0 0" />
+    <parent link="base_footprint" />
+    <child link="base_link" />
+  </joint>
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.021533200260098476 -2.6730947262285993e-07 0.11265180991700938" rpy="0 0 0" />
+      <mass value="5.544575452642739" />
+      <inertia ixx="0.15088233661059702" iyy="0.25254616879183" izz="0.3940770957822911" ixy="-3.1914733765819894e-08" iyz="-7.714531536724789e-09" ixz="0.010434033972929536" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3_outdoor/base_link.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="material_base_link" />
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3_outdoor/base_link.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_wheel_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="1.24" />
+      <inertia ixx="1.655435e-03" ixy="0.0" ixz="0.0" iyy="2.678186e-03" iyz="0.0" izz="1.655435e-03" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.19 -0.18815 -0.069" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3_outdoor/left_wheel.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="dark_grey" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.19 -0.18815 -0.069" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3_outdoor/left_wheel.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_wheel_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="1.24" />
+      <inertia ixx="1.655421e-03" ixy="0.0" ixz="0.0" iyy="2.678055e-03" iyz="0.0" izz="1.655420e-03" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.19 0.18815 -0.069" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3_outdoor/right_wheel.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="dark_grey" />
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.19 0.18815 -0.069" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3_outdoor/right_wheel.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="CASE">
+    <inertial>
+      <origin xyz="0.007376818370198324 -0.00012805018001641326 0.10606753003762784" rpy="0 0 0" />
+      <mass value="5.991331703230223" />
+      <inertia ixx="0.09857375516052522" iyy="0.09651485170005958" izz="0.16144407148773096" ixy="-5.281695436961109e-05" iyz="-4.6465562975365466e-05" ixz="0.0022533131824167513" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3_outdoor/CASE.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="material_CASE" />
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3_outdoor/CASE.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Caster_Frame">
+    <inertial>
+      <origin xyz="-0.03035756286608754 -8.865791635276123e-10 -0.028121885999395427" rpy="0 0 0" />
+      <mass value="0.1310617208811754" />
+      <inertia ixx="8.918525674833405e-05" iyy="0.00016170864079072082" izz="0.00015020780020126405" ixy="3.405363186845285e-13" iyz="-4.2444613293619276e-12" ixz="-3.769052149692198e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0.255 0.0 -0.119" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3_outdoor/Caster_Frame.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="material_Caster_Frame" />
+    </visual>
+    <collision>
+      <origin xyz="0.255 0.0 -0.119" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3_outdoor/Caster_Frame.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Caster_Wheel">
+    <inertial>
+      <origin xyz="5.551115123125783e-16 -0.01749999999999955 2.0816681711721685e-17" rpy="0 0 0" />
+      <mass value="2.0567619932840304" />
+      <inertia ixx="0.001429281486571717" iyy="0.0024655831199319467" izz="0.001429281486571704" ixy="9.995346772490005e-19" iyz="-3.5697667044584973e-19" ixz="-6.938893903907228e-18" />
+    </inertial>
+    <visual>
+      <origin xyz="0.287 -0.0175 -0.05" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3_outdoor/Caster_Wheel.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="material_Caster_Wheel" />
+    </visual>
+    <collision>
+      <origin xyz="0.287 -0.0175 -0.05" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3_outdoor/Caster_Wheel.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Battery">
+    <inertial>
+      <origin xyz="0.038310700518913596 -0.0001914069884846533 0.1031516129185513" rpy="0 0 0" />
+      <mass value="14.36626600000001" />
+      <inertia ixx="0.16583400764655448" iyy="0.051001162861592814" izz="0.1795603149580309" ixy="3.432423249248763e-07" iyz="0.0006428118307779435" ixz="6.864846498576271e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3_outdoor/Battery.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="material_8300a_Battery" />
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://megarover_description/meshes/mega3_outdoor/Battery.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_wheel_joint" type="continuous">
+    <origin xyz="0.19 0.18815 0.069" rpy="0.0 0.0 0.0" />
+    <parent link="base_link" />
+    <child link="left_wheel_1" />
+    <axis xyz="0.0 1.0 0.0" />
+  </joint>
+  <joint name="right_wheel_joint" type="continuous">
+    <origin xyz="0.19 -0.18815 0.069" rpy="0.0 0.0 0.0" />
+    <parent link="base_link" />
+    <child link="right_wheel_1" />
+    <axis xyz="0.0 1.0 0.0" />
+  </joint>
+  <joint name="case_joint" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+    <parent link="base_link" />
+    <child link="CASE" />
+  </joint>
+  <joint name="caster_swivel_joint" type="continuous">
+    <origin xyz="-0.255 0.0 0.119" rpy="0.0 0.0 0.0" />
+    <parent link="base_link" />
+    <child link="Caster_Frame" />
+    <axis xyz="-0.0 -0.0 -1.0" />
+    <limit effort="100.0" velocity="100.0" />
+  </joint>
+  <joint name="caster_wheel_joint" type="continuous">
+    <origin xyz="-0.032 0.0175 -0.069" rpy="0.0 0.0 0.0" />
+    <parent link="Caster_Frame" />
+    <child link="Caster_Wheel" />
+    <axis xyz="-0.0 -1.0 0.0" />
+    <limit effort="100.0" velocity="100.0" />
+  </joint>
+  <joint name="battery_joint" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+    <parent link="CASE" />
+    <child link="Battery" />
+  </joint>
+</robot>

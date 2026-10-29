@@ -14,7 +14,14 @@ rover_twist_relay:
     mega3.wheel_radius: 0.07
     mega3.wheel_separation: 0.272
 
+    # mega3_outdoor (tire tread centers at Y = +/-0.250 m)
+    mega3_outdoor.wheel_radius: 0.07
+    mega3_outdoor.wheel_separation: 0.500
+
     # f120a
     f120a.wheel_radius: 0.085
-    f120a.wheel_separation: 0.216
+    f120a.wheel_separation: 0.404
+
+    # s40a_lb
+    s40a_lb.wheel_separation: 0.340
 

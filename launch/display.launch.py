@@ -12,13 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from ament_index_python.packages import get_package_share_directory
+import os
+from pathlib import Path
+
+from ament_index_python.packages import get_package_prefix, get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.conditions import IfCondition, UnlessCondition
 from launch.substitutions import Command, LaunchConfiguration, PythonExpression
 from launch_ros.actions import Node
 from launch_ros.parameter_descriptions import ParameterValue
+from rclpy.utilities import get_rmw_implementation_identifier
 
 
 def generate_launch_description():
@@ -27,6 +31,13 @@ def generate_launch_description():
     # Package path
     # --------------------------------------------------
     desc_pkg = get_package_share_directory('megarover_description')
+    rmw = get_rmw_implementation_identifier()
+    rmw_library = Path(get_package_prefix(rmw)) / 'lib' / ('lib' + rmw + '.so')
+    if not rmw_library.is_file():
+        raise RuntimeError('RViz RMW library unavailable: ' + str(rmw_library))
+    rviz_preload = str(rmw_library)
+    if os.environ.get('LD_PRELOAD'):
+        rviz_preload += ':' + os.environ['LD_PRELOAD']
 
     # --------------------------------------------------
     # Launch arguments
@@ -39,6 +50,7 @@ def generate_launch_description():
     # --------------------------------------------------
     model_file = PythonExpression([
         '"', desc_pkg, '/urdf/" + (',
+        '"mega3_outdoor.xacro" if "', rover, '" == "mega3_outdoor" else ',
         '"mega3.xacro" if "', rover, '" == "mega3" else ',
         '"s40a_lb.xacro" if "', rover, '" == "s40a_lb" else ',
         '"f120a.xacro")'
@@ -46,7 +58,7 @@ def generate_launch_description():
 
     rviz_file = PythonExpression([
         '"', desc_pkg, '/rviz/" + (',
-        '"mega3.rviz" if "', rover, '" == "mega3" else ',
+        '"mega3.rviz" if "', rover, '" in ("mega3", "mega3_outdoor") else ',
         '"s40a_lb.rviz" if "', rover, '" == "s40a_lb" else ',
         '"f120a.rviz")'
     ])
@@ -66,30 +78,35 @@ def generate_launch_description():
         package='robot_state_publisher',
         executable='robot_state_publisher',
         parameters=[{
-            'robot_description': robot_description,
-            'publish_frequency': 200.0
+            'robot_description': robot_description
         }]
     )
 
     joint_state_publisher = Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-        parameters=[{'rate': 100}],
+        package='megarover_description',
+        executable='joint_state_node.py',
+        prefix='setsid',
         condition=UnlessCondition(gui)
     )
 
     joint_state_publisher_gui = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-        parameters=[{'rate': 100}],
+        package='megarover_description',
+        executable='joint_state_gui.py',
+        prefix='setsid',
         condition=IfCondition(gui)
     )
 
     rviz = Node(
-        package='rviz2',
-        executable='rviz2',
+        package='megarover_description',
+        executable='gui_session.py',
         name='rviz2',
-        arguments=['-d', rviz_file],
+        prefix='setsid',
+        additional_env={'LD_PRELOAD': rviz_preload},
+        arguments=[
+            os.path.join(
+                get_package_prefix('megarover_description'),
+                'lib/megarover_description/rviz_no_prompt'),
+            '-d', rviz_file],
         output='screen'
     )
 
@@ -101,7 +118,7 @@ def generate_launch_description():
         DeclareLaunchArgument(
             'rover',
             default_value='mega3',
-            description='Rover type: mega3 | f120a | s40a_lb'
+            description='Rover type: mega3 | mega3_outdoor | f120a | s40a_lb'
         ),
 
         DeclareLaunchArgument(

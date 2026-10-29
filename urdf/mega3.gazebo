@@ -14,6 +14,15 @@
         <odom_publish_frequency>50</odom_publish_frequency>
         <dimensions>2</dimensions>
       </plugin>
+      <plugin name="megarover_description::SupportFriction" filename="$(find megarover_description)/../../lib/libmegarover_support_friction.so">
+        <support_link>base_link</support_link><mu1>0.05</mu1><mu2>0.05</mu2>
+      <original_wheel_material>
+        <link>right_wheel_1</link><mu1>1.5</mu1><mu2>0.8</mu2>
+      </original_wheel_material>
+      <original_wheel_material>
+        <link>left_wheel_1</link><mu1>1.5</mu1><mu2>0.8</mu2>
+      </original_wheel_material>
+      </plugin>
     </gazebo>
   </xacro:if>
 

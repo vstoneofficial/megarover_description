@@ -56,27 +56,9 @@
       <material name="dark_grey"/>
     </visual>
     <collision>
-      <origin xyz="0 0 0.02885" rpy="0 0 0"/>
       <geometry>
-        <cylinder radius="0.070000" length="0.001000"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 0 0.02885" rpy="0 0 0"/>
-      <geometry>
-        <cylinder radius="0.069811" length="0.014534"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 0 0.02885" rpy="0 0 0"/>
-      <geometry>
-        <cylinder radius="0.069244" length="0.029066"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0 0 0.02885" rpy="0 0 0"/>
-      <geometry>
-        <cylinder radius="0.068300" length="0.043500"/>
+        <mesh filename="package://megarover_description/meshes/s40a_lb/wheel.stl"
+              scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </xacro:macro>
@@ -146,9 +128,9 @@
       <material name="dark_grey"/>
     </visual>
     <collision>
-      <origin xyz="0 0 0.01"/>
       <geometry>
-        <cylinder radius="0.0325" length="0.02"/>
+        <mesh filename="package://megarover_description/meshes/s40a_lb/caster_wheel.stl"
+              scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </xacro:macro>
@@ -260,8 +242,8 @@
       <parent link="${parent}"/>
       <child link="${child}"/>
       <axis xyz="0 0 -1"/>
-      <limit lower="0.0" upper="0.0135" effort="451.2" velocity="20.0"/>
-      <dynamics damping="1000.0" friction="0.0"/>
+      <limit lower="-0.015" upper="0.006" effort="100" velocity="20.0"/>
+      <dynamics damping="280.0" friction="0.0"/>
     </joint>
   </xacro:macro>
 
@@ -272,7 +254,7 @@
       <parent link="${parent}"/>
       <child link="${child}"/>
       <axis xyz="0 0 ${axis_z}"/>
-      <limit effort="3.5" velocity="28.274"/>
+      <limit effort="500" velocity="50000"/>
       <dynamics damping="0.02"/>
     </joint>
   </xacro:macro>
@@ -284,8 +266,8 @@
       <parent link="${parent}"/>
       <child link="${child}"/>
       <axis xyz="0 0 -1"/>
-      <limit lower="0.0" upper="0.0135" effort="392.3" velocity="20.0"/>
-      <dynamics damping="1.0" friction="0.0"/>
+      <limit lower="-0.015" upper="0.006" effort="1000" velocity="20.0"/>
+      <dynamics damping="120.0" friction="0.0"/>
     </joint>
   </xacro:macro>
 
