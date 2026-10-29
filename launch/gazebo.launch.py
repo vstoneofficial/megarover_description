@@ -1,5 +1,6 @@
 """Gazebo Harmonic bringup using native Jazzy model definitions."""
 import os
+import shlex
 import subprocess
 import xml.etree.ElementTree as ET
 
@@ -63,7 +64,7 @@ def _setup(context):
                               'urdf', rover + '.xacro')], text=True)
     model = ET.fromstring(description)
     server_args = '-r -s ' + ('' if gui else '--headless-rendering ')
-    server_args += os.path.join(share, 'worlds', 'empty.sdf')
+    server_args += shlex.quote(os.path.join(share, 'worlds', 'empty.sdf'))
     gz_groups = [_gazebo_group(context, server_args)]
     if gui:
         gz_groups.append(_gazebo_group(context, '-g'))

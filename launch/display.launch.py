@@ -13,6 +13,7 @@
 # limitations under the License.
 
 import os
+import shlex
 from pathlib import Path
 
 from ament_index_python.packages import get_package_prefix, get_package_share_directory
@@ -49,7 +50,7 @@ def generate_launch_description():
     # Select xacro and rviz by rover type
     # --------------------------------------------------
     model_file = PythonExpression([
-        '"', desc_pkg, '/urdf/" + (',
+        repr(shlex.quote(os.path.join(desc_pkg, 'urdf') + os.sep)), ' + (',
         '"mega3_outdoor.xacro" if "', rover, '" == "mega3_outdoor" else ',
         '"mega3.xacro" if "', rover, '" == "mega3" else ',
         '"s40a_lb.xacro" if "', rover, '" == "s40a_lb" else ',
@@ -57,7 +58,7 @@ def generate_launch_description():
     ])
 
     rviz_file = PythonExpression([
-        '"', desc_pkg, '/rviz/" + (',
+        repr(os.path.join(desc_pkg, 'rviz') + os.sep), ' + (',
         '"mega3.rviz" if "', rover, '" in ("mega3", "mega3_outdoor") else ',
         '"s40a_lb.rviz" if "', rover, '" == "s40a_lb" else ',
         '"f120a.rviz")'
