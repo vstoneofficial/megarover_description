@@ -26,6 +26,13 @@ from launch_ros.parameter_descriptions import ParameterValue
 from rclpy.utilities import get_rmw_implementation_identifier
 
 
+class IsolatedNode(Node):
+    """Forward terminal shutdown to a child outside the terminal session."""
+
+    def _shutdown_process(self, context, *, send_sigint):
+        return super()._shutdown_process(context, send_sigint=True)
+
+
 def generate_launch_description():
 
     # --------------------------------------------------
@@ -83,21 +90,21 @@ def generate_launch_description():
         }]
     )
 
-    joint_state_publisher = Node(
+    joint_state_publisher = IsolatedNode(
         package='megarover_description',
         executable='joint_state_node.py',
         prefix='setsid',
         condition=UnlessCondition(gui)
     )
 
-    joint_state_publisher_gui = Node(
+    joint_state_publisher_gui = IsolatedNode(
         package='megarover_description',
         executable='joint_state_gui.py',
         prefix='setsid',
         condition=IfCondition(gui)
     )
 
-    rviz = Node(
+    rviz = IsolatedNode(
         package='megarover_description',
         executable='gui_session.py',
         name='rviz2',

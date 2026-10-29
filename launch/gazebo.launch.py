@@ -16,6 +16,20 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 
+class IsolatedNode(Node):
+    """Forward terminal shutdown to a child outside the terminal session."""
+
+    def _shutdown_process(self, context, *, send_sigint):
+        return super()._shutdown_process(context, send_sigint=True)
+
+
+class IsolatedProcess(ExecuteLocal):
+    """Forward terminal shutdown to a child outside the terminal session."""
+
+    def _shutdown_process(self, context, *, send_sigint):
+        return super()._shutdown_process(context, send_sigint=True)
+
+
 def _gazebo_exited(event, context):
     if event.process_name.rsplit('-', 1)[0] != 'gazebo' or context.is_shutdown:
         return []
@@ -28,7 +42,7 @@ def _bind_gazebo_timeout(context, installed_action):
         if isinstance(action, ExecuteProcess):
             # Preserve ros_gz_sim's executable, resource paths and shell settings.
             # A literal timeout survives the launch configuration scope popping.
-            action = ExecuteLocal(
+            action = IsolatedProcess(
                 process_description=action.process_description,
                 shell=action.shell, output=action.output,
                 emulate_tty=action.emulate_tty,
@@ -68,17 +82,17 @@ def _setup(context):
     gz_groups = [_gazebo_group(context, server_args)]
     if gui:
         gz_groups.append(_gazebo_group(context, '-g'))
-    rsp = Node(
+    rsp = IsolatedNode(
         package='robot_state_publisher', executable='robot_state_publisher',
         prefix='setsid',
         name='megarover_description_state_publisher',
         parameters=[{'robot_description': description, 'use_sim_time': True}], output='screen')
-    spawn = Node(
+    spawn = IsolatedNode(
         package='ros_gz_sim', executable='create',
         prefix='setsid',
         arguments=['-world', 'default', '-name', rover, '-topic', '/robot_description',
                    '-z', LaunchConfiguration('spawn_z')], output='screen')
-    controllers = Node(
+    controllers = IsolatedNode(
         package='controller_manager', executable='spawner',
         prefix='setsid',
         arguments=['joint_state_broadcaster', 'wheel_velocity_controller',
@@ -127,19 +141,19 @@ def _setup(context):
                     }
         elif sensor_type == 'imu':
             bridge_arguments.append(topic + '@sensor_msgs/msg/Imu[gz.msgs.IMU')
-    bridge = Node(
+    bridge = IsolatedNode(
         package='ros_gz_bridge', executable='parameter_bridge', prefix='setsid',
         arguments=bridge_arguments, remappings=bridge_remappings,
         parameters=[{'use_sim_time': True}], output='screen')
     point_nodes = []
     if point_bridges:
         # Parameter-defined bridges initialize when no CLI bridge already exists.
-        point_nodes.append(Node(
+        point_nodes.append(IsolatedNode(
             package='ros_gz_bridge', executable='parameter_bridge', prefix='setsid',
             name='megarover_depth_bridge',
             parameters=[{'bridge_names': list(point_bridges), 'bridges': point_bridges}],
             output='screen'))
-    relay = Node(
+    relay = IsolatedNode(
         package='megarover_description', executable='rover_twist_relay.py',
         prefix='setsid',
         name='rover_twist_relay', output='screen', parameters=[os.path.join(
